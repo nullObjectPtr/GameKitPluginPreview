@@ -1,0 +1,26 @@
+{
+	"name":"com.hovelhouse.gamekit",
+	"version":"0.0.1",
+	"displayName":"Game Kit Plugin",
+	"description":"An Apple Arcade ready GameKit plugin for iOS, macOS and TVOS.",
+	"unity":"2018.4",
+	"unityRelease":"7f1",
+	"dependencies":{},
+	"keywords":
+	[
+		"GameKit",
+		"Apple",
+		"Arcade",
+		"Apple Arcade",
+		"Native",
+		"iOS",
+		"TVOS",
+		"macOS"
+	],
+	"author":
+	{
+		"name":"Jonathan Culp",
+		"email":"support@hovelhouse.com",
+		"url":"http://www.hovelhouse.com/"
+	}
+}

@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB2AEA89252F458A00CBC580 /* GKMatch.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA46252F458300CBC580 /* GKMatch.h */; };
+		AB2AEA8A252F458A00CBC580 /* GKTurnBasedParticipant.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA47252F458300CBC580 /* GKTurnBasedParticipant.h */; };
+		AB2AEA8B252F458A00CBC580 /* GKTurnBasedExchangeReply.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA48252F458300CBC580 /* GKTurnBasedExchangeReply.h */; };
+		AB2AEA8C252F458A00CBC580 /* GKVoiceChat.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA49252F458400CBC580 /* GKVoiceChat.mm */; };
+		AB2AEA8D252F458A00CBC580 /* GKMatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA4A252F458400CBC580 /* GKMatch.mm */; };
+		AB2AEA8E252F458A00CBC580 /* GKPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA4B252F458400CBC580 /* GKPlayer.h */; };
+		AB2AEA8F252F458A00CBC580 /* GKVoiceChat.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA4C252F458400CBC580 /* GKVoiceChat.h */; };
+		AB2AEA90252F458A00CBC580 /* GKMatchmakerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA4D252F458400CBC580 /* GKMatchmakerViewController.mm */; };
+		AB2AEA91252F458A00CBC580 /* NSException.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA4E252F458400CBC580 /* NSException.h */; };
+		AB2AEA92252F458A00CBC580 /* GKTurnBasedMatch.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA4F252F458400CBC580 /* GKTurnBasedMatch.h */; };
+		AB2AEA93252F458A00CBC580 /* GameKitInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA50252F458400CBC580 /* GameKitInitializer.h */; };
+		AB2AEA94252F458A00CBC580 /* NSError.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA51252F458400CBC580 /* NSError.mm */; };
+		AB2AEA95252F458A00CBC580 /* MatchmakerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA52252F458400CBC580 /* MatchmakerViewControllerDelegate.h */; };
+		AB2AEA96252F458A00CBC580 /* Callbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA53252F458400CBC580 /* Callbacks.h */; };
+		AB2AEA97252F458A00CBC580 /* GKInvite.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA54252F458400CBC580 /* GKInvite.h */; };
+		AB2AEA98252F458A00CBC580 /* GKLeaderboardSet.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA55252F458400CBC580 /* GKLeaderboardSet.mm */; };
+		AB2AEA99252F458A00CBC580 /* GKAchievementDescription.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA56252F458400CBC580 /* GKAchievementDescription.mm */; };
+		AB2AEA9A252F458A00CBC580 /* GKTurnBasedExchange.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA57252F458500CBC580 /* GKTurnBasedExchange.mm */; };
+		AB2AEA9B252F458A00CBC580 /* Converters.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA58252F458500CBC580 /* Converters.h */; };
+		AB2AEA9C252F458A00CBC580 /* GKScoreChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA59252F458500CBC580 /* GKScoreChallenge.h */; };
+		AB2AEA9D252F458A00CBC580 /* GKLocalPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA5A252F458500CBC580 /* GKLocalPlayer.h */; };
+		AB2AEA9E252F458A00CBC580 /* GKTurnBasedParticipant.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA5B252F458500CBC580 /* GKTurnBasedParticipant.mm */; };
+		AB2AEA9F252F458A00CBC580 /* ChallengeListener.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA5C252F458500CBC580 /* ChallengeListener.h */; };
+		AB2AEAA0252F458A00CBC580 /* GKBasePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA5D252F458500CBC580 /* GKBasePlayer.h */; };
+		AB2AEAA1252F458A00CBC580 /* GKMatchmaker.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA5E252F458500CBC580 /* GKMatchmaker.mm */; };
+		AB2AEAA2252F458A00CBC580 /* ChallengeListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA5F252F458500CBC580 /* ChallengeListener.mm */; };
+		AB2AEAA3252F458A00CBC580 /* LocalPlayerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA60252F458500CBC580 /* LocalPlayerListener.h */; };
+		AB2AEAA4252F458A00CBC580 /* GKAchievementChallenge.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA61252F458500CBC580 /* GKAchievementChallenge.mm */; };
+		AB2AEAA5252F458A00CBC580 /* NSError.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA62252F458500CBC580 /* NSError.h */; };
+		AB2AEAA6252F458A00CBC580 /* GKMatchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA63252F458600CBC580 /* GKMatchRequest.h */; };
+		AB2AEAA7252F458A00CBC580 /* GKAchievementDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA64252F458600CBC580 /* GKAchievementDescription.h */; };
+		AB2AEAA8252F458A00CBC580 /* GKMatchRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA65252F458600CBC580 /* GKMatchRequest.mm */; };
+		AB2AEAA9252F458A00CBC580 /* GKTurnBasedExchangeReply.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA66252F458600CBC580 /* GKTurnBasedExchangeReply.mm */; };
+		AB2AEAAA252F458A00CBC580 /* MatchDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA67252F458600CBC580 /* MatchDelegate.mm */; };
+		AB2AEAAB252F458A00CBC580 /* GKAchievement.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA68252F458600CBC580 /* GKAchievement.mm */; };
+		AB2AEAAC252F458A00CBC580 /* UIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA69252F458600CBC580 /* UIViewController.h */; };
+		AB2AEAAD252F458A00CBC580 /* GKInvite.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA6A252F458600CBC580 /* GKInvite.mm */; };
+		AB2AEAAE252F458A00CBC580 /* GKScore.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA6B252F458600CBC580 /* GKScore.h */; };
+		AB2AEAAF252F458A00CBC580 /* LocalPlayerListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA6C252F458600CBC580 /* LocalPlayerListener.mm */; };
+		AB2AEAB0252F458A00CBC580 /* MatchmakerViewControllerDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA6D252F458700CBC580 /* MatchmakerViewControllerDelegate.mm */; };
+		AB2AEAB1252F458A00CBC580 /* TurnBasedEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA6E252F458700CBC580 /* TurnBasedEventListener.h */; };
+		AB2AEAB2252F458A00CBC580 /* TurnBasedEventListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA6F252F458700CBC580 /* TurnBasedEventListener.mm */; };
+		AB2AEAB3252F458A00CBC580 /* GKPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA70252F458700CBC580 /* GKPlayer.mm */; };
+		AB2AEAB4252F458A00CBC580 /* GKMatchmaker.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA71252F458700CBC580 /* GKMatchmaker.h */; };
+		AB2AEAB5252F458A00CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA72252F458700CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.mm */; };
+		AB2AEAB6252F458A00CBC580 /* GameKitInitializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA73252F458700CBC580 /* GameKitInitializer.mm */; };
+		AB2AEAB7252F458A00CBC580 /* GKChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA74252F458700CBC580 /* GKChallenge.h */; };
+		AB2AEAB8252F458A00CBC580 /* GKTurnBasedExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA75252F458800CBC580 /* GKTurnBasedExchange.h */; };
+		AB2AEAB9252F458A00CBC580 /* GKLeaderboard.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA76252F458800CBC580 /* GKLeaderboard.mm */; };
+		AB2AEABA252F458A00CBC580 /* MatchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA77252F458800CBC580 /* MatchDelegate.h */; };
+		AB2AEABB252F458A00CBC580 /* GKTurnBasedMatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA78252F458800CBC580 /* GKTurnBasedMatch.mm */; };
+		AB2AEABC252F458A00CBC580 /* GKScore.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA79252F458800CBC580 /* GKScore.mm */; };
+		AB2AEABD252F458A00CBC580 /* GKChallenge.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA7A252F458800CBC580 /* GKChallenge.mm */; };
+		AB2AEABE252F458A00CBC580 /* GKTurnBasedMatchmakerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA7B252F458800CBC580 /* GKTurnBasedMatchmakerViewController.mm */; };
+		AB2AEABF252F458A00CBC580 /* GKAchievement.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA7C252F458800CBC580 /* GKAchievement.h */; };
+		AB2AEAC0252F458A00CBC580 /* GKLeaderboard.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA7D252F458900CBC580 /* GKLeaderboard.h */; };
+		AB2AEAC1252F458A00CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA7E252F458900CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.h */; };
+		AB2AEAC2252F458A00CBC580 /* UIViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA7F252F458900CBC580 /* UIViewController.mm */; };
+		AB2AEAC3252F458A00CBC580 /* GKLocalPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA80252F458900CBC580 /* GKLocalPlayer.mm */; };
+		AB2AEAC4252F458A00CBC580 /* GKBasePlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA81252F458900CBC580 /* GKBasePlayer.mm */; };
+		AB2AEAC5252F458A00CBC580 /* GKScoreChallenge.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA82252F458900CBC580 /* GKScoreChallenge.mm */; };
+		AB2AEAC6252F458A00CBC580 /* NSException.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA83252F458900CBC580 /* NSException.mm */; };
+		AB2AEAC7252F458A00CBC580 /* Converters.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2AEA84252F458900CBC580 /* Converters.m */; };
+		AB2AEAC8252F458A00CBC580 /* GKTurnBasedMatchmakerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA85252F458900CBC580 /* GKTurnBasedMatchmakerViewController.h */; };
+		AB2AEAC9252F458A00CBC580 /* GKAchievementChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA86252F458900CBC580 /* GKAchievementChallenge.h */; };
+		AB2AEACA252F458A00CBC580 /* GKLeaderboardSet.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA87252F458900CBC580 /* GKLeaderboardSet.h */; };
+		AB2AEACB252F458A00CBC580 /* GKMatchmakerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2AEA88252F458A00CBC580 /* GKMatchmakerViewController.h */; };
+		AB3C653723F6FD5800B20CC4 /* libHHGameKitTVOS.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3C646823F6F98800B20CC4 /* libHHGameKitTVOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB3C653623F6FD4C00B20CC4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${PROJECT_DIR}/../../UnityGameKitPlugin/Packages/GameKit/Runtime/bin/TVOS";
+			dstSubfolderSpec = 0;
+			files = (
+				AB3C653723F6FD5800B20CC4 /* libHHGameKitTVOS.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB2AEA46252F458300CBC580 /* GKMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKMatch.h; path = ../../Common/GKMatch.h; sourceTree = "<group>"; };
+		AB2AEA47252F458300CBC580 /* GKTurnBasedParticipant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKTurnBasedParticipant.h; path = ../../Common/GKTurnBasedParticipant.h; sourceTree = "<group>"; };
+		AB2AEA48252F458300CBC580 /* GKTurnBasedExchangeReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKTurnBasedExchangeReply.h; path = ../../Common/GKTurnBasedExchangeReply.h; sourceTree = "<group>"; };
+		AB2AEA49252F458400CBC580 /* GKVoiceChat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKVoiceChat.mm; path = ../../Common/GKVoiceChat.mm; sourceTree = "<group>"; };
+		AB2AEA4A252F458400CBC580 /* GKMatch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKMatch.mm; path = ../../Common/GKMatch.mm; sourceTree = "<group>"; };
+		AB2AEA4B252F458400CBC580 /* GKPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKPlayer.h; path = ../../Common/GKPlayer.h; sourceTree = "<group>"; };
+		AB2AEA4C252F458400CBC580 /* GKVoiceChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKVoiceChat.h; path = ../../Common/GKVoiceChat.h; sourceTree = "<group>"; };
+		AB2AEA4D252F458400CBC580 /* GKMatchmakerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKMatchmakerViewController.mm; path = ../../Common/GKMatchmakerViewController.mm; sourceTree = "<group>"; };
+		AB2AEA4E252F458400CBC580 /* NSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSException.h; path = ../../Common/NSException.h; sourceTree = "<group>"; };
+		AB2AEA4F252F458400CBC580 /* GKTurnBasedMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKTurnBasedMatch.h; path = ../../Common/GKTurnBasedMatch.h; sourceTree = "<group>"; };
+		AB2AEA50252F458400CBC580 /* GameKitInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameKitInitializer.h; path = ../../Common/GameKitInitializer.h; sourceTree = "<group>"; };
+		AB2AEA51252F458400CBC580 /* NSError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NSError.mm; path = ../../Common/NSError.mm; sourceTree = "<group>"; };
+		AB2AEA52252F458400CBC580 /* MatchmakerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchmakerViewControllerDelegate.h; path = ../../Common/MatchmakerViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB2AEA53252F458400CBC580 /* Callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Callbacks.h; path = ../../Common/Callbacks.h; sourceTree = "<group>"; };
+		AB2AEA54252F458400CBC580 /* GKInvite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKInvite.h; path = ../../Common/GKInvite.h; sourceTree = "<group>"; };
+		AB2AEA55252F458400CBC580 /* GKLeaderboardSet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKLeaderboardSet.mm; path = ../../Common/GKLeaderboardSet.mm; sourceTree = "<group>"; };
+		AB2AEA56252F458400CBC580 /* GKAchievementDescription.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKAchievementDescription.mm; path = ../../Common/GKAchievementDescription.mm; sourceTree = "<group>"; };
+		AB2AEA57252F458500CBC580 /* GKTurnBasedExchange.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKTurnBasedExchange.mm; path = ../../Common/GKTurnBasedExchange.mm; sourceTree = "<group>"; };
+		AB2AEA58252F458500CBC580 /* Converters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Converters.h; path = ../../Common/Converters.h; sourceTree = "<group>"; };
+		AB2AEA59252F458500CBC580 /* GKScoreChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKScoreChallenge.h; path = ../../Common/GKScoreChallenge.h; sourceTree = "<group>"; };
+		AB2AEA5A252F458500CBC580 /* GKLocalPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKLocalPlayer.h; path = ../../Common/GKLocalPlayer.h; sourceTree = "<group>"; };
+		AB2AEA5B252F458500CBC580 /* GKTurnBasedParticipant.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKTurnBasedParticipant.mm; path = ../../Common/GKTurnBasedParticipant.mm; sourceTree = "<group>"; };
+		AB2AEA5C252F458500CBC580 /* ChallengeListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChallengeListener.h; path = ../../Common/ChallengeListener.h; sourceTree = "<group>"; };
+		AB2AEA5D252F458500CBC580 /* GKBasePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKBasePlayer.h; path = ../../Common/GKBasePlayer.h; sourceTree = "<group>"; };
+		AB2AEA5E252F458500CBC580 /* GKMatchmaker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKMatchmaker.mm; path = ../../Common/GKMatchmaker.mm; sourceTree = "<group>"; };
+		AB2AEA5F252F458500CBC580 /* ChallengeListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ChallengeListener.mm; path = ../../Common/ChallengeListener.mm; sourceTree = "<group>"; };
+		AB2AEA60252F458500CBC580 /* LocalPlayerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalPlayerListener.h; path = ../../Common/LocalPlayerListener.h; sourceTree = "<group>"; };
+		AB2AEA61252F458500CBC580 /* GKAchievementChallenge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKAchievementChallenge.mm; path = ../../Common/GKAchievementChallenge.mm; sourceTree = "<group>"; };
+		AB2AEA62252F458500CBC580 /* NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSError.h; path = ../../Common/NSError.h; sourceTree = "<group>"; };
+		AB2AEA63252F458600CBC580 /* GKMatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKMatchRequest.h; path = ../../Common/GKMatchRequest.h; sourceTree = "<group>"; };
+		AB2AEA64252F458600CBC580 /* GKAchievementDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKAchievementDescription.h; path = ../../Common/GKAchievementDescription.h; sourceTree = "<group>"; };
+		AB2AEA65252F458600CBC580 /* GKMatchRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKMatchRequest.mm; path = ../../Common/GKMatchRequest.mm; sourceTree = "<group>"; };
+		AB2AEA66252F458600CBC580 /* GKTurnBasedExchangeReply.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKTurnBasedExchangeReply.mm; path = ../../Common/GKTurnBasedExchangeReply.mm; sourceTree = "<group>"; };
+		AB2AEA67252F458600CBC580 /* MatchDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MatchDelegate.mm; path = ../../Common/MatchDelegate.mm; sourceTree = "<group>"; };
+		AB2AEA68252F458600CBC580 /* GKAchievement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKAchievement.mm; path = ../../Common/GKAchievement.mm; sourceTree = "<group>"; };
+		AB2AEA69252F458600CBC580 /* UIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewController.h; path = ../../Common/UIViewController.h; sourceTree = "<group>"; };
+		AB2AEA6A252F458600CBC580 /* GKInvite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKInvite.mm; path = ../../Common/GKInvite.mm; sourceTree = "<group>"; };
+		AB2AEA6B252F458600CBC580 /* GKScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKScore.h; path = ../../Common/GKScore.h; sourceTree = "<group>"; };
+		AB2AEA6C252F458600CBC580 /* LocalPlayerListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LocalPlayerListener.mm; path = ../../Common/LocalPlayerListener.mm; sourceTree = "<group>"; };
+		AB2AEA6D252F458700CBC580 /* MatchmakerViewControllerDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MatchmakerViewControllerDelegate.mm; path = ../../Common/MatchmakerViewControllerDelegate.mm; sourceTree = "<group>"; };
+		AB2AEA6E252F458700CBC580 /* TurnBasedEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TurnBasedEventListener.h; path = ../../Common/TurnBasedEventListener.h; sourceTree = "<group>"; };
+		AB2AEA6F252F458700CBC580 /* TurnBasedEventListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TurnBasedEventListener.mm; path = ../../Common/TurnBasedEventListener.mm; sourceTree = "<group>"; };
+		AB2AEA70252F458700CBC580 /* GKPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKPlayer.mm; path = ../../Common/GKPlayer.mm; sourceTree = "<group>"; };
+		AB2AEA71252F458700CBC580 /* GKMatchmaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKMatchmaker.h; path = ../../Common/GKMatchmaker.h; sourceTree = "<group>"; };
+		AB2AEA72252F458700CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKTurnBasedMatchmakerViewControllerDelegate.mm; path = ../../Common/GKTurnBasedMatchmakerViewControllerDelegate.mm; sourceTree = "<group>"; };
+		AB2AEA73252F458700CBC580 /* GameKitInitializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameKitInitializer.mm; path = ../../Common/GameKitInitializer.mm; sourceTree = "<group>"; };
+		AB2AEA74252F458700CBC580 /* GKChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKChallenge.h; path = ../../Common/GKChallenge.h; sourceTree = "<group>"; };
+		AB2AEA75252F458800CBC580 /* GKTurnBasedExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKTurnBasedExchange.h; path = ../../Common/GKTurnBasedExchange.h; sourceTree = "<group>"; };
+		AB2AEA76252F458800CBC580 /* GKLeaderboard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKLeaderboard.mm; path = ../../Common/GKLeaderboard.mm; sourceTree = "<group>"; };
+		AB2AEA77252F458800CBC580 /* MatchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchDelegate.h; path = ../../Common/MatchDelegate.h; sourceTree = "<group>"; };
+		AB2AEA78252F458800CBC580 /* GKTurnBasedMatch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKTurnBasedMatch.mm; path = ../../Common/GKTurnBasedMatch.mm; sourceTree = "<group>"; };
+		AB2AEA79252F458800CBC580 /* GKScore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKScore.mm; path = ../../Common/GKScore.mm; sourceTree = "<group>"; };
+		AB2AEA7A252F458800CBC580 /* GKChallenge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKChallenge.mm; path = ../../Common/GKChallenge.mm; sourceTree = "<group>"; };
+		AB2AEA7B252F458800CBC580 /* GKTurnBasedMatchmakerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKTurnBasedMatchmakerViewController.mm; path = ../../Common/GKTurnBasedMatchmakerViewController.mm; sourceTree = "<group>"; };
+		AB2AEA7C252F458800CBC580 /* GKAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKAchievement.h; path = ../../Common/GKAchievement.h; sourceTree = "<group>"; };
+		AB2AEA7D252F458900CBC580 /* GKLeaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKLeaderboard.h; path = ../../Common/GKLeaderboard.h; sourceTree = "<group>"; };
+		AB2AEA7E252F458900CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKTurnBasedMatchmakerViewControllerDelegate.h; path = ../../Common/GKTurnBasedMatchmakerViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB2AEA7F252F458900CBC580 /* UIViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UIViewController.mm; path = ../../Common/UIViewController.mm; sourceTree = "<group>"; };
+		AB2AEA80252F458900CBC580 /* GKLocalPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKLocalPlayer.mm; path = ../../Common/GKLocalPlayer.mm; sourceTree = "<group>"; };
+		AB2AEA81252F458900CBC580 /* GKBasePlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKBasePlayer.mm; path = ../../Common/GKBasePlayer.mm; sourceTree = "<group>"; };
+		AB2AEA82252F458900CBC580 /* GKScoreChallenge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GKScoreChallenge.mm; path = ../../Common/GKScoreChallenge.mm; sourceTree = "<group>"; };
+		AB2AEA83252F458900CBC580 /* NSException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NSException.mm; path = ../../Common/NSException.mm; sourceTree = "<group>"; };
+		AB2AEA84252F458900CBC580 /* Converters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Converters.m; path = ../../Common/Converters.m; sourceTree = "<group>"; };
+		AB2AEA85252F458900CBC580 /* GKTurnBasedMatchmakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKTurnBasedMatchmakerViewController.h; path = ../../Common/GKTurnBasedMatchmakerViewController.h; sourceTree = "<group>"; };
+		AB2AEA86252F458900CBC580 /* GKAchievementChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKAchievementChallenge.h; path = ../../Common/GKAchievementChallenge.h; sourceTree = "<group>"; };
+		AB2AEA87252F458900CBC580 /* GKLeaderboardSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKLeaderboardSet.h; path = ../../Common/GKLeaderboardSet.h; sourceTree = "<group>"; };
+		AB2AEA88252F458A00CBC580 /* GKMatchmakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GKMatchmakerViewController.h; path = ../../Common/GKMatchmakerViewController.h; sourceTree = "<group>"; };
+		AB3C646823F6F98800B20CC4 /* libHHGameKitTVOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHHGameKitTVOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB3C646623F6F98800B20CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB3C645F23F6F98800B20CC4 = {
+			isa = PBXGroup;
+			children = (
+				AB3C646A23F6F98900B20CC4 /* HHGameKitTVOS */,
+				AB3C646923F6F98800B20CC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB3C646923F6F98800B20CC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB3C646823F6F98800B20CC4 /* libHHGameKitTVOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3C646A23F6F98900B20CC4 /* HHGameKitTVOS */ = {
+			isa = PBXGroup;
+			children = (
+				AB2AEA53252F458400CBC580 /* Callbacks.h */,
+				AB2AEA5C252F458500CBC580 /* ChallengeListener.h */,
+				AB2AEA5F252F458500CBC580 /* ChallengeListener.mm */,
+				AB2AEA58252F458500CBC580 /* Converters.h */,
+				AB2AEA84252F458900CBC580 /* Converters.m */,
+				AB2AEA50252F458400CBC580 /* GameKitInitializer.h */,
+				AB2AEA73252F458700CBC580 /* GameKitInitializer.mm */,
+				AB2AEA7C252F458800CBC580 /* GKAchievement.h */,
+				AB2AEA68252F458600CBC580 /* GKAchievement.mm */,
+				AB2AEA86252F458900CBC580 /* GKAchievementChallenge.h */,
+				AB2AEA61252F458500CBC580 /* GKAchievementChallenge.mm */,
+				AB2AEA64252F458600CBC580 /* GKAchievementDescription.h */,
+				AB2AEA56252F458400CBC580 /* GKAchievementDescription.mm */,
+				AB2AEA5D252F458500CBC580 /* GKBasePlayer.h */,
+				AB2AEA81252F458900CBC580 /* GKBasePlayer.mm */,
+				AB2AEA74252F458700CBC580 /* GKChallenge.h */,
+				AB2AEA7A252F458800CBC580 /* GKChallenge.mm */,
+				AB2AEA54252F458400CBC580 /* GKInvite.h */,
+				AB2AEA6A252F458600CBC580 /* GKInvite.mm */,
+				AB2AEA7D252F458900CBC580 /* GKLeaderboard.h */,
+				AB2AEA76252F458800CBC580 /* GKLeaderboard.mm */,
+				AB2AEA87252F458900CBC580 /* GKLeaderboardSet.h */,
+				AB2AEA55252F458400CBC580 /* GKLeaderboardSet.mm */,
+				AB2AEA5A252F458500CBC580 /* GKLocalPlayer.h */,
+				AB2AEA80252F458900CBC580 /* GKLocalPlayer.mm */,
+				AB2AEA46252F458300CBC580 /* GKMatch.h */,
+				AB2AEA4A252F458400CBC580 /* GKMatch.mm */,
+				AB2AEA71252F458700CBC580 /* GKMatchmaker.h */,
+				AB2AEA5E252F458500CBC580 /* GKMatchmaker.mm */,
+				AB2AEA88252F458A00CBC580 /* GKMatchmakerViewController.h */,
+				AB2AEA4D252F458400CBC580 /* GKMatchmakerViewController.mm */,
+				AB2AEA63252F458600CBC580 /* GKMatchRequest.h */,
+				AB2AEA65252F458600CBC580 /* GKMatchRequest.mm */,
+				AB2AEA4B252F458400CBC580 /* GKPlayer.h */,
+				AB2AEA70252F458700CBC580 /* GKPlayer.mm */,
+				AB2AEA6B252F458600CBC580 /* GKScore.h */,
+				AB2AEA79252F458800CBC580 /* GKScore.mm */,
+				AB2AEA59252F458500CBC580 /* GKScoreChallenge.h */,
+				AB2AEA82252F458900CBC580 /* GKScoreChallenge.mm */,
+				AB2AEA75252F458800CBC580 /* GKTurnBasedExchange.h */,
+				AB2AEA57252F458500CBC580 /* GKTurnBasedExchange.mm */,
+				AB2AEA48252F458300CBC580 /* GKTurnBasedExchangeReply.h */,
+				AB2AEA66252F458600CBC580 /* GKTurnBasedExchangeReply.mm */,
+				AB2AEA4F252F458400CBC580 /* GKTurnBasedMatch.h */,
+				AB2AEA78252F458800CBC580 /* GKTurnBasedMatch.mm */,
+				AB2AEA85252F458900CBC580 /* GKTurnBasedMatchmakerViewController.h */,
+				AB2AEA7B252F458800CBC580 /* GKTurnBasedMatchmakerViewController.mm */,
+				AB2AEA7E252F458900CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.h */,
+				AB2AEA72252F458700CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.mm */,
+				AB2AEA47252F458300CBC580 /* GKTurnBasedParticipant.h */,
+				AB2AEA5B252F458500CBC580 /* GKTurnBasedParticipant.mm */,
+				AB2AEA4C252F458400CBC580 /* GKVoiceChat.h */,
+				AB2AEA49252F458400CBC580 /* GKVoiceChat.mm */,
+				AB2AEA60252F458500CBC580 /* LocalPlayerListener.h */,
+				AB2AEA6C252F458600CBC580 /* LocalPlayerListener.mm */,
+				AB2AEA77252F458800CBC580 /* MatchDelegate.h */,
+				AB2AEA67252F458600CBC580 /* MatchDelegate.mm */,
+				AB2AEA52252F458400CBC580 /* MatchmakerViewControllerDelegate.h */,
+				AB2AEA6D252F458700CBC580 /* MatchmakerViewControllerDelegate.mm */,
+				AB2AEA62252F458500CBC580 /* NSError.h */,
+				AB2AEA51252F458400CBC580 /* NSError.mm */,
+				AB2AEA4E252F458400CBC580 /* NSException.h */,
+				AB2AEA83252F458900CBC580 /* NSException.mm */,
+				AB2AEA6E252F458700CBC580 /* TurnBasedEventListener.h */,
+				AB2AEA6F252F458700CBC580 /* TurnBasedEventListener.mm */,
+				AB2AEA69252F458600CBC580 /* UIViewController.h */,
+				AB2AEA7F252F458900CBC580 /* UIViewController.mm */,
+			);
+			path = HHGameKitTVOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB3C646423F6F98800B20CC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2AEACB252F458A00CBC580 /* GKMatchmakerViewController.h in Headers */,
+				AB2AEAB8252F458A00CBC580 /* GKTurnBasedExchange.h in Headers */,
+				AB2AEA97252F458A00CBC580 /* GKInvite.h in Headers */,
+				AB2AEA93252F458A00CBC580 /* GameKitInitializer.h in Headers */,
+				AB2AEA8B252F458A00CBC580 /* GKTurnBasedExchangeReply.h in Headers */,
+				AB2AEA9F252F458A00CBC580 /* ChallengeListener.h in Headers */,
+				AB2AEAC8252F458A00CBC580 /* GKTurnBasedMatchmakerViewController.h in Headers */,
+				AB2AEA9C252F458A00CBC580 /* GKScoreChallenge.h in Headers */,
+				AB2AEA92252F458A00CBC580 /* GKTurnBasedMatch.h in Headers */,
+				AB2AEAB7252F458A00CBC580 /* GKChallenge.h in Headers */,
+				AB2AEA91252F458A00CBC580 /* NSException.h in Headers */,
+				AB2AEA89252F458A00CBC580 /* GKMatch.h in Headers */,
+				AB2AEABA252F458A00CBC580 /* MatchDelegate.h in Headers */,
+				AB2AEAC9252F458A00CBC580 /* GKAchievementChallenge.h in Headers */,
+				AB2AEA8A252F458A00CBC580 /* GKTurnBasedParticipant.h in Headers */,
+				AB2AEAC1252F458A00CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.h in Headers */,
+				AB2AEA95252F458A00CBC580 /* MatchmakerViewControllerDelegate.h in Headers */,
+				AB2AEA96252F458A00CBC580 /* Callbacks.h in Headers */,
+				AB2AEAAE252F458A00CBC580 /* GKScore.h in Headers */,
+				AB2AEA9B252F458A00CBC580 /* Converters.h in Headers */,
+				AB2AEAB1252F458A00CBC580 /* TurnBasedEventListener.h in Headers */,
+				AB2AEAA3252F458A00CBC580 /* LocalPlayerListener.h in Headers */,
+				AB2AEA8E252F458A00CBC580 /* GKPlayer.h in Headers */,
+				AB2AEAA5252F458A00CBC580 /* NSError.h in Headers */,
+				AB2AEABF252F458A00CBC580 /* GKAchievement.h in Headers */,
+				AB2AEAA7252F458A00CBC580 /* GKAchievementDescription.h in Headers */,
+				AB2AEAC0252F458A00CBC580 /* GKLeaderboard.h in Headers */,
+				AB2AEAAC252F458A00CBC580 /* UIViewController.h in Headers */,
+				AB2AEAB4252F458A00CBC580 /* GKMatchmaker.h in Headers */,
+				AB2AEA8F252F458A00CBC580 /* GKVoiceChat.h in Headers */,
+				AB2AEAA0252F458A00CBC580 /* GKBasePlayer.h in Headers */,
+				AB2AEAA6252F458A00CBC580 /* GKMatchRequest.h in Headers */,
+				AB2AEACA252F458A00CBC580 /* GKLeaderboardSet.h in Headers */,
+				AB2AEA9D252F458A00CBC580 /* GKLocalPlayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AB3C646723F6F98800B20CC4 /* HHGameKitTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3C647123F6F98900B20CC4 /* Build configuration list for PBXNativeTarget "HHGameKitTVOS" */;
+			buildPhases = (
+				AB3C646423F6F98800B20CC4 /* Headers */,
+				AB3C646523F6F98800B20CC4 /* Sources */,
+				AB3C646623F6F98800B20CC4 /* Frameworks */,
+				AB3C653623F6FD4C00B20CC4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHGameKitTVOS;
+			productName = HHCloudKitTVOS;
+			productReference = AB3C646823F6F98800B20CC4 /* libHHGameKitTVOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB3C646023F6F98800B20CC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = HovelHouseApps;
+				TargetAttributes = {
+					AB3C646723F6F98800B20CC4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AB3C646323F6F98800B20CC4 /* Build configuration list for PBXProject "HHGameKitTVOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB3C645F23F6F98800B20CC4;
+			productRefGroup = AB3C646923F6F98800B20CC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3C646723F6F98800B20CC4 /* HHGameKitTVOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB3C646523F6F98800B20CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2AEA9A252F458A00CBC580 /* GKTurnBasedExchange.mm in Sources */,
+				AB2AEAB6252F458A00CBC580 /* GameKitInitializer.mm in Sources */,
+				AB2AEAA9252F458A00CBC580 /* GKTurnBasedExchangeReply.mm in Sources */,
+				AB2AEAAA252F458A00CBC580 /* MatchDelegate.mm in Sources */,
+				AB2AEAA8252F458A00CBC580 /* GKMatchRequest.mm in Sources */,
+				AB2AEAC5252F458A00CBC580 /* GKScoreChallenge.mm in Sources */,
+				AB2AEAC6252F458A00CBC580 /* NSException.mm in Sources */,
+				AB2AEAB9252F458A00CBC580 /* GKLeaderboard.mm in Sources */,
+				AB2AEAB2252F458A00CBC580 /* TurnBasedEventListener.mm in Sources */,
+				AB2AEAC4252F458A00CBC580 /* GKBasePlayer.mm in Sources */,
+				AB2AEAAD252F458A00CBC580 /* GKInvite.mm in Sources */,
+				AB2AEAC2252F458A00CBC580 /* UIViewController.mm in Sources */,
+				AB2AEABC252F458A00CBC580 /* GKScore.mm in Sources */,
+				AB2AEABD252F458A00CBC580 /* GKChallenge.mm in Sources */,
+				AB2AEAA1252F458A00CBC580 /* GKMatchmaker.mm in Sources */,
+				AB2AEA99252F458A00CBC580 /* GKAchievementDescription.mm in Sources */,
+				AB2AEABB252F458A00CBC580 /* GKTurnBasedMatch.mm in Sources */,
+				AB2AEAC3252F458A00CBC580 /* GKLocalPlayer.mm in Sources */,
+				AB2AEAB5252F458A00CBC580 /* GKTurnBasedMatchmakerViewControllerDelegate.mm in Sources */,
+				AB2AEAAF252F458A00CBC580 /* LocalPlayerListener.mm in Sources */,
+				AB2AEAB0252F458A00CBC580 /* MatchmakerViewControllerDelegate.mm in Sources */,
+				AB2AEABE252F458A00CBC580 /* GKTurnBasedMatchmakerViewController.mm in Sources */,
+				AB2AEA9E252F458A00CBC580 /* GKTurnBasedParticipant.mm in Sources */,
+				AB2AEA8C252F458A00CBC580 /* GKVoiceChat.mm in Sources */,
+				AB2AEA94252F458A00CBC580 /* NSError.mm in Sources */,
+				AB2AEAAB252F458A00CBC580 /* GKAchievement.mm in Sources */,
+				AB2AEA8D252F458A00CBC580 /* GKMatch.mm in Sources */,
+				AB2AEAA2252F458A00CBC580 /* ChallengeListener.mm in Sources */,
+				AB2AEAC7252F458A00CBC580 /* Converters.m in Sources */,
+				AB2AEAA4252F458A00CBC580 /* GKAchievementChallenge.mm in Sources */,
+				AB2AEA98252F458A00CBC580 /* GKLeaderboardSet.mm in Sources */,
+				AB2AEAB3252F458A00CBC580 /* GKPlayer.mm in Sources */,
+				AB2AEA90252F458A00CBC580 /* GKMatchmakerViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB3C646F23F6F98900B20CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+			};
+			name = Debug;
+		};
+		AB3C647023F6F98900B20CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+			};
+			name = Release;
+		};
+		AB3C647223F6F98900B20CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DCQFJ2K8S3;
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB3C647323F6F98900B20CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DCQFJ2K8S3;
+				EXECUTABLE_PREFIX = lib;
+				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB3C646323F6F98800B20CC4 /* Build configuration list for PBXProject "HHGameKitTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3C646F23F6F98900B20CC4 /* Debug */,
+				AB3C647023F6F98900B20CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3C647123F6F98900B20CC4 /* Build configuration list for PBXNativeTarget "HHGameKitTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3C647223F6F98900B20CC4 /* Debug */,
+				AB3C647323F6F98900B20CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB3C646023F6F98800B20CC4 /* Project object */;
+}
