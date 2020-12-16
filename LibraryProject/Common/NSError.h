@@ -19,11 +19,25 @@
 // Void methods 
 
 // Properties 
+
 extern "C" NSInteger NSError_GetPropCode(void* ptr);
+
+
 extern "C" const char* NSError_GetPropLocalizedDescription(void* ptr);
+
+
 extern "C" const char* NSError_GetPropLocalizedRecoverySuggestion(void* ptr);
+
+
 extern "C" const char* NSError_GetPropLocalizedFailureReason(void* ptr);
-extern "C" const char* NSError_GetPropHelpAnchor(void* ptr);// TODO: HEADERPROPERTYSTRINGARRAY
+
+
+extern "C" const char* NSError_GetPropHelpAnchor(void* ptr);
+
+// TODO: HEADERPROPERTYSTRINGARRAY
+
+extern "C" const char* NSError_GetPropDomain(void* ptr);
+
 
 
 

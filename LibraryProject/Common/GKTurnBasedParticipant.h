@@ -19,7 +19,15 @@
 // Void methods 
 
 // Properties 
+
 extern "C" void* GKTurnBasedParticipant_GetPropPlayer(void* ptr);
+
+
+extern "C" long GKTurnBasedParticipant_GetPropStatus(void* ptr);
+
+
+extern "C" double GKTurnBasedParticipant_GetPropLastTurnDate(void* ptr);
+
 
 
 

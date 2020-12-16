@@ -18,13 +18,13 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-
 void* GKScoreChallenge_GetPropScore(void* ptr)
 {
 	GKScoreChallenge* iGKScoreChallenge = (__bridge GKScoreChallenge*) ptr;
 	GKScore* val = [iGKScoreChallenge score];
 	return (__bridge_retained void*) val;
 }
+
 
 
 

@@ -18,7 +18,6 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-
 uint GKInvite_GetPropPlayerGroup(void* ptr)
 {
 	GKInvite* iGKInvite = (__bridge GKInvite*) ptr;
@@ -41,6 +40,15 @@ bool GKInvite_GetPropHosted(void* ptr)
 	BOOL val = [iGKInvite isHosted];
 	return val;
 }
+
+
+uint32_t GKInvite_GetPropPlayerAttributes(void* ptr)
+{
+	GKInvite* iGKInvite = (__bridge GKInvite*) ptr;
+	uint32_t val = [iGKInvite playerAttributes];
+	return val;
+}
+
 
 
 

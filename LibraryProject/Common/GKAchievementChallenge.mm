@@ -18,13 +18,13 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-
 void* GKAchievementChallenge_GetPropAchievement(void* ptr)
 {
 	GKAchievementChallenge* iGKAchievementChallenge = (__bridge GKAchievementChallenge*) ptr;
 	GKAchievement* val = [iGKAchievementChallenge achievement];
 	return (__bridge_retained void*) val;
 }
+
 
 
 

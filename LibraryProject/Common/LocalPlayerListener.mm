@@ -95,8 +95,12 @@ void LocalPlayerListener_Dispose(void* ptr)
 {
     NSLog(@"LocalPlayerListener_player_didRequestMatchWithRecipients");
     long recipientPlayersCount = [recipientPlayers count];
-			void** recipientPlayersBuffer = (void**) malloc(sizeof(void*) * recipientPlayersCount);
-			[Converters NSArrayToRetainedCArray:recipientPlayers withBuffer:recipientPlayersBuffer];
+			void** recipientPlayersBuffer = nil;
+			if(recipientPlayersCount > 0)
+			{
+				recipientPlayersBuffer = (void**) malloc(sizeof(void*) * recipientPlayersCount);
+				[Converters NSArrayToRetainedCArray:recipientPlayers withBuffer:recipientPlayersBuffer];
+			}
     KLocalPlayerListener_player_didRequestMatchWithRecipients(
         (__bridge void*) self,
         (__bridge_retained void*) player,
@@ -135,8 +139,12 @@ void LocalPlayerListener_Dispose(void* ptr)
 {
     NSLog(@"LocalPlayerListener_player_receivedExchangeReplies_forCompletedExchange_forMatch");
     long repliesCount = [replies count];
-			void** repliesBuffer = (void**) malloc(sizeof(void*) * repliesCount);
-			[Converters NSArrayToRetainedCArray:replies withBuffer:repliesBuffer];
+			void** repliesBuffer = nil;
+			if(repliesCount > 0)
+			{
+				repliesBuffer = (void**) malloc(sizeof(void*) * repliesCount);
+				[Converters NSArrayToRetainedCArray:replies withBuffer:repliesBuffer];
+			}
     KLocalPlayerListener_player_receivedExchangeReplies_forCompletedExchange_forMatch(
         (__bridge void*) self,
         (__bridge_retained void*) player,
@@ -164,8 +172,12 @@ void LocalPlayerListener_Dispose(void* ptr)
 {
     NSLog(@"LocalPlayerListener_player_didRequestMatchWithOtherPlayers");
     long playersToInviteCount = [playersToInvite count];
-			void** playersToInviteBuffer = (void**) malloc(sizeof(void*) * playersToInviteCount);
-			[Converters NSArrayToRetainedCArray:playersToInvite withBuffer:playersToInviteBuffer];
+			void** playersToInviteBuffer = nil;
+			if(playersToInviteCount > 0)
+			{
+				playersToInviteBuffer = (void**) malloc(sizeof(void*) * playersToInviteCount);
+				[Converters NSArrayToRetainedCArray:playersToInvite withBuffer:playersToInviteBuffer];
+			}
     KLocalPlayerListener_player_didRequestMatchWithOtherPlayers(
         (__bridge void*) self,
         (__bridge_retained void*) player,

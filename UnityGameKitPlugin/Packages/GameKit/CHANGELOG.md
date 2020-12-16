@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 - split the iOS fat binary into two separate libs, one for arm64 and one for armv7 to reduce build size
 
+## [1.1.6] - 2020-11-30
+### Changed
+- MacOS bundle built with arm64 architecture for new apple silicon macs
+
+### Added
+- added functions for fetching information from the NSError userInfo dictionary
+- added CKErrorCode enum
+
+## [1.1.5] - 2020-11-10
+### Changed
+- added the QueuePriority property from NSOperation to CKOperation, this helps address a bug iOS 14.1
+
+## [1.1.4] - 2020-10-28
+### Changed
+- added additional properties to NSURL to make dealing with CKAsset a bit easier
+- fixed a potential crash caused by not calling the completion handler when recieving remote notifications
+- fixed errors in MacOS signing script
+- fixed an issue where Unity could generate an entitlements file that could not be parsed by the codesign utility if no containers were specified
+
+## [1.1.3] - 2020-09-29
+### Changed
+- zip file unzips to the properly named directory now, fixes issue where the build post process script could not find the resigning script path unless the user renamed the folder after installation
+- the MacOS settings now use relative paths for the info.plist and entitlements file
+- fixes bug in signing script that could not handle signing apps with spaces in the path
+
 ## [1.1.2] - 2020-07-29
 ### Changed
 - adding a missing didRecieveRemoteNotifications:fetchCompletion handler, the absence of which prevented some types of CloudKitNotifications from being recieved by the client

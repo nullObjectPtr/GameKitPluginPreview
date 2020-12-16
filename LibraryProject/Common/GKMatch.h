@@ -20,10 +20,12 @@ extern "C" void GKMatch_disconnect(
 	void** exception
     );
 
-extern "C" void GKMatch_sendDataToAllPlayers_withDataMode_error(
+extern "C" bool GKMatch_sendDataToAllPlayers_withDataMode_error(
     void* ptr,
     void* buffer,
-    unsigned long length);
+    unsigned long length,
+ unsigned long dataMode,
+   void** error);
 extern "C" void GKMatch_chooseBestHostingPlayerWithCompletionHandler(
 	void* ptr,
 	unsigned long invocationId, GKPlayerCallback completionHandler,
@@ -54,10 +56,15 @@ extern "C" bool GKMatch_sendData_toPlayers_dataMode_error(
 // Void methods 
 
 // Properties 
+
 extern "C" void* GKMatch_GetPropDelegate(void* ptr);
 extern "C" void GKMatch_SetPropDelegate(void* ptr, void* delegate, void** exceptionPtr);
 
+
+
 extern "C" uint GKMatch_GetPropExpectedPlayerCount(void* ptr);
+
+
 extern "C" void GKMatch_GetPropPlayers(void* ptr, void** buffer, long* count);
 
 

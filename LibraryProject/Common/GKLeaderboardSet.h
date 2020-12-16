@@ -11,19 +11,36 @@
 #import "Callbacks.h"
 
 // Class Methods 
+extern "C" void GKLeaderboardSet_loadLeaderboardSetsWithCompletionHandler(
+	unsigned long invocationId, GKLeaderboardSetCallback completionHandler,
+    void** exception
+    );
+
 
 // Init Methods 
 
 // Instance methods 
+extern "C" void GKLeaderboardSet_loadLeaderboardsWithHandler(
+	void* ptr,
+	unsigned long invocationId, LoadLeaderboardsCallback handler,
+    void** exception
+    );
+
 
 // Void methods 
 
 // Properties 
+
 extern "C" const char* GKLeaderboardSet_GetPropTitle(void* ptr);
+
+
 extern "C" const char* GKLeaderboardSet_GetPropIdentifier(void* ptr);
 extern "C" void GKLeaderboardSet_SetPropIdentifier(void* ptr, const char* identifier, void** exceptionPtr);
 
+
+
 extern "C" const char* GKLeaderboardSet_GetPropGroupIdentifier(void* ptr);
+
 
 
 

@@ -16,9 +16,37 @@ extern "C" {
 //ClassMethods
 //InitMethods
 //InstanceMethods
+void GKTurnBasedExchange_cancelWithLocalizableMessageKey_arguments_completionHandler(
+    void* ptr,
+    const char* key,
+    const char* arguments[],
+	long argumentsCount,
+    unsigned long invocationId, StaticCompletionCallback completionHandler,
+    void** exception
+    )
+{
+	@try 
+	{
+		GKTurnBasedExchange* iGKTurnBasedExchange = (__bridge GKTurnBasedExchange*) ptr;
+	    [iGKTurnBasedExchange cancelWithLocalizableMessageKey:[NSString stringWithUTF8String:key] arguments:[Converters StringArray:arguments withCount:argumentsCount] completionHandler:^(NSError* error)
+		{
+			
+			completionHandler(invocationId, (__bridge_retained void*) error);
+			
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+	
+}
+
+
+
 //VoidMethods
 //Properties
-
 const char* GKTurnBasedExchange_GetPropExchangeID(void* ptr)
 {
 	GKTurnBasedExchange* iGKTurnBasedExchange = (__bridge GKTurnBasedExchange*) ptr;
@@ -41,6 +69,57 @@ void* GKTurnBasedExchange_GetPropSender(void* ptr)
 	GKTurnBasedParticipant* val = [iGKTurnBasedExchange sender];
 	return (__bridge_retained void*) val;
 }
+
+
+double GKTurnBasedExchange_GetPropCompletionDate(void* ptr)
+{
+	GKTurnBasedExchange* iGKTurnBasedExchange = (__bridge GKTurnBasedExchange*) ptr;
+	NSDate* val = [iGKTurnBasedExchange completionDate];
+	return [val timeIntervalSince1970];
+}
+
+
+double GKTurnBasedExchange_GetPropSendDate(void* ptr)
+{
+	GKTurnBasedExchange* iGKTurnBasedExchange = (__bridge GKTurnBasedExchange*) ptr;
+	NSDate* val = [iGKTurnBasedExchange sendDate];
+	return [val timeIntervalSince1970];
+}
+
+
+double GKTurnBasedExchange_GetPropTimeoutDate(void* ptr)
+{
+	GKTurnBasedExchange* iGKTurnBasedExchange = (__bridge GKTurnBasedExchange*) ptr;
+	NSDate* val = [iGKTurnBasedExchange timeoutDate];
+	return [val timeIntervalSince1970];
+}
+
+
+
+void GKTurnBasedExchange_GetPropRecipients(void* ptr, void** buffer, long* count)
+{
+	GKTurnBasedExchange* iGKTurnBasedExchange = (__bridge GKTurnBasedExchange*) ptr;
+	NSArray<GKTurnBasedParticipant*>* val = [iGKTurnBasedExchange recipients];
+
+	*buffer = [Converters NSArrayToRetainedCArray:val];
+	*count = [val count];
+}
+
+void GKTurnBasedExchange_GetPropReplies(void* ptr, void** buffer, long* count)
+{
+	GKTurnBasedExchange* iGKTurnBasedExchange = (__bridge GKTurnBasedExchange*) ptr;
+	NSArray<GKTurnBasedExchangeReply*>* val = [iGKTurnBasedExchange replies];
+
+	*buffer = [Converters NSArrayToRetainedCArray:val];
+	*count = [val count];
+}
+long GKTurnBasedExchange_GetPropStatus(void* ptr)
+{
+	GKTurnBasedExchange* iGKTurnBasedExchange = (__bridge GKTurnBasedExchange*) ptr;
+	GKTurnBasedExchangeStatus val = [iGKTurnBasedExchange status];
+	return val;
+}
+
 
 
 

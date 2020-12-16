@@ -19,8 +19,12 @@
 // Void methods 
 
 // Properties 
+
 extern "C" const char* GKBasePlayer_GetPropDisplayName(void* ptr);
+
+
 extern "C" const char* GKBasePlayer_GetPropPlayerID(void* ptr);
+
 
 
 

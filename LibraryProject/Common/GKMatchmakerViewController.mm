@@ -142,7 +142,6 @@ void GKMatchmakerViewController_setHostedPlayer_didConnect(
 
 //VoidMethods
 //Properties
-
 void* GKMatchmakerViewController_GetPropMatchmakerDelegate(void* ptr)
 {
 	GKMatchmakerViewController* iGKMatchmakerViewController = (__bridge GKMatchmakerViewController*) ptr;
@@ -152,7 +151,7 @@ void* GKMatchmakerViewController_GetPropMatchmakerDelegate(void* ptr)
 
 void GKMatchmakerViewController_SetPropMatchmakerDelegate(void* ptr, void* matchmakerDelegate, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKMatchmakerViewController* iGKMatchmakerViewController = (__bridge GKMatchmakerViewController*) ptr;
 		[iGKMatchmakerViewController setMatchmakerDelegate:(__bridge MatchmakerViewControllerDelegate*) matchmakerDelegate];
@@ -173,7 +172,7 @@ bool GKMatchmakerViewController_GetPropHosted(void* ptr)
 
 void GKMatchmakerViewController_SetPropHosted(void* ptr, bool hosted, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKMatchmakerViewController* iGKMatchmakerViewController = (__bridge GKMatchmakerViewController*) ptr;
 		[iGKMatchmakerViewController setHosted:hosted];
@@ -183,6 +182,29 @@ void GKMatchmakerViewController_SetPropHosted(void* ptr, bool hosted, void** exc
 		*exceptionPtr = (__bridge_retained void*) ex;
 	}
 }
+
+
+#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
+long GKMatchmakerViewController_GetPropMatchmakingMode(void* ptr)
+{
+	GKMatchmakerViewController* iGKMatchmakerViewController = (__bridge GKMatchmakerViewController*) ptr;
+	GKMatchmakingMode val = [iGKMatchmakerViewController matchmakingMode];
+	return val;
+}
+
+void GKMatchmakerViewController_SetPropMatchmakingMode(void* ptr, long matchmakingMode, void** exceptionPtr)
+{
+	@try
+	{
+		GKMatchmakerViewController* iGKMatchmakerViewController = (__bridge GKMatchmakerViewController*) ptr;
+		[iGKMatchmakerViewController setMatchmakingMode:(GKMatchmakingMode)matchmakingMode];
+	}
+	@catch(NSException* ex) 
+	{
+		*exceptionPtr = (__bridge_retained void*) ex;
+	}
+}
+#endif
 
 
 

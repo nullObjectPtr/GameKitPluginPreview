@@ -52,7 +52,6 @@ void* GKMatchRequest_init(
 //InstanceMethods
 //VoidMethods
 //Properties
-
 uint GKMatchRequest_GetPropMaxPlayers(void* ptr)
 {
 	GKMatchRequest* iGKMatchRequest = (__bridge GKMatchRequest*) ptr;
@@ -62,7 +61,7 @@ uint GKMatchRequest_GetPropMaxPlayers(void* ptr)
 
 void GKMatchRequest_SetPropMaxPlayers(void* ptr, uint maxPlayers, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKMatchRequest* iGKMatchRequest = (__bridge GKMatchRequest*) ptr;
 		[iGKMatchRequest setMaxPlayers:maxPlayers];
@@ -83,7 +82,7 @@ uint GKMatchRequest_GetPropMinPlayers(void* ptr)
 
 void GKMatchRequest_SetPropMinPlayers(void* ptr, uint minPlayers, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKMatchRequest* iGKMatchRequest = (__bridge GKMatchRequest*) ptr;
 		[iGKMatchRequest setMinPlayers:minPlayers];
@@ -104,7 +103,7 @@ uint GKMatchRequest_GetPropDefaultNumberOfPlayers(void* ptr)
 
 void GKMatchRequest_SetPropDefaultNumberOfPlayers(void* ptr, uint defaultNumberOfPlayers, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKMatchRequest* iGKMatchRequest = (__bridge GKMatchRequest*) ptr;
 		[iGKMatchRequest setDefaultNumberOfPlayers:defaultNumberOfPlayers];
@@ -125,7 +124,7 @@ const char* GKMatchRequest_GetPropInviteMessage(void* ptr)
 
 void GKMatchRequest_SetPropInviteMessage(void* ptr, const char* inviteMessage, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKMatchRequest* iGKMatchRequest = (__bridge GKMatchRequest*) ptr;
 		[iGKMatchRequest setInviteMessage:[NSString stringWithUTF8String:inviteMessage]];
@@ -146,7 +145,7 @@ uint GKMatchRequest_GetPropPlayerGroup(void* ptr)
 
 void GKMatchRequest_SetPropPlayerGroup(void* ptr, uint playerGroup, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKMatchRequest* iGKMatchRequest = (__bridge GKMatchRequest*) ptr;
 		[iGKMatchRequest setPlayerGroup:playerGroup];
@@ -156,6 +155,7 @@ void GKMatchRequest_SetPropPlayerGroup(void* ptr, uint playerGroup, void** excep
 		*exceptionPtr = (__bridge_retained void*) ex;
 	}
 }
+
 
 void GKMatchRequest_SetPropRecipientResponseHandler(void* ptr, RecipientResponseHandler recipientResponseHandler, void** exceptionPtr)
 {
@@ -175,6 +175,7 @@ void GKMatchRequest_SetPropRecipientResponseHandler(void* ptr, RecipientResponse
 		*exceptionPtr = (__bridge_retained void*)ex;
 	}
 }
+
 
 void GKMatchRequest_GetPropRecipients(void* ptr, void** buffer, long* count)
 {
@@ -198,6 +199,27 @@ void GKMatchRequest_SetPropRecipients(void* ptr, void* recipients[],
 		*exceptionPtr = (__bridge_retained void*) ex;
 	}
 }
+uint32_t GKMatchRequest_GetPropPlayerAttributes(void* ptr)
+{
+	GKMatchRequest* iGKMatchRequest = (__bridge GKMatchRequest*) ptr;
+	uint32_t val = [iGKMatchRequest playerAttributes];
+	return val;
+}
+
+void GKMatchRequest_SetPropPlayerAttributes(void* ptr, uint32_t playerAttributes, void** exceptionPtr)
+{
+	@try
+	{
+		GKMatchRequest* iGKMatchRequest = (__bridge GKMatchRequest*) ptr;
+		[iGKMatchRequest setPlayerAttributes:playerAttributes];
+	}
+	@catch(NSException* ex) 
+	{
+		*exceptionPtr = (__bridge_retained void*) ex;
+	}
+}
+
+
 
 
 void GKMatchRequest_Dispose(void* ptr)

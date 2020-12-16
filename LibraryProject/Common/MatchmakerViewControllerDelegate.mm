@@ -81,8 +81,12 @@ void MatchmakerViewControllerDelegate_Dispose(void* ptr)
 {
     NSLog(@"MatchmakerViewControllerDelegate_matchmakerViewController_didFindHostedPlayers");
     long playersCount = [players count];
-			void** playersBuffer = (void**) malloc(sizeof(void*) * playersCount);
-			[Converters NSArrayToRetainedCArray:players withBuffer:playersBuffer];
+			void** playersBuffer = nil;
+			if(playersCount > 0)
+			{
+				playersBuffer = (void**) malloc(sizeof(void*) * playersCount);
+				[Converters NSArrayToRetainedCArray:players withBuffer:playersBuffer];
+			}
     KMatchmakerViewControllerDelegate_matchmakerViewController_didFindHostedPlayers(
         (__bridge void*) self,
         (__bridge_retained void*) viewController,

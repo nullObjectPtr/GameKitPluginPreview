@@ -18,13 +18,29 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-
 void* GKTurnBasedParticipant_GetPropPlayer(void* ptr)
 {
 	GKTurnBasedParticipant* iGKTurnBasedParticipant = (__bridge GKTurnBasedParticipant*) ptr;
 	GKPlayer* val = [iGKTurnBasedParticipant player];
 	return (__bridge_retained void*) val;
 }
+
+
+long GKTurnBasedParticipant_GetPropStatus(void* ptr)
+{
+	GKTurnBasedParticipant* iGKTurnBasedParticipant = (__bridge GKTurnBasedParticipant*) ptr;
+	GKTurnBasedParticipantStatus val = [iGKTurnBasedParticipant status];
+	return val;
+}
+
+
+double GKTurnBasedParticipant_GetPropLastTurnDate(void* ptr)
+{
+	GKTurnBasedParticipant* iGKTurnBasedParticipant = (__bridge GKTurnBasedParticipant*) ptr;
+	NSDate* val = [iGKTurnBasedParticipant lastTurnDate];
+	return [val timeIntervalSince1970];
+}
+
 
 
 

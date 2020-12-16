@@ -47,8 +47,12 @@ void TurnBasedEventListener_Dispose(void* ptr)
 {
     NSLog(@"TurnBasedEventListener_player_receivedExchangeReplies_forCompletedExchange_forMatch");
     long repliesCount = [replies count];
-			void** repliesBuffer = (void**) malloc(sizeof(void*) * repliesCount);
-			[Converters NSArrayToRetainedCArray:replies withBuffer:repliesBuffer];
+			void** repliesBuffer = nil;
+			if(repliesCount > 0)
+			{
+				repliesBuffer = (void**) malloc(sizeof(void*) * repliesCount);
+				[Converters NSArrayToRetainedCArray:replies withBuffer:repliesBuffer];
+			}
     KTurnBasedEventListener_player_receivedExchangeReplies_forCompletedExchange_forMatch(
         (__bridge void*) self,
         (__bridge_retained void*) player,
@@ -76,8 +80,12 @@ void TurnBasedEventListener_Dispose(void* ptr)
 {
     NSLog(@"TurnBasedEventListener_player_didRequestMatchWithOtherPlayers");
     long playersToInviteCount = [playersToInvite count];
-			void** playersToInviteBuffer = (void**) malloc(sizeof(void*) * playersToInviteCount);
-			[Converters NSArrayToRetainedCArray:playersToInvite withBuffer:playersToInviteBuffer];
+			void** playersToInviteBuffer = nil;
+			if(playersToInviteCount > 0)
+			{
+				playersToInviteBuffer = (void**) malloc(sizeof(void*) * playersToInviteCount);
+				[Converters NSArrayToRetainedCArray:playersToInvite withBuffer:playersToInviteBuffer];
+			}
     KTurnBasedEventListener_player_didRequestMatchWithOtherPlayers(
         (__bridge void*) self,
         (__bridge_retained void*) player,

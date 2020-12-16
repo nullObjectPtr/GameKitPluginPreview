@@ -1,3 +1,13 @@
-﻿{
-	"name": "com.hovelhouse.editor.cloudkit"
+{
+    "name": "com.hovelhouse.editor.gamekit",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

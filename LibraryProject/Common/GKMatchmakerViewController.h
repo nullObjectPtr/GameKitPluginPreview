@@ -50,11 +50,20 @@ extern "C" void GKMatchmakerViewController_setHostedPlayer_didConnect(
 // Void methods 
 
 // Properties 
+
 extern "C" void* GKMatchmakerViewController_GetPropMatchmakerDelegate(void* ptr);
 extern "C" void GKMatchmakerViewController_SetPropMatchmakerDelegate(void* ptr, void* matchmakerDelegate, void** exceptionPtr);
 
+
+
 extern "C" bool GKMatchmakerViewController_GetPropHosted(void* ptr);
 extern "C" void GKMatchmakerViewController_SetPropHosted(void* ptr, bool hosted, void** exceptionPtr);
+
+
+
+extern "C" long GKMatchmakerViewController_GetPropMatchmakingMode(void* ptr);
+extern "C" void GKMatchmakerViewController_SetPropMatchmakingMode(void* ptr, long matchmakingMode, void** exceptionPtr);
+
 
 
 

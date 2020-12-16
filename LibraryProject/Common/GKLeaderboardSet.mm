@@ -14,11 +14,76 @@
 extern "C" {
 
 //ClassMethods
+void GKLeaderboardSet_loadLeaderboardSetsWithCompletionHandler(
+	unsigned long invocationId, GKLeaderboardSetCallback completionHandler, 
+	void** exception
+    )
+{
+	@try {
+		NSLog(@"GKLeaderboardSet_loadLeaderboardSetsWithCompletionHandler()");
+	    [GKLeaderboardSet loadLeaderboardSetsWithCompletionHandler:^(NSArray<GKLeaderboardSet*>* leaderboardSets,
+NSError* error)
+		{
+			long leaderboardSetsCount = [leaderboardSets count];
+			void** leaderboardSetsBuffer = nil;
+			if(leaderboardSetsCount > 0)
+			{
+				leaderboardSetsBuffer = (void**) malloc(sizeof(void*) * leaderboardSetsCount);
+				[Converters NSArrayToRetainedCArray:leaderboardSets withBuffer:leaderboardSetsBuffer];
+			}
+			completionHandler(invocationId, leaderboardSetsBuffer, leaderboardSetsCount, (__bridge_retained void*) error);
+			free(leaderboardSetsBuffer);
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+
+	
+}
+
+
+
 //InitMethods
 //InstanceMethods
+#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
+void GKLeaderboardSet_loadLeaderboardsWithHandler(
+    void* ptr,
+    unsigned long invocationId, LoadLeaderboardsCallback handler,
+    void** exception
+    )
+{
+	@try 
+	{
+		GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
+	    [iGKLeaderboardSet loadLeaderboardsWithHandler:^(NSArray<GKLeaderboard*>* leaderboards,
+NSError* error)
+		{
+			long leaderboardsCount = [leaderboards count];
+			void** leaderboardsBuffer = nil;
+			if(leaderboardsCount > 0)
+			{
+				leaderboardsBuffer = (void**) malloc(sizeof(void*) * leaderboardsCount);
+				[Converters NSArrayToRetainedCArray:leaderboards withBuffer:leaderboardsBuffer];
+			}
+			handler(invocationId, leaderboardsBuffer, leaderboardsCount, (__bridge_retained void*) error);
+			free(leaderboardsBuffer);
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+	
+}
+#endif
+
+
 //VoidMethods
 //Properties
-
 const char* GKLeaderboardSet_GetPropTitle(void* ptr)
 {
 	GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
@@ -36,7 +101,7 @@ const char* GKLeaderboardSet_GetPropIdentifier(void* ptr)
 
 void GKLeaderboardSet_SetPropIdentifier(void* ptr, const char* identifier, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
 		[iGKLeaderboardSet setIdentifier:[NSString stringWithUTF8String:identifier]];
@@ -54,6 +119,7 @@ const char* GKLeaderboardSet_GetPropGroupIdentifier(void* ptr)
 	NSString* val = [iGKLeaderboardSet groupIdentifier];
 	return [val UTF8String];
 }
+
 
 
 

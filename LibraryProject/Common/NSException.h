@@ -19,8 +19,13 @@
 // Void methods 
 
 // Properties 
+
 extern "C" const char* NSException_GetPropName(void* ptr);
-extern "C" const char* NSException_GetPropReason(void* ptr);// TODO: HEADERPROPERTYSTRINGARRAY
+
+
+extern "C" const char* NSException_GetPropReason(void* ptr);
+
+// TODO: HEADERPROPERTYSTRINGARRAY
 
 
 

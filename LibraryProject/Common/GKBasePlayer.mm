@@ -18,7 +18,6 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-
 const char* GKBasePlayer_GetPropDisplayName(void* ptr)
 {
 	GKBasePlayer* iGKBasePlayer = (__bridge GKBasePlayer*) ptr;
@@ -33,6 +32,7 @@ const char* GKBasePlayer_GetPropPlayerID(void* ptr)
 	NSString* val = [iGKBasePlayer playerID];
 	return [val UTF8String];
 }
+
 
 
 

@@ -19,7 +19,9 @@
 // Void methods 
 
 // Properties 
+
 extern "C" void* GKAchievementChallenge_GetPropAchievement(void* ptr);
+
 
 
 

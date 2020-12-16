@@ -38,6 +38,19 @@ extern "C" void GKLocalPlayer_loadRecentPlayersWithCompletionHandler(
     void** exception
     );
 
+extern "C" void GKLocalPlayer_setDefaultLeaderboardIdentifier_completionHandler(
+	void* ptr,
+	const char* leaderboardIdentifier,
+    unsigned long invocationId, StaticCompletionCallback completionHandler,
+    void** exception
+    );
+
+extern "C" void GKLocalPlayer_loadDefaultLeaderboardIdentifierWithCompletionHandler(
+	void* ptr,
+	unsigned long invocationId, NSStringCallback completionHandler,
+    void** exception
+    );
+
 extern "C" void GKLocalPlayer_loadChallengableFriendsWithCompletionHandler(
 	void* ptr,
 	unsigned long invocationId, LoadChallengableFriendsWithCompletionCallback completionHandler,
@@ -47,12 +60,27 @@ extern "C" void GKLocalPlayer_loadChallengableFriendsWithCompletionHandler(
 
 // Void methods 
 
-// Properties extern "C" void GKLocalPlayer_SetPropAuthenticateHandler(void* ptr, AuthenticateHandler authenticateHandler, void** exceptionPtr);
+// Properties 
+extern "C" void GKLocalPlayer_SetPropAuthenticateHandler(void* ptr, AuthenticateHandler authenticateHandler, void** exceptionPtr);
+
 
 extern "C" void* GKLocalPlayer_GetPropLocalPlayer();
+
+
 extern "C" void* GKLocalPlayer_GetPropLocal();
+
+
 extern "C" bool GKLocalPlayer_GetPropAuthenticated(void* ptr);
+
+
 extern "C" bool GKLocalPlayer_GetPropUnderage(void* ptr);
+
+
+extern "C" bool GKLocalPlayer_GetPropMultiplayerGamingRestricted(void* ptr);
+
+
+extern "C" bool GKLocalPlayer_GetPropPersonalizedCommunicationRestricted(void* ptr);
+
 
 
 

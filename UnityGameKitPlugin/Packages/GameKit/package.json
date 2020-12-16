@@ -1,6 +1,6 @@
 {
 	"name":"com.hovelhouse.gamekit",
-	"version":"0.0.1",
+	"version":"1.0.0",
 	"displayName":"Game Kit Plugin",
 	"description":"An Apple Arcade ready GameKit plugin for iOS, macOS and TVOS.",
 	"unity":"2018.4",
@@ -22,5 +22,13 @@
 		"name":"Jonathan Culp",
 		"email":"support@hovelhouse.com",
 		"url":"http://www.hovelhouse.com/"
-	}
+	},
+    "samples":
+    [
+        {
+            "displayName": "Samples",
+            "description": "Eight sample scenes that demonstrate common usages of GameKit",
+            "path":"Samples~/ExampleHub"
+        }
+    ]
 }

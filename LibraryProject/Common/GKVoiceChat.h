@@ -40,11 +40,21 @@ extern "C" void GKVoiceChat_setPlayer_muted(
 // Void methods 
 
 // Properties 
+
 extern "C" bool GKVoiceChat_GetPropActive(void* ptr);
 extern "C" void GKVoiceChat_SetPropActive(void* ptr, bool active, void** exceptionPtr);
 
+
+
 extern "C" const char* GKVoiceChat_GetPropName(void* ptr);
+
+
 extern "C" void GKVoiceChat_GetPropPlayers(void* ptr, void** buffer, long* count);
+
+extern "C" float GKVoiceChat_GetPropVolume(void* ptr);
+extern "C" void GKVoiceChat_SetPropVolume(void* ptr, float volume, void** exceptionPtr);
+
+
 
 
 

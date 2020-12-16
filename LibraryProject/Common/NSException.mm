@@ -18,7 +18,6 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-
 const char* NSException_GetPropName(void* ptr)
 {
 	NSException* iNSException = (__bridge NSException*) ptr;
@@ -33,6 +32,7 @@ const char* NSException_GetPropReason(void* ptr)
 	NSString* val = [iNSException reason];
 	return [val UTF8String];
 }
+
 
 //TODO: PROPERTYSTRINGARRAY
 

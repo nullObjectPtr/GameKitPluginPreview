@@ -13,14 +13,25 @@
 // Class Methods 
 
 // Init Methods 
+extern "C" void* GKTurnBasedMatchmakerViewController_initWithMatchRequest(
+    void* request,
+    void** exceptionPtr);
+
 
 // Instance methods 
 
 // Void methods 
 
 // Properties 
+
 extern "C" bool GKTurnBasedMatchmakerViewController_GetPropShowExistingMatches(void* ptr);
 extern "C" void GKTurnBasedMatchmakerViewController_SetPropShowExistingMatches(void* ptr, bool showExistingMatches, void** exceptionPtr);
+
+
+
+extern "C" void* GKTurnBasedMatchmakerViewController_GetPropTurnBasedMatchmakerDelegate(void* ptr);
+extern "C" void GKTurnBasedMatchmakerViewController_SetPropTurnBasedMatchmakerDelegate(void* ptr, void* turnBasedMatchmakerDelegate, void** exceptionPtr);
+
 
 
 

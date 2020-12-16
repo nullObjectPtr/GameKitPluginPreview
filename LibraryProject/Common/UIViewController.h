@@ -15,7 +15,12 @@
 // Init Methods 
 
 // Instance methods 
-extern "C" void UIViewController_show(
+extern "C" void UIViewController_present(
+	void* ptr,
+	void** exception
+    );
+
+extern "C" void UIViewController_dismiss(
 	void* ptr,
 	void** exception
     );

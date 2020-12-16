@@ -33,6 +33,8 @@ bool GKVoiceChat_isVoIPAllowed(
 	return nil;
 }
 
+
+
 void GKVoiceChat_start(
     void* ptr,
     void** exception
@@ -94,7 +96,6 @@ void GKVoiceChat_setPlayer_muted(
 
 //VoidMethods
 //Properties
-
 bool GKVoiceChat_GetPropActive(void* ptr)
 {
 	GKVoiceChat* iGKVoiceChat = (__bridge GKVoiceChat*) ptr;
@@ -104,7 +105,7 @@ bool GKVoiceChat_GetPropActive(void* ptr)
 
 void GKVoiceChat_SetPropActive(void* ptr, bool active, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKVoiceChat* iGKVoiceChat = (__bridge GKVoiceChat*) ptr;
 		[iGKVoiceChat setActive:active];
@@ -124,6 +125,7 @@ const char* GKVoiceChat_GetPropName(void* ptr)
 }
 
 
+
 void GKVoiceChat_GetPropPlayers(void* ptr, void** buffer, long* count)
 {
 	GKVoiceChat* iGKVoiceChat = (__bridge GKVoiceChat*) ptr;
@@ -132,6 +134,27 @@ void GKVoiceChat_GetPropPlayers(void* ptr, void** buffer, long* count)
 	*buffer = [Converters NSArrayToRetainedCArray:val];
 	*count = [val count];
 }
+float GKVoiceChat_GetPropVolume(void* ptr)
+{
+	GKVoiceChat* iGKVoiceChat = (__bridge GKVoiceChat*) ptr;
+	float val = [iGKVoiceChat volume];
+	return val;
+}
+
+void GKVoiceChat_SetPropVolume(void* ptr, float volume, void** exceptionPtr)
+{
+	@try
+	{
+		GKVoiceChat* iGKVoiceChat = (__bridge GKVoiceChat*) ptr;
+		[iGKVoiceChat setVolume:volume];
+	}
+	@catch(NSException* ex) 
+	{
+		*exceptionPtr = (__bridge_retained void*) ex;
+	}
+}
+
+
 
 
 void GKVoiceChat_Dispose(void* ptr)

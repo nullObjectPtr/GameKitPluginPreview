@@ -18,13 +18,29 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-
 const char* GKTurnBasedExchangeReply_GetPropMessage(void* ptr)
 {
 	GKTurnBasedExchangeReply* iGKTurnBasedExchangeReply = (__bridge GKTurnBasedExchangeReply*) ptr;
 	NSString* val = [iGKTurnBasedExchangeReply message];
 	return [val UTF8String];
 }
+
+
+double GKTurnBasedExchangeReply_GetPropReplyDate(void* ptr)
+{
+	GKTurnBasedExchangeReply* iGKTurnBasedExchangeReply = (__bridge GKTurnBasedExchangeReply*) ptr;
+	NSDate* val = [iGKTurnBasedExchangeReply replyDate];
+	return [val timeIntervalSince1970];
+}
+
+
+void* GKTurnBasedExchangeReply_GetPropRecipient(void* ptr)
+{
+	GKTurnBasedExchangeReply* iGKTurnBasedExchangeReply = (__bridge GKTurnBasedExchangeReply*) ptr;
+	GKTurnBasedParticipant* val = [iGKTurnBasedExchangeReply recipient];
+	return (__bridge_retained void*) val;
+}
+
 
 
 

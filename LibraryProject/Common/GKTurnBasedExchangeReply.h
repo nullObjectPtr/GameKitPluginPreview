@@ -19,7 +19,15 @@
 // Void methods 
 
 // Properties 
+
 extern "C" const char* GKTurnBasedExchangeReply_GetPropMessage(void* ptr);
+
+
+extern "C" double GKTurnBasedExchangeReply_GetPropReplyDate(void* ptr);
+
+
+extern "C" void* GKTurnBasedExchangeReply_GetPropRecipient(void* ptr);
+
 
 
 

@@ -16,579 +16,497 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1871a63-bac4-4425-bacb-d73786e15938" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../LibraryProject/HHCloudKitLibrary.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LibraryProject/HHCloudKitLibrary.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/.gitmodules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/AppledocSettings.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Articles/TheNatureOfLogicLessTemplates.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Articles/WhyMustacheFilters.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/GRMustache.podspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/NSFormatter.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/compatibility.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/configuration.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/delegate.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/filters.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/forking.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/helpers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/html_vs_text.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/installation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/introduction.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/partials.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/protected_contexts.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/proxies.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/rendering_objects.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/runtime.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/runtime/booleans.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/runtime/context_stack.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/runtime/loops.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/runtime_patterns.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/sample_code/counters.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/sample_code/indexes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/sample_code/localization.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/sample_code/number_formatting.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/section_helpers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/section_tag_helpers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/security.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/standard_library.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/template_inheritance.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/template_repositories.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/templates.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/troubleshooting.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/upgrading.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/variable_helpers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/variable_tag_helpers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Guides/view_model.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/RELEASE_NOTES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Categories/NSFormatter+GRMustache.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Categories/NSValueTransformer+GRMustache.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustache.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustacheConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustacheContext.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustacheFilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustacheLocalizer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustacheRendering.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustacheTag.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustacheTemplate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Classes/GRMustacheTemplateRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Constants/GRMustacheContentType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Constants/GRMustacheErrorCode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Constants/GRMustacheTagType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Protocols/GRMustacheFilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Protocols/GRMustacheRendering.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Protocols/GRMustacheSafeKeyAccess.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Protocols/GRMustacheTagDelegate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/Protocols/GRMustacheTemplateRepositoryDataSource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/css/stylesPrint.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/hierarchy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/img/button_bar_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/img/disclosure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/img/disclosure_open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/img/library_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/img/title_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/Reference/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/TODO.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheAvailabilityMacros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheConfiguration.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheContentType.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheContext.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheError.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheFilter.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheLocalizer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheRendering.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheSafeKeyAccess.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheTag.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheTagDelegate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheTemplate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheTemplateRepository.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/GRMustacheVersion.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/NSFormatter+GRMustache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/include/NSValueTransformer+GRMustache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/lib/libGRMustache7-MacOS.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/lib/libGRMustache7-iOS.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/GRMustache.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/GRMustache.xcodeproj/xcshareddata/xcschemes/GRMustache.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/GRMustache/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/bin/buildGRMustacheAvailabilityMacros" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheExpression.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheExpressionVisitor_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheExpression_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheFilteredExpression.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheFilteredExpression_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheIdentifierExpression.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheIdentifierExpression_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheImplicitIteratorExpression.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheImplicitIteratorExpression_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheScopedExpression.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/Expressions/GRMustacheScopedExpression_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/GRMustacheCompiler.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/GRMustacheCompiler_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheInheritableSectionNode.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheInheritableSectionNode_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheInheritedPartialNode.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheInheritedPartialNode_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustachePartialNode.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustachePartialNode_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheSectionTag.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheSectionTag_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTag.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTag.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTag_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTemplateAST.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTemplateASTNode_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTemplateASTVisitor_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTemplateAST_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTextNode.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheTextNode_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheVariableTag.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Compiling/TemplateAST/GRMustacheVariableTag_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Configuration/GRMustacheConfiguration.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Configuration/GRMustacheConfiguration.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Configuration/GRMustacheConfiguration_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/GRMustache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/GRMustache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/GRMustacheVersion.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/GRMustache_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Parsing/GRMustacheExpressionParser.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Parsing/GRMustacheExpressionParser_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Parsing/GRMustacheTemplateParser.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Parsing/GRMustacheTemplateParser_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Parsing/GRMustacheToken.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Parsing/GRMustacheToken_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheContext.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheContext.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheContext_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheExpressionInvocation.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheExpressionInvocation_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheFilter.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheFilter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheFilter_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheKeyAccess.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheKeyAccess_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheRendering.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheRendering.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheRenderingEngine.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheRenderingEngine_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheRendering_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheSafeKeyAccess.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Rendering/GRMustacheTagDelegate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/GRMustacheExpressionGenerator.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/GRMustacheExpressionGenerator_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/GRMustacheTemplateGenerator.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/GRMustacheTemplateGenerator_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/NSFormatter+GRMustache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/NSFormatter+GRMustache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/NSValueTransformer+GRMustache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/NSValueTransformer+GRMustache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheEachFilter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheEachFilter_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheHTMLLibrary.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheHTMLLibrary_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheJavascriptLibrary.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheJavascriptLibrary_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheLocalizer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheLocalizer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheStandardLibrary.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheStandardLibrary_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheURLLibrary.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Services/StandardLibrary/GRMustacheURLLibrary_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Shared/GRMustacheAvailabilityMacros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Shared/GRMustacheAvailabilityMacros_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Shared/GRMustacheBuffer_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Shared/GRMustacheContentType.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Shared/GRMustacheError.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Shared/GRMustacheError.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Shared/GRMustacheTranslateCharacters.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Shared/GRMustacheTranslateCharacters_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Templates/GRMustacheTemplate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Templates/GRMustacheTemplate.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Templates/GRMustacheTemplateRepository.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Templates/GRMustacheTemplateRepository.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Templates/GRMustacheTemplateRepository_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/classes/Templates/GRMustacheTemplate_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/GRMustache7Tests-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/GRMustacheTestBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/GRMustacheTestBase.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Private/GRMustacheContextPrivateTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Private/GRMustacheExpressionParserTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Private/GRMustachePrivateAPITest.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Private/GRMustachePrivateAPITest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Private/GRMustacheTemplateGeneratorTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Private/GRPreventNSUndefinedKeyExceptionAttackTest.xcdatamodeld/.xccurrentversion" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Private/GRPreventNSUndefinedKeyExceptionAttackTest.xcdatamodeld/GRPreventNSUndefinedKeyExceptionAttackTest.xcdatamodel/elements" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Private/GRPreventNSUndefinedKeyExceptionAttackTest.xcdatamodeld/GRPreventNSUndefinedKeyExceptionAttackTest.xcdatamodel/layout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/GRMustachePublicAPITest.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/GRMustachePublicAPITest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRBooleanTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheConfigurationTest/GRMustacheConfigurationBaseContextTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheConfigurationTest/GRMustacheConfigurationExtendBaseContextTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheConfigurationTest/GRMustacheConfigurationTagDelimitersTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheConfigurationTest/GRMustacheConfigurationTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheContextTest/GRMustacheContextHasValueForMustacheExpressionTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheContextTest/GRMustacheContextKeyAccessTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheContextTest/GRMustacheContextProtectedObjectTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheContextTest/GRMustacheContextTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheContextTest/GRMustacheContextTopMustacheObjectTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheContextTest/GRMustacheContextValueForMustacheKeyTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheContextTest/GRMustacheKeyedSubscriptingTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheErrorHandlingTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheFilterTest/GRMustacheFilterTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheFilterTest/GRMustacheVariadicFilterTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheFoundationCollectionTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheParsingErrorsTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustachePositionFilterTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheRenderingObjectTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheServicesTest/GRMustacheLocalizerTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheServicesTest/GRMustacheLocalizerTestBundle/Localizable.strings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheServicesTest/GRMustacheLocalizerTestBundle/Table.strings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheServicesTest/GRMustacheNSFormatterTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheServicesTest/GRMustacheNSValueTransformerTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheServicesTest/GRMustacheStandardLibraryTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTagDelegateTest/GRMustacheTagDelegateTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTagDelegateTest/GRMustacheTagDelegateTest.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTagDelegateTest/GRMustacheTagDelegateTest_wrapper.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryDataSourceTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest/base.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest/partials/partial1.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest/partials/partial2.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/dir/file1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/dir/file1.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/dir/file1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/dir/file2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/dir/file2.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/dir/file2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/file1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/file1.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/file1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/file2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/file2.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/dir/file2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/file1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/file1.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/file1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/file2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/file2.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_ISOLatin1/file2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/dir/file1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/dir/file1.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/dir/file1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/dir/file2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/dir/file2.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/dir/file2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/file1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/file1.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/file1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/file2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/file2.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/dir/file2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/file1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/file1.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/file1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/file2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/file2.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryTest_UTF8/file2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBaseURLTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTest.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTest.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTestResources/partial.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTestResources/sibling.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTest_partial" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTest_partial.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithBundleTest_partial.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithDictionaryTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateRepositoryTest/GRMustacheTemplateRepositoryWithDirectoryTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateExtendBaseContextTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateFromMethodsTest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateFromMethodsTest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateFromMethodsTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateFromMethodsTest.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateFromMethodsTest_compilerError.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateFromMethodsTest_compilerErrorWrapper.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateFromMethodsTest_parserError.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateFromMethodsTest_parserErrorWrapper.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateRenderMethodsTest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateRenderMethodsTest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateRenderMethodsTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateRenderMethodsTest.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/GRMustacheTemplateTest/GRMustacheTemplateTemplateRepositoryTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/comments.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/compound_keys.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/delimiters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/expression_parsing_errors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/filters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/general.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/implicit_iterator.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/inheritable_partials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/inheritable_sections.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/inverted_sections.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/partials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/pragmas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/sections.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/standard_library.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/tag_parsing_errors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/text_rendering.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuites/variables.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/groue/GRMustache/GRMustacheSuitesTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/mustache/spec/GRSpecificationSuitesTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/box.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/client.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/div.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/follow.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/follownomenu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/follownomenu.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/method.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/multipleextensions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/multipleextensions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/nested_inheritance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/nested_inheritance.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/parentreplace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/partialsub.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/partialsubpartial.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/partialsubpartial.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/partialsuper.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/recurse_base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/recursive_partial.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/recursive_partial2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/recursive_partial3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/recursive_partial_inheritance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/recursive_partial_inheritance.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/replace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/replace.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/singlereplace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/sub.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/sub.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subblockchild1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subblockchild1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subblockchild2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subblockchild2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subblocksuper.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsub.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsub.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsubchild1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsubchild1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsubchild2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsubchild2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsubchild3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsubchild3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsubmiddle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/subsubsuper.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/super.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuites/tweetbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/spullara/mustache.java/GRMustacheJavaSuitesTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/twitter/hogan.js/GRHoganSuites/inheritable_partials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.0/Suites/twitter/hogan.js/GRHoganSuitesTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.2/GRMustacheEachFilterTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.2/GRMustacheRenderingObject_7_2_Test.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.2/Suites/groue/GRMustache/GRMustacheSuites_7_2/standard_library.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/Public/v7.2/Suites/groue/GRMustache/GRMustacheSuites_7_2_Test.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/vendor/blach/NSJSONSerialization-Comments/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/vendor/blach/NSJSONSerialization-Comments/NSJSONSerialization+Comments.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/vendor/blach/NSJSONSerialization-Comments/NSJSONSerialization+Comments.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/GRMustache-master/src/tests/vendor/blach/NSJSONSerialization-Comments/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator.xcodeproj/project.xcworkspace/xcuserdata/jonathan.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator.xcodeproj/xcshareddata/xcschemes/PluginCodeGenerator.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator.xcodeproj/xcuserdata/jonathan.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator.xcodeproj/xcuserdata/jonathan.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/CallbackGenerator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/CallbackGenerator.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/ClassGenerator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/ClassGenerator.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Converters.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Converters.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/EnumGenerator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/EnumGenerator.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Generator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/JSONLoader.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/JSONLoader.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/MethodParser.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/MethodParser.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/MethodTokenizer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/MethodTokenizer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/PropertyParser.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/PropertyParser.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/PropertyTokenizer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/PropertyTokenizer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/BlockTemplate.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/CSharpCallbacks.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/CSharpClass.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/CSharpEnum.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/CSharpTest.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DelegateObjectCS.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DllMethodBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DllMethodObjectArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DllMethodStringArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DllPropertyBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DllPropertyBlock.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DllPropertyDictionary.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DllPropertyObjectArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/DllPropertyStringArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/InitializerCS.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/MethodBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/MethodDoc.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/MethodName.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/MethodObjectArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/MethodStringArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/PropertyBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/PropertyBlock.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/PropertyBlockTemplate.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/PropertyDictionary.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/PropertyObjectArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/CSharp/PropertyStringArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/BlockTemplate.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/ClassHeader.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/ClassImplementation.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/ClassMethodBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/ClassMethodInit.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/DelegateObjectH.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/DelegateObjectMM.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/HeaderClassMethodBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/HeaderMethodBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/HeaderMethodInit.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/HeaderMethodStringArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/HeaderPropertyBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/HeaderPropertyBlock.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/HeaderPropertyObjectArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/HeaderPropertyStringArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/InitializerH.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/InitializerMM.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/MethodBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/MethodInit.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/MethodName.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/MethodStringArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/Notification.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/ObjCCallbacks.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/ObjCToCParamList.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/PropertyBasic.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/PropertyBlock.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/PropertyBlockTemplate.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/PropertyObjectArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Templates/ObjC/PropertyStringArray.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Token.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Token.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Tokenizer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Tokenizer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Utils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/Utils.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKAchievement.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKAchievementChallenge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKAchievementDescription.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKBasePlayer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKChallenge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKInvite.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKLeaderboard.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKLeaderboardSet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKLocalPlayer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKMatch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKMatchRequest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKMatchmaker.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKMatchmakerViewController.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKPlayer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKScore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKScoreChallenge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKTurnBasedExchange.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKTurnBasedExchangeReply.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKTurnBasedMatch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKTurnBasedMatchmakerViewController.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKTurnBasedParticipant.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/GKVoiceChat.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/NSError.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/NSException.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Classes/UIViewController.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Data/BlockData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Data/EnumTypes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Data/PointerTypes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Data/StringTypes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/DelegateObjects/DelegateObjects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Enums/GKAccessPointLocation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Enums/GKChallengeState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Enums/GKGameCenterViewControllerState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Enums/GKInviteRecipientResponse.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Enums/GKMatchSendDataMode.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Enums/GKMatchType.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Enums/GKMatchmakingMode.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/Enums/GKPlayerConnectionState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/TODO/CKOperation copy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/TODO/GKAccessPoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/TODO/GKLeaderboardScore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/json/TODO/GKSavedGame.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugin Code Generator/PluginCodeGenerator/PluginCodeGenerator/main.m" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/GameKit.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/HovelHouse.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/HovelHouse/CloudKit.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/HovelHouse/CloudKit/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/HovelHouse/CloudKit/Resources/HovelHouseCloudKitBuildSettings.Asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/HovelHouse/CloudKit/Resources/HovelHouseCloudKitBuildSettings.Asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PhysicsTest.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PhysicsTest.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AbstractSample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AbstractSample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/AS_Checklist.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/AS_Checklist.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/Editor/AssetStoreTools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/Editor/AssetStoreTools.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Android.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Android/lunar-console.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Android/lunar-console.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/AndroidPlugin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/AndroidPlugin.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/common.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/common.sh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/disable_lunar_console.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/disable_lunar_console.sh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/enable_lunar_console.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/enable_lunar_console.sh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Autorun.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Autorun.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/BuildPostProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/BuildPostProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Compatibility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Compatibility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/EditorConstants.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/EditorConstants.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/EditorHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/EditorHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Installer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Installer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Legacy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Legacy/LunarConsoleLegacyActionsEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Legacy/LunarConsoleLegacyActionsEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Log.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Log.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleActionEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleActionEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditorAnalytics.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditorAnalytics.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleHttpClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleHttpClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/MenuItems.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/MenuItems.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/SimpleJSON.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/SimpleJSON.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/UI/ActionsAndVariablesWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/UI/ActionsAndVariablesWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Updater.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Updater.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Utils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Utils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntry.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntry.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntry.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntryTableViewCell.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntryTableViewCell.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntryTableViewCell.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntryTableViewCell.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsole.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsole.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsole.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsole.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntry.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntry.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntry.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryList.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryList.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryList.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryList.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryLookupTable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryLookupTable.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryLookupTable.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryLookupTable.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryTableViewCell.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryTableViewCell.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryTableViewCell.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryTableViewCell.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogTypeButton.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogTypeButton.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogTypeButton.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogTypeButton.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LULogMessage.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LULogMessage.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LULogMessage.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LULogMessage.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePlugin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePlugin.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePlugin.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePlugin.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePluginImp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePluginImp.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUPluginSettings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUPluginSettings.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUPluginSettings.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUPluginSettings.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUUnityScriptMessenger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUUnityScriptMessenger.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUUnityScriptMessenger.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUUnityScriptMessenger.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/lunar_unity_native_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/lunar_unity_native_interface.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/lunar_unity_native_interface.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/lunar_unity_native_interface.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase_Inheritance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase_Inheritance.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionRegistry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionRegistry.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUSettingsTableCell.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUSettingsTableCell.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Variables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Variables/LUCVar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Variables/LUCVar.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.xib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical@2x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Lunar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Lunar.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUActionButton.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUActionButton.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUActionButton.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUActionButton.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUButton.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUButton.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUButton.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUButton.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPanViewGestureRecognizer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPanViewGestureRecognizer.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPanViewGestureRecognizer.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPanViewGestureRecognizer.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPassTouchView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPassTouchView.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPassTouchView.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPassTouchView.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSlider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSlider.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSlider.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSlider.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSwitch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSwitch.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSwitch.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSwitch.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTableView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTableView.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTableView.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTableView.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTextField.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTextField.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTextField.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTextField.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTheme.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTheme.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTheme.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTheme.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUToggleButton.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUToggleButton.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUToggleButton.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUToggleButton.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUUIHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUUIHelper.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUUIHelper.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUUIHelper.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUViewController.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUViewController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUWindow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUWindow.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUWindow.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUWindow.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAssert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAssert.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAssert.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAssert.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAvailability.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAvailability.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAvailability.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAvailability.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUDefines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUDefines.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUFileUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUFileUtils.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUFileUtils.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUFileUtils.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUImageUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUImageUtils.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUImageUtils.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUImageUtils.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LULittleHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LULittleHelper.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LULittleHelper.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LULittleHelper.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUMutableArray.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUMutableArray.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUMutableArray.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUMutableArray.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUNotificationCenter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUNotificationCenter.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUNotificationCenter.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUNotificationCenter.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUObject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUObject.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUObject.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUObject.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializableObject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializableObject.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializableObject.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializableObject.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializationUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializationUtils.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializationUtils.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializationUtils.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSortedList.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSortedList.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSortedList.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSortedList.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStacktrace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStacktrace.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStacktrace.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStacktrace.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStringUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStringUtils.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStringUtils.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStringUtils.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUThreading.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUThreading.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUThreading.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUThreading.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUUtils.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Console.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Console/Plugin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Console/Plugin/LUConsolePluginImp.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Console/Plugin/LUConsolePluginImp.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions/LUActionController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions/LUActionController.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions/LUActionRegistry.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions/LUActionRegistry.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Variables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Variables/LUCVar.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Variables/LUCVar.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Lunar.projmods" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Lunar.projmods.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CRegistry.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CRegistry.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CVar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CVar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Constants.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Constants.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Legacy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Legacy/LunarConsoleLegacyActions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Legacy/LunarConsoleLegacyActions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsoleAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsoleAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/BaseList.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/BaseList.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ClassUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ClassUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ColorUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ColorUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/FileUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/FileUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/Iterator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/Iterator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/Log.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/Log.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ReflectionUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ReflectionUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/StringUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/StringUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/readme.txt.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DebugAckBufferView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DebugAckBufferView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Env.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IBinaryWritable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IBinaryWritable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IndexedQueue.Collection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IndexedQueue.Collection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IndexedQueue.Enumerable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IndexedQueue.Enumerable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IndexedQueue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IndexedQueue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/InputFrame.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/InputFrame.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/InputSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/InputSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/LocalInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/LocalInput.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyMatchDelegate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyMatchDelegate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MySimulation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MySimulation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/GameKitConnection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/GameKitConnection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PongGame.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PongGame.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SentQueue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SentQueue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Setup/LocalSetup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Setup/LocalSetup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Setup/MatchFinding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Setup/MatchFinding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Setup/NetworkedSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Setup/NetworkedSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Setup/Setup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Setup/Setup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimulatedComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimulatedComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Simulation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Simulation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwipeGesture.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwipeGesture.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchLine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchLine.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/MatchDelegate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/MatchDelegate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -596,66 +514,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKLocalPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKBasePlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameClient.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Network/ICopyable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/InvocationRecord.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKMatchmaker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/d0/ed11d4cc/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Network/NullConnection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKMatchRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GameKitInitializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditorAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKAchievement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE22A4E8-F83C-41D6-9684-AE7F557133D9/b0/3eb7f2fa/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/f4/7d925689/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleActionEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Setup/MatchFinding.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LunarConsole/Editor/MenuItems.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Setup/NetworkedSetup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyMatchmakerViewControllerDelegate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKMatch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/ChallengeListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Editor/BuildProcess.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyMatchDelegate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitCallbacks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievementDescription.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKLeaderboard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/UIViewController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Network/LocalPipe.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/UIViewController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyLocalPlayerListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/61/de3ab2b9/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/NSError.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GameKitCallbacks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/16/2bdd2930/HandleRef.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE22A4E8-F83C-41D6-9684-AE7F557133D9/b0/3eb7f2fa/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Network/IConnection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LunarConsole/Editor/BuildPostProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/MatchmakerViewControllerDelegate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/UnmanagedObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GameKitException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsoleAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKInviteRecipientResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/LocalPlayerListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/MatchDelegate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKMatchmakerViewController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Editor/BuildProcess.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/f4/7d925689/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/3a/305fd913/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/61/de3ab2b9/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/GameStateFrame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Simulation2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Test.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameState.cs" />
-        <option value="$PROJECT_DIR$/Assets/MySimulation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Simulation.cs" />
-        <option value="$PROJECT_DIR$/Assets/PhysTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/IndexedQueue.cs" />
-        <option value="$PROJECT_DIR$/Assets/MyMatchDelegate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Setup.cs" />
         <option value="$PROJECT_DIR$/Assets/ICopyable.cs" />
         <option value="$PROJECT_DIR$/Assets/SentQueue.cs" />
         <option value="$PROJECT_DIR$/Assets/Network/LocalPipe.cs" />
@@ -672,7 +551,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Setup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Setup/Setup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Setup/MatchFinding.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Network/NullConnection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Setup/NetworkedSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Network/GameKitConnection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SwipeGesture.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MySimulation.cs" />
@@ -687,16 +569,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputFrame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SentQueue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Setup/LocalSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameClient.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKLocalPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/QuickTest.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GameKitInitializer.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/MatchDelegate.cs" />
-        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Setup/NetworkedSetup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Setup/MatchFinding.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MyMatchDelegate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Network/GameKitConnection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameClient.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKPlayer.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/InvocationRecord.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Editor/BuildProcess.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKLeaderboard.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitCallbacks.cs" />
+        <option value="$PROJECT_DIR$/Packages/CloudKit/Editor/BuildProcess.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/UIViewController.cs" />
+        <option value="$PROJECT_DIR$/Assets/AbstractSample.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievementDescription.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sample3_Achievements.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sample2_Leaderboards.cs" />
       </list>
     </option>
   </component>
@@ -765,7 +654,13 @@
       <workItem from="1601994800740" duration="20291000" />
       <workItem from="1602165134291" duration="2946000" />
       <workItem from="1602168446987" duration="4394000" />
-      <workItem from="1602186482468" duration="1815000" />
+      <workItem from="1604099650611" duration="4480000" />
+      <workItem from="1607438620695" duration="897000" />
+      <workItem from="1607439978410" duration="5983000" />
+      <workItem from="1607532433204" duration="9887000" />
+      <workItem from="1607903017927" duration="666000" />
+      <workItem from="1608145051539" duration="1662000" />
+      <workItem from="1608153145935" duration="206000" />
     </task>
     <servers />
   </component>
@@ -893,71 +788,37 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="305" y="186" key="run.anything.popup/0.23.1280.777@0.23.1280.777" timestamp="1600876914702" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1602188996565">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="305" y="104" width="670" height="697" key="search.everywhere.popup" timestamp="1608145155240">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="104" width="670" height="697" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1601993005467" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1602188996565" />
+    <state x="305" y="104" width="670" height="697" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1608145155240" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1604104061565" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../../../guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs</url>
+          <url>file://$USER_HOME$/guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs</url>
           <line>120</line>
-          <properties documentPath="$PROJECT_DIR$/../../../guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs" initialLine="120">
-            <startOffsets>
-              <option value="3573" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3620" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$USER_HOME$/guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs" initialLine="120" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../../../guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs</url>
+          <url>file://$USER_HOME$/guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs</url>
           <line>123</line>
-          <properties documentPath="$PROJECT_DIR$/../../../guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs" initialLine="123">
-            <startOffsets>
-              <option value="3645" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3741" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$USER_HOME$/guildlingslfs/Assets/AppleArcadeSplash/UnitySplashScreen.cs" initialLine="123" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
-          <line>36</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" initialLine="36" />
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKLocalPlayer.cs</url>
-          <line>409</line>
-          <properties documentPath="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKLocalPlayer.cs" initialLine="414">
-            <startOffsets>
-              <option value="13611" />
-            </startOffsets>
-            <endOffsets>
-              <option value="13626" />
-            </endOffsets>
-          </properties>
+          <line>405</line>
+          <properties documentPath="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKLocalPlayer.cs" initialLine="414" />
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKBasePlayer.cs</url>
           <line>116</line>
-          <properties documentPath="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKBasePlayer.cs" initialLine="121">
-            <startOffsets>
-              <option value="2714" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2729" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKBasePlayer.cs" initialLine="121" />
           <option name="timeStamp" value="137" />
         </line-breakpoint>
       </breakpoints>

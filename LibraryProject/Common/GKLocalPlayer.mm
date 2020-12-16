@@ -88,10 +88,68 @@ void GKLocalPlayer_loadRecentPlayersWithCompletionHandler(
 NSError* error)
 		{
 			long recentPlayersCount = [recentPlayers count];
-			void** recentPlayersBuffer = (void**) malloc(sizeof(void*) * recentPlayersCount);
-			[Converters NSArrayToRetainedCArray:recentPlayers withBuffer:recentPlayersBuffer];
-			completionHandler(ptr, invocationId, recentPlayersBuffer, recentPlayersCount, (__bridge_retained void*) error);
+			void** recentPlayersBuffer = nil;
+			if(recentPlayersCount > 0)
+			{
+				recentPlayersBuffer = (void**) malloc(sizeof(void*) * recentPlayersCount);
+				[Converters NSArrayToRetainedCArray:recentPlayers withBuffer:recentPlayersBuffer];
+			}
+			completionHandler(invocationId, recentPlayersBuffer, recentPlayersCount, (__bridge_retained void*) error);
 			free(recentPlayersBuffer);
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+	
+}
+
+
+
+void GKLocalPlayer_setDefaultLeaderboardIdentifier_completionHandler(
+    void* ptr,
+    const char* leaderboardIdentifier,
+    unsigned long invocationId, StaticCompletionCallback completionHandler,
+    void** exception
+    )
+{
+	@try 
+	{
+		GKLocalPlayer* iGKLocalPlayer = (__bridge GKLocalPlayer*) ptr;
+	    [iGKLocalPlayer setDefaultLeaderboardIdentifier:[NSString stringWithUTF8String:leaderboardIdentifier] completionHandler:^(NSError* error)
+		{
+			
+			completionHandler(invocationId, (__bridge_retained void*) error);
+			
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+	
+}
+
+
+
+void GKLocalPlayer_loadDefaultLeaderboardIdentifierWithCompletionHandler(
+    void* ptr,
+    unsigned long invocationId, NSStringCallback completionHandler,
+    void** exception
+    )
+{
+	@try 
+	{
+		GKLocalPlayer* iGKLocalPlayer = (__bridge GKLocalPlayer*) ptr;
+	    [iGKLocalPlayer loadDefaultLeaderboardIdentifierWithCompletionHandler:^(NSString* leaderboardIdentifier,
+NSError* error)
+		{
+			
+			completionHandler(invocationId, [leaderboardIdentifier UTF8String], (__bridge_retained void*) error);
+			
 		}
 ];
 	}
@@ -117,9 +175,13 @@ void GKLocalPlayer_loadChallengableFriendsWithCompletionHandler(
 NSError* error)
 		{
 			long recentPlayersCount = [recentPlayers count];
-			void** recentPlayersBuffer = (void**) malloc(sizeof(void*) * recentPlayersCount);
-			[Converters NSArrayToRetainedCArray:recentPlayers withBuffer:recentPlayersBuffer];
-			completionHandler(ptr, invocationId, recentPlayersBuffer, recentPlayersCount, (__bridge_retained void*) error);
+			void** recentPlayersBuffer = nil;
+			if(recentPlayersCount > 0)
+			{
+				recentPlayersBuffer = (void**) malloc(sizeof(void*) * recentPlayersCount);
+				[Converters NSArrayToRetainedCArray:recentPlayers withBuffer:recentPlayersBuffer];
+			}
+			completionHandler(invocationId, recentPlayersBuffer, recentPlayersCount, (__bridge_retained void*) error);
 			free(recentPlayersBuffer);
 		}
 ];
@@ -137,8 +199,8 @@ NSError* error)
 //Properties
 void GKLocalPlayer_SetPropAuthenticateHandler(void* ptr, AuthenticateHandler authenticateHandler, void** exceptionPtr)
 {
-	@try 
-	{
+    @try
+    {
 #if TARGET_OS_OSX
         GKLocalPlayer* iGKLocalPlayer = (__bridge GKLocalPlayer*) ptr;
         [iGKLocalPlayer setAuthenticateHandler:^(NSViewController* viewController, NSError* error)
@@ -148,20 +210,20 @@ void GKLocalPlayer_SetPropAuthenticateHandler(void* ptr, AuthenticateHandler aut
             
         }];
 #else
-		GKLocalPlayer* iGKLocalPlayer = (__bridge GKLocalPlayer*) ptr;
-		[iGKLocalPlayer setAuthenticateHandler:^(UIViewController* viewController,
-	NSError* error)
-			{
-				
-				authenticateHandler(ptr, (__bridge_retained void*) viewController, (__bridge_retained void*) error);
-				
-			}];
+        GKLocalPlayer* iGKLocalPlayer = (__bridge GKLocalPlayer*) ptr;
+        [iGKLocalPlayer setAuthenticateHandler:^(UIViewController* viewController,
+    NSError* error)
+            {
+                
+                authenticateHandler(ptr, (__bridge_retained void*) viewController, (__bridge_retained void*) error);
+                
+            }];
 #endif
-	}
-	@catch(NSException* ex)
-	{
-		*exceptionPtr = (__bridge_retained void*)ex;
-	}
+    }
+    @catch(NSException* ex)
+    {
+        *exceptionPtr = (__bridge_retained void*)ex;
+    }
 }
 
 void* GKLocalPlayer_GetPropLocalPlayer()
@@ -192,6 +254,25 @@ bool GKLocalPlayer_GetPropUnderage(void* ptr)
 	BOOL val = [iGKLocalPlayer isUnderage];
 	return val;
 }
+
+
+#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 101500) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 130000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 130000)
+bool GKLocalPlayer_GetPropMultiplayerGamingRestricted(void* ptr)
+{
+	GKLocalPlayer* iGKLocalPlayer = (__bridge GKLocalPlayer*) ptr;
+	BOOL val = [iGKLocalPlayer isMultiplayerGamingRestricted];
+	return val;
+}
+#endif
+
+#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
+bool GKLocalPlayer_GetPropPersonalizedCommunicationRestricted(void* ptr)
+{
+	GKLocalPlayer* iGKLocalPlayer = (__bridge GKLocalPlayer*) ptr;
+	BOOL val = [iGKLocalPlayer isPersonalizedCommunicationRestricted];
+	return val;
+}
+#endif
 
 
 

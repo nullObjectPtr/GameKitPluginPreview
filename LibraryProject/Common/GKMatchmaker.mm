@@ -31,6 +31,8 @@ void* GKMatchmaker_sharedMatchmaker(
 	return nil;
 }
 
+
+
 //InitMethods
 //InstanceMethods
 void GKMatchmaker_cancel(
@@ -111,61 +113,6 @@ void GKMatchmaker_finishMatchmakingForMatch(
 
 
 
-void GKMatchmaker_startBrowsingForNearbyPlayersWithHandler(
-    void* ptr,
-    unsigned long invocationId, StartBrowsingForNearbyPlayersCallback reachableHandler,
-    void** exception
-    )
-{
-	@try 
-	{
-		GKMatchmaker* iGKMatchmaker = (__bridge GKMatchmaker*) ptr;
-	    [iGKMatchmaker startBrowsingForNearbyPlayersWithHandler:^(GKPlayer* player,
-BOOL reachable)
-		{
-			
-			reachableHandler(ptr, invocationId, (__bridge_retained void*) player, reachable);
-			
-		}
-];
-	}
-	@catch(NSException* ex)
-	{
-		*exception = (__bridge_retained void*) ex;
-	}
-	
-}
-
-
-
-void GKMatchmaker_findMatchForRequest_withCompletionHandler(
-    void* ptr,
-    void* request,
-    unsigned long invocationId, FindMatchForRequestCallback completionHandler,
-    void** exception
-    )
-{
-	@try 
-	{
-		GKMatchmaker* iGKMatchmaker = (__bridge GKMatchmaker*) ptr;
-	    [iGKMatchmaker findMatchForRequest:(__bridge GKMatchRequest*) request withCompletionHandler:^(GKMatch* match,
-NSError* error)
-		{
-			
-			completionHandler(ptr, invocationId, (__bridge_retained void*) match, (__bridge_retained void*) error);
-			
-		}
-];
-	}
-	@catch(NSException* ex)
-	{
-		*exception = (__bridge_retained void*) ex;
-	}
-	
-}
-
-
-
 void GKMatchmaker_matchForInvite_completionHandler(
     void* ptr,
     void* invite,
@@ -180,7 +127,7 @@ void GKMatchmaker_matchForInvite_completionHandler(
 NSError* error)
 		{
 			
-			completionHandler(ptr, invocationId, (__bridge_retained void*) match, (__bridge_retained void*) error);
+			completionHandler(invocationId, (__bridge_retained void*) match, (__bridge_retained void*) error);
 			
 		}
 ];
@@ -198,7 +145,7 @@ void GKMatchmaker_addPlayersToMatch_matchRequest_completionHandler(
     void* ptr,
     void* match,
     void* matchRequest,
-    unsigned long invocationId, CompletionCallback completionHandler,
+    unsigned long invocationId, StaticCompletionCallback completionHandler,
     void** exception
     )
 {
@@ -208,7 +155,7 @@ void GKMatchmaker_addPlayersToMatch_matchRequest_completionHandler(
 	    [iGKMatchmaker addPlayersToMatch:(__bridge GKMatch*) match matchRequest:(__bridge GKMatchRequest*) matchRequest completionHandler:^(NSError* error)
 		{
 			
-			completionHandler(ptr, invocationId, (__bridge_retained void*) error);
+			completionHandler(invocationId, (__bridge_retained void*) error);
 			
 		}
 ];
@@ -225,7 +172,7 @@ void GKMatchmaker_addPlayersToMatch_matchRequest_completionHandler(
 void GKMatchmaker_findPlayersForHostedRequest_withCompletionHandler(
     void* ptr,
     void* request,
-    unsigned long invocationId, FindPlayersForHostedRequestCallback completionHandler,
+    unsigned long invocationId, GKPlayersCallback completionHandler,
     void** exception
     )
 {
@@ -236,9 +183,13 @@ void GKMatchmaker_findPlayersForHostedRequest_withCompletionHandler(
 NSError* error)
 		{
 			long playersCount = [players count];
-			void** playersBuffer = (void**) malloc(sizeof(void*) * playersCount);
-			[Converters NSArrayToRetainedCArray:players withBuffer:playersBuffer];
-			completionHandler(ptr, invocationId, playersBuffer, playersCount, (__bridge_retained void*) error);
+			void** playersBuffer = nil;
+			if(playersCount > 0)
+			{
+				playersBuffer = (void**) malloc(sizeof(void*) * playersCount);
+				[Converters NSArrayToRetainedCArray:players withBuffer:playersBuffer];
+			}
+			completionHandler(invocationId, playersBuffer, playersCount, (__bridge_retained void*) error);
 			free(playersBuffer);
 		}
 ];
@@ -265,7 +216,7 @@ void GKMatchmaker_queryActivityWithCompletionHandler(
 NSError* error)
 		{
 			
-			completionHandler(ptr, invocationId, activity, (__bridge_retained void*) error);
+			completionHandler(invocationId, activity, (__bridge_retained void*) error);
 			
 		}
 ];
@@ -293,7 +244,62 @@ void GKMatchmaker_queryPlayerGroupActivity_withCompletionHandler(
 NSError* error)
 		{
 			
-			completionHandler(ptr, invocationId, activity, (__bridge_retained void*) error);
+			completionHandler(invocationId, activity, (__bridge_retained void*) error);
+			
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+	
+}
+
+
+
+void GKMatchmaker_findMatchForRequest_withCompletionHandler(
+    void* ptr,
+    void* request,
+    unsigned long invocationId, FindMatchForRequestCallback completionHandler,
+    void** exception
+    )
+{
+	@try 
+	{
+		GKMatchmaker* iGKMatchmaker = (__bridge GKMatchmaker*) ptr;
+	    [iGKMatchmaker findMatchForRequest:(__bridge GKMatchRequest*) request withCompletionHandler:^(GKMatch* match,
+NSError* error)
+		{
+			
+			completionHandler(invocationId, (__bridge_retained void*) match, (__bridge_retained void*) error);
+			
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+	
+}
+
+
+
+void GKMatchmaker_startBrowsingForNearbyPlayersWithHandler(
+    void* ptr,
+    unsigned long invocationId, StartBrowsingForNearbyPlayersCallback reachableHandler,
+    void** exception
+    )
+{
+	@try 
+	{
+		GKMatchmaker* iGKMatchmaker = (__bridge GKMatchmaker*) ptr;
+	    [iGKMatchmaker startBrowsingForNearbyPlayersWithHandler:^(GKPlayer* player,
+BOOL reachable)
+		{
+			
+			reachableHandler(invocationId, (__bridge_retained void*) player, reachable);
 			
 		}
 ];

@@ -19,7 +19,9 @@
 // Void methods 
 
 // Properties 
+
 extern "C" void* GKScoreChallenge_GetPropScore(void* ptr);
+
 
 
 

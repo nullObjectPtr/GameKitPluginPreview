@@ -14,11 +14,42 @@
 extern "C" {
 
 //ClassMethods
+void GKAchievementDescription_loadAchievementDescriptionsWithCompletionHandler(
+	unsigned long invocationId, GKAchievementDescriptionsCallback completionHandler, 
+	void** exception
+    )
+{
+	@try {
+		NSLog(@"GKAchievementDescription_loadAchievementDescriptionsWithCompletionHandler()");
+	    [GKAchievementDescription loadAchievementDescriptionsWithCompletionHandler:^(NSArray<GKAchievementDescription*>* descriptions,
+NSError* error)
+		{
+			long descriptionsCount = [descriptions count];
+			void** descriptionsBuffer = nil;
+			if(descriptionsCount > 0)
+			{
+				descriptionsBuffer = (void**) malloc(sizeof(void*) * descriptionsCount);
+				[Converters NSArrayToRetainedCArray:descriptions withBuffer:descriptionsBuffer];
+			}
+			completionHandler(invocationId, descriptionsBuffer, descriptionsCount, (__bridge_retained void*) error);
+			free(descriptionsBuffer);
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+
+	
+}
+
+
+
 //InitMethods
 //InstanceMethods
 //VoidMethods
 //Properties
-
 const char* GKAchievementDescription_GetPropIdentifier(void* ptr)
 {
 	GKAchievementDescription* iGKAchievementDescription = (__bridge GKAchievementDescription*) ptr;
@@ -81,6 +112,7 @@ const char* GKAchievementDescription_GetPropGroupIdentifier(void* ptr)
 	NSString* val = [iGKAchievementDescription groupIdentifier];
 	return [val UTF8String];
 }
+
 
 
 

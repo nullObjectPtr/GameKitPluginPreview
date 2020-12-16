@@ -41,19 +41,6 @@ extern "C" void GKMatchmaker_finishMatchmakingForMatch(
     void** exception
     );
 
-extern "C" void GKMatchmaker_startBrowsingForNearbyPlayersWithHandler(
-	void* ptr,
-	unsigned long invocationId, StartBrowsingForNearbyPlayersCallback reachableHandler,
-    void** exception
-    );
-
-extern "C" void GKMatchmaker_findMatchForRequest_withCompletionHandler(
-	void* ptr,
-	void* request,
-    unsigned long invocationId, FindMatchForRequestCallback completionHandler,
-    void** exception
-    );
-
 extern "C" void GKMatchmaker_matchForInvite_completionHandler(
 	void* ptr,
 	void* invite,
@@ -65,14 +52,14 @@ extern "C" void GKMatchmaker_addPlayersToMatch_matchRequest_completionHandler(
 	void* ptr,
 	void* match,
     void* matchRequest,
-    unsigned long invocationId, CompletionCallback completionHandler,
+    unsigned long invocationId, StaticCompletionCallback completionHandler,
     void** exception
     );
 
 extern "C" void GKMatchmaker_findPlayersForHostedRequest_withCompletionHandler(
 	void* ptr,
 	void* request,
-    unsigned long invocationId, FindPlayersForHostedRequestCallback completionHandler,
+    unsigned long invocationId, GKPlayersCallback completionHandler,
     void** exception
     );
 
@@ -86,6 +73,19 @@ extern "C" void GKMatchmaker_queryPlayerGroupActivity_withCompletionHandler(
 	void* ptr,
 	uint playerGroup,
     unsigned long invocationId, QueryActivityCallback completionHandler,
+    void** exception
+    );
+
+extern "C" void GKMatchmaker_findMatchForRequest_withCompletionHandler(
+	void* ptr,
+	void* request,
+    unsigned long invocationId, FindMatchForRequestCallback completionHandler,
+    void** exception
+    );
+
+extern "C" void GKMatchmaker_startBrowsingForNearbyPlayersWithHandler(
+	void* ptr,
+	unsigned long invocationId, StartBrowsingForNearbyPlayersCallback reachableHandler,
     void** exception
     );
 

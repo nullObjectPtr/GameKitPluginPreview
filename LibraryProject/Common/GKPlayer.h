@@ -11,8 +11,19 @@
 #import "Callbacks.h"
 
 // Class Methods 
+extern "C" void GKPlayer_loadPlayersForIdentifiers_withCompletionHandler(
+	const char* identifiers[],
+	long identifiersCount,
+    unsigned long invocationId, LoadPlayersForIdentifierCallback completionHandler,
+    void** exception
+    );
+
 
 // Init Methods 
+extern "C" void* GKPlayer_anonymousGuestPlayerWithIdentifier(
+    const char* guestIdentifier,
+    void** exceptionPtr);
+
 
 // Instance methods 
 extern "C" bool GKPlayer_scopedIDsArePersistent(
@@ -29,6 +40,7 @@ extern "C" const char* GKPlayer_GetPropTeamPlayerID(void* ptr);
 extern "C" const char* GKPlayer_GetPropAlias(void* ptr);
 extern "C" const char* GKPlayer_GetPropDisplayName(void* ptr);
 extern "C" const char* GKPlayer_GetPropGuestIdentifier(void* ptr);
+extern "C" bool GKPlayer_GetPropIsInvitable(void* ptr);
 
 
 

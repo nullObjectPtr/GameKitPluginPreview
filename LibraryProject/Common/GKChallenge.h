@@ -11,6 +11,11 @@
 #import "Callbacks.h"
 
 // Class Methods 
+extern "C" void GKChallenge_loadReceivedChallengesWithCompletionHandler(
+	unsigned long invocationId, LoadReceivedChallengesCompletionCallback completionHandler,
+    void** exception
+    );
+
 
 // Init Methods 
 
@@ -19,10 +24,24 @@
 // Void methods 
 
 // Properties 
+
+extern "C" double GKChallenge_GetPropIssueDate(void* ptr);
+
+
+extern "C" double GKChallenge_GetPropCompletionDate(void* ptr);
+
+
 extern "C" void* GKChallenge_GetPropIssuingPlayer(void* ptr);
+
+
 extern "C" void* GKChallenge_GetPropReceivingPlayer(void* ptr);
+
+
 extern "C" const char* GKChallenge_GetPropMessage(void* ptr);
+
+
 extern "C" long GKChallenge_GetPropState(void* ptr);
+
 
 
 

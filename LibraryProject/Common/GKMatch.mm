@@ -35,20 +35,20 @@ void GKMatch_disconnect(
 
 
 
-void GKMatch_sendDataToAllPlayers_withDataMode_error(
+bool GKMatch_sendDataToAllPlayers_withDataMode_error(
     void* ptr,
     void* buffer,
-    unsigned long length
-    )
+    unsigned long length,
+    unsigned long dataMode,
+  void** error
+)
 {
     GKMatch* match = (__bridge GKMatch*) ptr;
     NSData* data = [NSData dataWithBytes:buffer length:(NSUInteger)length];
-    NSError* error;
-    [match sendDataToAllPlayers:data withDataMode:GKMatchSendDataUnreliable error:&error];
-    if(error != nil)
-    {
-        NSLog(@"Error Sending Data");
-    }
+    NSError* anyError;
+    BOOL val = [match sendDataToAllPlayers:data withDataMode:(GKMatchSendDataMode)dataMode error:&anyError];
+    *error = (__bridge_retained void*) anyError;
+    return val;
 }
 
 
@@ -64,7 +64,7 @@ void GKMatch_chooseBestHostingPlayerWithCompletionHandler(
 	    [iGKMatch chooseBestHostingPlayerWithCompletionHandler:^(GKPlayer* player)
 		{
 			
-			completionHandler(ptr, invocationId, (__bridge_retained void*) player);
+			completionHandler(invocationId, (__bridge_retained void*) player);
 			
 		}
 ];
@@ -91,7 +91,7 @@ void GKMatch_rematchWithCompletionHandler(
 NSError* error)
 		{
 			
-			completionHandler(ptr, invocationId, (__bridge_retained void*) match, (__bridge_retained void*) error);
+			completionHandler(invocationId, (__bridge_retained void*) match, (__bridge_retained void*) error);
 			
 		}
 ];
@@ -148,7 +148,6 @@ bool GKMatch_sendData_toPlayers_dataMode_error(
 
 //VoidMethods
 //Properties
-
 void* GKMatch_GetPropDelegate(void* ptr)
 {
 	GKMatch* iGKMatch = (__bridge GKMatch*) ptr;
@@ -158,7 +157,7 @@ void* GKMatch_GetPropDelegate(void* ptr)
 
 void GKMatch_SetPropDelegate(void* ptr, void* delegate, void** exceptionPtr)
 {
-	@try 
+	@try
 	{
 		GKMatch* iGKMatch = (__bridge GKMatch*) ptr;
 		[iGKMatch setDelegate:(__bridge MatchDelegate*) delegate];
@@ -176,6 +175,7 @@ uint GKMatch_GetPropExpectedPlayerCount(void* ptr)
 	NSUInteger val = [iGKMatch expectedPlayerCount];
 	return val;
 }
+
 
 
 void GKMatch_GetPropPlayers(void* ptr, void** buffer, long* count)

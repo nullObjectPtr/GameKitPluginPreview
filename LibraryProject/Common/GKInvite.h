@@ -19,9 +19,18 @@
 // Void methods 
 
 // Properties 
+
 extern "C" uint GKInvite_GetPropPlayerGroup(void* ptr);
+
+
 extern "C" void* GKInvite_GetPropSender(void* ptr);
+
+
 extern "C" bool GKInvite_GetPropHosted(void* ptr);
+
+
+extern "C" uint32_t GKInvite_GetPropPlayerAttributes(void* ptr);
+
 
 
 

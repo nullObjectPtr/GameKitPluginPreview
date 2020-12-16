@@ -1,16 +1,21 @@
 {
-    "name": "Unity.HovelHouse.CloudKit.RuntimeTests",
+    "name": "Unity.HovelHouse.GameKit.RuntimeTests",
     "references": [
-        "Packages_com.hovelhouse.cloudkit_Runtime_NewAssembly"
-    ],
-    "optionalUnityReferences": [
-        "TestAssemblies"
+        "com.hovelhouse.gamekit.runtime",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": []
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

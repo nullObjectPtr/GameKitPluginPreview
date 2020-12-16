@@ -27,25 +27,42 @@ extern "C" void* GKMatchRequest_init(
 // Void methods 
 
 // Properties 
+
 extern "C" uint GKMatchRequest_GetPropMaxPlayers(void* ptr);
 extern "C" void GKMatchRequest_SetPropMaxPlayers(void* ptr, uint maxPlayers, void** exceptionPtr);
+
+
 
 extern "C" uint GKMatchRequest_GetPropMinPlayers(void* ptr);
 extern "C" void GKMatchRequest_SetPropMinPlayers(void* ptr, uint minPlayers, void** exceptionPtr);
 
+
+
 extern "C" uint GKMatchRequest_GetPropDefaultNumberOfPlayers(void* ptr);
 extern "C" void GKMatchRequest_SetPropDefaultNumberOfPlayers(void* ptr, uint defaultNumberOfPlayers, void** exceptionPtr);
+
+
 
 extern "C" const char* GKMatchRequest_GetPropInviteMessage(void* ptr);
 extern "C" void GKMatchRequest_SetPropInviteMessage(void* ptr, const char* inviteMessage, void** exceptionPtr);
 
+
+
 extern "C" uint GKMatchRequest_GetPropPlayerGroup(void* ptr);
 extern "C" void GKMatchRequest_SetPropPlayerGroup(void* ptr, uint playerGroup, void** exceptionPtr);
+
+
 extern "C" void GKMatchRequest_SetPropRecipientResponseHandler(void* ptr, RecipientResponseHandler recipientResponseHandler, void** exceptionPtr);
+
 
 extern "C" void GKMatchRequest_GetPropRecipients(void* ptr, void** buffer, long* count);
 extern "C" void GKMatchRequest_SetPropRecipients(void* ptr, void* recipients[],
 	long recipientsCount, void** exceptionPtr);
+
+
+extern "C" uint32_t GKMatchRequest_GetPropPlayerAttributes(void* ptr);
+extern "C" void GKMatchRequest_SetPropPlayerAttributes(void* ptr, uint32_t playerAttributes, void** exceptionPtr);
+
 
 
 

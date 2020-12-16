@@ -18,7 +18,6 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-
 NSInteger NSError_GetPropCode(void* ptr)
 {
 	NSError* iNSError = (__bridge NSError*) ptr;
@@ -58,7 +57,16 @@ const char* NSError_GetPropHelpAnchor(void* ptr)
 	return [val UTF8String];
 }
 
+
 //TODO: PROPERTYSTRINGARRAY
+const char* NSError_GetPropDomain(void* ptr)
+{
+	NSError* iNSError = (__bridge NSError*) ptr;
+	NSString* val = [iNSError domain];
+	return [val UTF8String];
+}
+
+
 
 
 void NSError_Dispose(void* ptr)
