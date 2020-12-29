@@ -9,504 +9,22 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:release" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1871a63-bac4-4425-bacb-d73786e15938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/GameKit.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Sample2UI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Sample2_AccessPoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Sample2_AccessPoint.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AbstractSample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AbstractSample.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/AS_Checklist.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/AS_Checklist.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/Editor/AssetStoreTools.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreTools/Editor/AssetStoreTools.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Android.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Android/lunar-console.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Android/lunar-console.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/AndroidPlugin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/AndroidPlugin.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/common.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/common.sh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/disable_lunar_console.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/disable_lunar_console.sh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/enable_lunar_console.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Automation/enable_lunar_console.sh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Autorun.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Autorun.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/BuildPostProcessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/BuildPostProcessor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Compatibility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Compatibility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/EditorConstants.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/EditorConstants.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/EditorHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/EditorHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Installer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Installer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Legacy.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Legacy/LunarConsoleLegacyActionsEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Legacy/LunarConsoleLegacyActionsEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Log.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Log.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleActionEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleActionEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditorAnalytics.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleEditorAnalytics.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/LunarConsoleHttpClient.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/MenuItems.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/MenuItems.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/SimpleJSON.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/SimpleJSON.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/UI/ActionsAndVariablesWindow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/UI/ActionsAndVariablesWindow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Updater.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Updater.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Utils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/Utils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntry.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntry.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntry.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntry.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntryTableViewCell.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntryTableViewCell.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntryTableViewCell.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Entries/LUEntryTableViewCell.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsole.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsole.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsole.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsole.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/LUConsoleController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogDetailsController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntry.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntry.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntry.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntry.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryList.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryList.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryList.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryList.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryLookupTable.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryLookupTable.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryLookupTable.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryLookupTable.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryTableViewCell.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryTableViewCell.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryTableViewCell.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogEntryTableViewCell.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogMenuController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogTypeButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogTypeButton.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogTypeButton.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LUConsoleLogTypeButton.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LULogMessage.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LULogMessage.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LULogMessage.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Log/LULogMessage.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePlugin.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePlugin.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePlugin.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePlugin.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePluginImp.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUConsolePluginImp.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUPluginSettings.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUPluginSettings.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUPluginSettings.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUPluginSettings.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUUnityScriptMessenger.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUUnityScriptMessenger.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUUnityScriptMessenger.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/LUUnityScriptMessenger.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/lunar_unity_native_interface.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/lunar_unity_native_interface.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/lunar_unity_native_interface.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Console/Plugin/lunar_unity_native_interface.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase_Inheritance.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionControllerBase_Inheritance.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionRegistry.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Actions/LUActionRegistry.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Misc/LUEnumPickerViewController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Popup/LUConsolePopupController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Resize/LUConsoleResizeController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUConsoleSettingsController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUSettingsTableCell.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Settings/LUSettingsTableCell.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Variables.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Variables/LUCVar.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Variables/LUCVar.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Controllers/Warning/LUExceptionWarningController.xib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_actions_empty_warning@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_collapse_background@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clear@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_clipboard@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_close@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_console@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_email@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_help@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_lock@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_more@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_settings@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_button_unlock@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_error@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_log_warning@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_icon_settings@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_log_button_background@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_horizontal@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical@2x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Images/lunar_console_resize_handle_vertical@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Lunar.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Lunar.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUActionButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUActionButton.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUActionButton.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUActionButton.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUButton.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUButton.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUButton.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPanViewGestureRecognizer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPanViewGestureRecognizer.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPanViewGestureRecognizer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPanViewGestureRecognizer.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPassTouchView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPassTouchView.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPassTouchView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUPassTouchView.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSlider.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSlider.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSlider.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSlider.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSwitch.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSwitch.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSwitch.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUSwitch.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTableView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTableView.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTableView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTableView.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTextField.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTextField.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTextField.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTextField.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTheme.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTheme.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTheme.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUTheme.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUToggleButton.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUToggleButton.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUToggleButton.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUToggleButton.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUUIHelper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUUIHelper.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUUIHelper.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUUIHelper.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUViewController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUViewController.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUViewController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUViewController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUWindow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUWindow.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUWindow.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/UI/LUWindow.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAssert.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAssert.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAssert.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAssert.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAvailability.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAvailability.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAvailability.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUAvailability.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUDefines.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUDefines.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUFileUtils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUFileUtils.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUFileUtils.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUFileUtils.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUImageUtils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUImageUtils.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUImageUtils.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUImageUtils.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LULittleHelper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LULittleHelper.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LULittleHelper.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LULittleHelper.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUMutableArray.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUMutableArray.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUMutableArray.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUMutableArray.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUNotificationCenter.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUNotificationCenter.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUNotificationCenter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUNotificationCenter.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUObject.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUObject.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUObject.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUObject.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializableObject.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializableObject.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializableObject.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializableObject.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializationUtils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializationUtils.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializationUtils.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSerializationUtils.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSortedList.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSortedList.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSortedList.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUSortedList.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStacktrace.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStacktrace.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStacktrace.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStacktrace.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStringUtils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStringUtils.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStringUtils.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUStringUtils.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUThreading.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUThreading.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUThreading.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUThreading.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUUtils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Common/Utils/LUUtils.h.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Console.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Console/Plugin.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Console/Plugin/LUConsolePluginImp.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Console/Plugin/LUConsolePluginImp.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions/LUActionController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions/LUActionController.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions/LUActionRegistry.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Actions/LUActionRegistry.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Variables.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Variables/LUCVar.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Free/Controllers/Variables/LUCVar.m.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Lunar.projmods" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Editor/iOS/Lunar.projmods.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CRegistry.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CVar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Actions/CVar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Constants.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Constants.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Legacy.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Legacy/LunarConsoleLegacyActions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Legacy/LunarConsoleLegacyActions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsole.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsoleAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/LunarConsoleAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/BaseList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/BaseList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ClassUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ClassUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ColorUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ColorUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/FileUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/FileUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/Iterator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/Iterator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/Log.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/Log.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ReflectionUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/ReflectionUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/StringUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/Scripts/Utils/StringUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LunarConsole/readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPointLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPointLocation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -517,28 +35,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Sample3_Achievements.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Sample2UI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/d0/ed11d4cc/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitCallbacks.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievementDescription.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKLeaderboard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/UIViewController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Network/LocalPipe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/16/2bdd2930/HandleRef.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Sample2_AccessPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE22A4E8-F83C-41D6-9684-AE7F557133D9/b0/3eb7f2fa/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Network/IConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Editor/BuildProcess.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/f4/7d925689/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.10f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPointLocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/3a/305fd913/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKGameCenterViewControllerState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/61/de3ab2b9/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/ICopyable.cs" />
-        <option value="$PROJECT_DIR$/Assets/SentQueue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Network/LocalPipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameClient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DebugAckBufferView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MyInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MySimulation2.cs" />
@@ -586,6 +106,10 @@
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievementDescription.cs" />
         <option value="$PROJECT_DIR$/Assets/Sample3_Achievements.cs" />
         <option value="$PROJECT_DIR$/Assets/Sample2_Leaderboards.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Sample2UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Sample2_AccessPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPointLocation.cs" />
       </list>
     </option>
   </component>
@@ -661,6 +185,7 @@
       <workItem from="1607903017927" duration="666000" />
       <workItem from="1608145051539" duration="1662000" />
       <workItem from="1608153145935" duration="206000" />
+      <workItem from="1609254216982" duration="4340000" />
     </task>
     <servers />
   </component>
@@ -788,10 +313,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="305" y="186" key="run.anything.popup/0.23.1280.777@0.23.1280.777" timestamp="1600876914702" />
-    <state x="305" y="104" width="670" height="697" key="search.everywhere.popup" timestamp="1608145155240">
+    <state x="305" y="104" width="670" height="697" key="search.everywhere.popup" timestamp="1609263160401">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="104" width="670" height="697" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1608145155240" />
+    <state x="305" y="104" width="670" height="697" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1609263160401" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1604104061565" />
   </component>
   <component name="XDebuggerManager">
