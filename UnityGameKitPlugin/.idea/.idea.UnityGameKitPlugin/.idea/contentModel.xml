@@ -7,6 +7,8 @@
         <e p="Scripts" t="Include">
           <e p="Samples" t="Include">
             <e p="AbstractSample.cs" t="Include" />
+            <e p="AchievementsSampleUI.cs" t="Include" />
+            <e p="AchievementWidget.cs" t="Include" />
             <e p="Sample2_AccessPoint.cs" t="Include" />
             <e p="Sample2_Leaderboards.cs" t="Include" />
             <e p="Sample2UI.cs" t="Include" />

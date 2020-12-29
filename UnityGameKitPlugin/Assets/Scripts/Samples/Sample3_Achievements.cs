@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using HovelHouse.GameKit;
 using UnityEngine;
-using Random = System.Random;
 
 public class Sample3_Achievements : AbstractSample
 {
+    public AchievementsSampleUI UI;
+    
     private Dictionary<string, GKAchievement> _achievementProgress = new Dictionary<string, GKAchievement>();
-    private GKAchievementDescription[] _achievementDescriptions;
+    private List<GKAchievementDescription> _achievementDescriptions;
     
     protected override void OnAuthenticated()
     {
         Debug.Log("player authenticated");
+
+        // Once we load achievement data, and the UI is drawn, this callback handles toggling the achievement earned
+        // status for the player
+        UI.OnToggleAchievementEarned = OnToggleAchievement;
+        UI.OnChallenge = IssueChallenge;
         
         //1. Load Achievement Descriptions
         //2. Load Local Player's achievement progress
@@ -20,11 +26,8 @@ public class Sample3_Achievements : AbstractSample
         LoadAchievementDescriptions();
     }
 
-    public void IssueChallenge(string identifier)
+    public void IssueChallenge(GKAchievement achievement)
     {
-        Debug.Log($"attempting to issue challenge for achievement {identifier}");
-        var achievement = GetAchievementProgress(identifier);
-
         Debug.Log("loading challengeable players from friends list");
         GKLocalPlayer.LocalPlayer.LoadChallengableFriendsWithCompletionHandler((players, error) =>
         {
@@ -82,23 +85,20 @@ public class Sample3_Achievements : AbstractSample
                 return;
             }
 
-            _achievementDescriptions = descriptions ?? new GKAchievementDescription[0];
+            Debug.Log($"loaded {descriptions?.Length} achievement descriptions");
+            _achievementDescriptions = descriptions != null ? descriptions.ToList() : new List<GKAchievementDescription>();
 
-            Debug.Log($"loaded {_achievementDescriptions.Length} achievement descriptions");
-            foreach (var description in _achievementDescriptions)
-            {
-                Debug.Log($"{description.Identifier}\n{description.Title}\n{description.UnachievedDescription}");
-            }
-
+            // Next - load the users achievement progress
+            // This only grabs achievements that have already been submitted by the local player
             LoadAchievementProgress();
         });
     }
 
     public void LoadAchievementProgress()
     {
-        // This only grabs achievements that have already been submitted by the local player
-        // if you haven't submitted an achievement yet, you will get nothing from this callback
         Debug.Log("Loading achievements");
+        
+        // if you haven't submitted any achievement progress for the current player yet, you will get nothing from this callback
         GKAchievement.LoadAchievementsWithCompletionHandler((achievements, error) =>
         {
             // You may still have achievements that load even if you get an error, so we let this fall-through for
@@ -106,6 +106,8 @@ public class Sample3_Achievements : AbstractSample
             if (error != null)
                 LogNSError(error);
             
+            Debug.Log($"loaded progress for {achievements.Length} achievements");
+
             // Achievements will be null, if you have not reported any progress for the current player yet
             if (achievements != null)
             {
@@ -117,57 +119,63 @@ public class Sample3_Achievements : AbstractSample
                     _achievementProgress[achievement.Identifier] = achievement;
                 }
             }
-
             
-            Debug.Log($"loaded progress for {_achievementProgress.Count} achievements");
-            IssueChallenge("catch_the_virus");
-            AwardAchievement("run_sample_2", true );
+            // We may not have pulled down any progress for some achievement description
+            // Fixup the achievement progress dictionary by creating new progress data for any achievements were missing
+            foreach (var description in _achievementDescriptions)
+            {
+                var id = description.Identifier;
+                if(_achievementProgress.ContainsKey(id) == false)
+                    _achievementProgress[id] = new GKAchievement(id);
+            }
+
+            PopulateUI();
         });
     }
 
-    // Grab or make an achievement, set it to complete
-    private void AwardAchievement(string identifier, bool showBanner)
+    private void PopulateUI()
     {
-        // Overwrite the show banner boolean, don't know why this isn't part of the achievement description instead
-        var achievement = GetAchievementProgress(identifier);
-
-        achievement.PercentComplete = 100;
-        achievement.ShowsCompletionBanner = showBanner;
-        
-        // Report the progress
-        GKAchievement.ReportAchievements(new []{ achievement }, DefaultCompletionHandler);
-    }
-
-    // Grab or make an achievement, update it's progress
-    private void AddAchievementProgress(string identifier, int percentProgress, bool showBanner)
-    {
-        var achievement = GetAchievementProgress(identifier);
-
-        achievement.PercentComplete = Math.Min(achievement.PercentComplete + percentProgress, 100);
-        achievement.ShowsCompletionBanner = showBanner;
-
-        // Might not be complete, but still need to save progress
-        GKAchievement.ReportAchievements(new[] {achievement}, DefaultCompletionHandler);
-    }
-    
-    private GKAchievement GetAchievementProgress(string identifier)
-    {
-        // Make sure the achievement we want to report progress for actually exists in Game Center
-        var achievementDesc = _achievementDescriptions.FirstOrDefault(a => a.Identifier == identifier);
-        if(achievementDesc == null)
-            throw new ArgumentException($"there is no achievement with the id {identifier} registered with gamekit");
-        
-        // If we already have achievement progress for this...use that instance to award this achievement
-        // If not, make a new instance from scratch and register it with the dictionary
-        if (_achievementProgress.TryGetValue(identifier, out var achievement) == false)
+        // Make a new array that contains the progress data in the same order of the descriptions
+        var inOrderProgress = new List<GKAchievement>();
+        foreach (var description in _achievementDescriptions)
         {
-            achievement = new GKAchievement(identifier);
-            _achievementProgress[identifier] = achievement;
+            inOrderProgress.Add(_achievementProgress[description.Identifier]);
         }
-
-        return achievement;
+        
+        UI.SetData(_achievementDescriptions, inOrderProgress);
     }
-    
+
+    private void OnToggleAchievement(GKAchievement achievement, bool isEarned)
+    {
+        // You complete achievements by setting the PercentComplete property to 100
+        // the "complete" property on this object is actually read-only
+        var currentlyEarned = achievement.PercentComplete == 100;
+        
+        // Check for change to prevent inf-loop on UI toggle
+        if (currentlyEarned == isEarned)
+            return;
+        
+        achievement.PercentComplete = isEarned ? 100 : 0;
+        
+        // Overwrite the show banner boolean, don't know why this isn't part of the achievement description instead
+        achievement.ShowsCompletionBanner = true;
+        
+        // Report the progress to the server
+        GKAchievement.ReportAchievements(new []{ achievement }, (error) =>
+        {
+            if(error != null)
+            {
+                LogNSError(error);
+            }
+            else
+            {
+                Debug.Log("Reported achievement for current player");
+            }
+
+            UI.RefreshAchievementView(achievement);
+        });
+    }
+
     // Get an achievement that you can award to some (other) player.
     // This implementation of them does not track progress, consider these achievements boolean only ones beceause this
     // method will create the achievement instance from scratch. You will have to come up with your own solution for
