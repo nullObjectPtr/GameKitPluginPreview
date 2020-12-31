@@ -3,20 +3,29 @@ using UnityEngine;
 
 public abstract class AbstractSample : MonoBehaviour
 {
+    public GameObject EditorWarning;
+    
     private void Start()
     {
-        GameKitInitializer.Init();
-        GKLocalPlayer.LocalPlayer.AuthenticateHandler = (controller, error) =>
+        if (Application.isEditor)
         {
-            if(controller != null)
-                controller.Present();
+            EditorWarning.gameObject.SetActive(true);
+        }
+        else
+        {
+            GameKitInitializer.Init();
+            GKLocalPlayer.LocalPlayer.AuthenticateHandler = (controller, error) =>
+            {
+                if (controller != null)
+                    controller.Present();
 
-            if (error != null)
-                Debug.LogError(error);
+                if (error != null)
+                    Debug.LogError(error);
 
-            if (GKLocalPlayer.LocalPlayer.Authenticated)
-                OnAuthenticated();
-        };
+                if (GKLocalPlayer.LocalPlayer.Authenticated)
+                    OnAuthenticated();
+            };
+        }
     }
 
     protected abstract void OnAuthenticated();

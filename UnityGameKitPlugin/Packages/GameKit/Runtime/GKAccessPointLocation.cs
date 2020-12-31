@@ -11,9 +11,9 @@ namespace HovelHouse.GameKit
 {
     public enum GKAccessPointLocation : long
     {
-        BottomLeading = 0,
-        BottomTrailing = 1,
-        TopLeading = 2,
-        TopTrailing = 3
+        TopLeading = 0,
+        TopTrailing = 1,
+        BottomLeading = 2,
+        BottomTrailing = 3
     }
 }
