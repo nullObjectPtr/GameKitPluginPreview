@@ -8,19 +8,14 @@
 //
 
 using System;
-using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using AOT;
-using UnityEngine;
 
 namespace HovelHouse.GameKit
 {
     /// <summary>
     /// 
     /// </summary>
-    public class GKTurnBasedMatchmakerViewController : UnmanagedObject, IDisposable
+    public class GKTurnBasedMatchmakerViewController : UIViewController, IDisposable
     {
         #region dll
 
@@ -151,7 +146,7 @@ namespace HovelHouse.GameKit
             
         private bool disposedValue = false; // To detect redundant calls
         
-        protected virtual void Dispose(bool disposing)
+        protected override void Dispose(bool disposing)
         {
             if (!disposedValue)
             {
@@ -168,7 +163,7 @@ namespace HovelHouse.GameKit
         }
 
         // This code added to correctly implement the disposable pattern.
-        public void Dispose()
+        public new void Dispose()
         {
             // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
             Dispose(true);
