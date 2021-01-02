@@ -50,7 +50,7 @@ namespace HovelHouse.GameKit
 
         internal UIViewController(IntPtr ptr) : base(ptr) {}
         
-        
+        internal UIViewController() {}
         
         
         

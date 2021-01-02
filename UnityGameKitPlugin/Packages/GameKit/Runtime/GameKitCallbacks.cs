@@ -162,6 +162,11 @@ namespace HovelHouse.GameKit
     	IntPtr match,
     	IntPtr error);
     
+	public delegate void TurnBasedExchangeDelegate(
+        ulong invocationId,
+    	IntPtr match,
+    	IntPtr error);
+    
 	public delegate void LoadMatchesDelegate(
         ulong invocationId,
     	[MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.SysInt, SizeParamIndex = 2)]
