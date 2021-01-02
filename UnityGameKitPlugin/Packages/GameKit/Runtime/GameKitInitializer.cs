@@ -197,6 +197,14 @@ namespace HovelHouse.GameKit
             IntPtr ptr,
             IntPtr viewController,
             IntPtr error);
+    public delegate void GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFindMatch(
+            IntPtr ptr,
+            IntPtr viewController,
+            IntPtr match);
+    public delegate void GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_playerQuitForMatch(
+            IntPtr ptr,
+            IntPtr viewController,
+            IntPtr match);
 
     public class GameKitInitializer
     {
@@ -500,6 +508,22 @@ namespace HovelHouse.GameKit
         private static extern void RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError(
             GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError del);
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern void RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFindMatch(
+            GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFindMatch del);
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern void RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_playerQuitForMatch(
+            GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_playerQuitForMatch del);
+        
         
 
         public static void Init()
@@ -581,6 +605,10 @@ namespace HovelHouse.GameKit
                 GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewControllerWasCancelled);
                 RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError(
                 GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewController_didFailWithError);
+                RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFindMatch(
+                GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewController_didFindMatch);
+                RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_playerQuitForMatch(
+                GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewController_playerQuitForMatch);
                 
                 
         }

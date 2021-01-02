@@ -2,7 +2,7 @@
 //  GKLeaderboard.cs
 //
 //  Created by Jonathan Culp <jonathanculp@gmail.com> on
-//  Copyright © 2020 HovelHouseApps. All rights reserved.
+//  Copyright © 2021 HovelHouseApps. All rights reserved.
 //  Unauthorized copying of this file, via any medium is strictly prohibited
 //  Proprietary and confidential
 //
@@ -93,6 +93,21 @@ namespace HovelHouse.GameKit
 			int playersCount,
             long timeScope,
             ulong invocationId, LoadLeaderboardEntriesDelegate completionHandler,
+            out IntPtr exceptionPtr);
+
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern void GKLeaderboard_loadEntriesForPlayerScope_timeScope_index_length_completionHandler(
+            HandleRef ptr, 
+            long playerScope,
+            long timeScope,
+            ulong index,
+            ulong length,
+            ulong invocationId, LoadEntriesForPlayerScopeDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
@@ -198,9 +213,6 @@ namespace HovelHouse.GameKit
 		    long leaderboardsCount,
             IntPtr error)
         {
-            Debug.Log("LoadLeaderboardsCallback");
-            Debug.Log($"count: {leaderboardsCount}");
-            Debug.Log($"{leaderboards.Length}");
             var invocation = new InvocationRecord(invocationId);
             var executionContext = LoadLeaderboardsWithIDsCallbacks[invocation];
             LoadLeaderboardsWithIDsCallbacks.Remove(invocation);
@@ -394,6 +406,66 @@ namespace HovelHouse.GameKit
             executionContext.Invoke(
                     localPlayerEntry == IntPtr.Zero ? null : new GKLeaderboardEntry(localPlayerEntry),
                     entries == null ? null : entries.Select(x => new GKLeaderboardEntry(x)).ToArray(),
+                    error == IntPtr.Zero ? null : new NSError(error));
+        }
+
+        
+
+        
+        /// <summary>
+        /// </summary>
+        /// <param name="playerScope"></param><param name="timeScope"></param><param name="index"></param><param name="length"></param><param name="completionHandler"></param>
+        /// <returns>void</returns>
+        public void LoadEntriesForPlayerScope(
+            GKLeaderboardPlayerScope playerScope, 
+            GKLeaderboardTimeScope timeScope, 
+            ulong minRank, 
+            ulong maxRank, 
+            Action<GKLeaderboardEntry,GKLeaderboardEntry[],long,NSError> completionHandler)
+        { 
+            
+            
+            
+            
+            var completionHandlerCall = new InvocationRecord(Handle);
+            LoadEntriesForPlayerScopeCallbacks[completionHandlerCall] = new ExecutionContext<GKLeaderboardEntry,GKLeaderboardEntry[],long,NSError>(completionHandler);
+            
+            GKLeaderboard_loadEntriesForPlayerScope_timeScope_index_length_completionHandler(
+                Handle,
+                (long) playerScope,
+                (long) timeScope,
+                minRank,
+                (maxRank - minRank),
+                completionHandlerCall.id, LoadEntriesForPlayerScopeCallback,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+        }
+        
+        private static readonly Dictionary<InvocationRecord,ExecutionContext<GKLeaderboardEntry,GKLeaderboardEntry[],long,NSError>> LoadEntriesForPlayerScopeCallbacks = new Dictionary<InvocationRecord,ExecutionContext<GKLeaderboardEntry,GKLeaderboardEntry[],long,NSError>>();
+
+        [MonoPInvokeCallback(typeof(LoadEntriesForPlayerScopeDelegate))]
+        private static void LoadEntriesForPlayerScopeCallback(
+            ulong invocationId,
+            IntPtr localPlayerEntry,
+            IntPtr[] entries,
+		long entriesCount,
+            long totalPlayerCount,
+            IntPtr error)
+        {
+            var invocation = new InvocationRecord(invocationId);
+            var executionContext = LoadEntriesForPlayerScopeCallbacks[invocation];
+            LoadEntriesForPlayerScopeCallbacks.Remove(invocation);
+            
+            executionContext.Invoke(
+                    localPlayerEntry == IntPtr.Zero ? null : new GKLeaderboardEntry(localPlayerEntry),
+                    entries == null ? null : entries.Select(x => new GKLeaderboardEntry(x)).ToArray(),
+                    totalPlayerCount,
                     error == IntPtr.Zero ? null : new NSError(error));
         }
 

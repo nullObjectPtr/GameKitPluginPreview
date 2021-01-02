@@ -7,12 +7,34 @@
         <e p="Scripts" t="Include">
           <e p="Samples" t="Include">
             <e p="AbstractSample.cs" t="Include" />
-            <e p="AchievementsSampleUI.cs" t="Include" />
-            <e p="AchievementWidget.cs" t="Include" />
-            <e p="Sample2_AccessPoint.cs" t="Include" />
-            <e p="Sample2_Leaderboards.cs" t="Include" />
-            <e p="Sample2UI.cs" t="Include" />
-            <e p="Sample3_Achievements.cs" t="Include" />
+            <e p="AccessPoint" t="Include">
+              <e p="Sample2_AccessPoint.cs" t="Include" />
+              <e p="Sample2UI.cs" t="Include" />
+            </e>
+            <e p="Achievements" t="Include">
+              <e p="AchievementsSampleUI.cs" t="Include" />
+              <e p="AchievementWidget.cs" t="Include" />
+              <e p="Sample3_Achievements.cs" t="Include" />
+            </e>
+            <e p="Leaderboards" t="Include">
+              <e p="LeaderboardSetView.cs" t="Include" />
+              <e p="LeaderboardView.cs" t="Include" />
+              <e p="Sample_Leaderboards.cs" t="Include" />
+            </e>
+            <e p="RealTimeMatch" t="Include">
+              <e p="MatchmakingView.cs" t="Include" />
+              <e p="MyMatchmakerViewControllerDelegate.cs" t="Include" />
+              <e p="RealTimeChatView.cs" t="Include" />
+              <e p="Sample_RealTimeMatch.cs" t="Include" />
+            </e>
+            <e p="TurnBasedMatch" t="Include">
+              <e p="MatchListView.cs" t="Include" />
+              <e p="MatchView.cs" t="Include" />
+              <e p="MyLocalPlayerDelegate.cs" t="Include" />
+              <e p="MyTurnBasedMatchmakerDelegate.cs" t="Include" />
+              <e p="RockPaperScissorsGameState.cs" t="Include" />
+              <e p="Sample_TurnBasedMatch.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
@@ -96,6 +118,7 @@
             <e p="GKTurnBasedMatch.cs" t="Include" />
             <e p="GKTurnBasedMatchmakerViewController.cs" t="Include" />
             <e p="GKTurnBasedMatchmakerViewControllerDelegate.cs" t="Include" />
+            <e p="GKTurnBasedMatchOutcome.cs" t="Include" />
             <e p="GKTurnBasedMatchStatus.cs" t="Include" />
             <e p="GKTurnBasedParticipant.cs" t="Include" />
             <e p="GKTurnBasedParticipantStatus.cs" t="Include" />
