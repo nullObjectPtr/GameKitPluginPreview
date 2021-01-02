@@ -121,7 +121,7 @@ namespace HovelHouse.GameKit
         private static void LoadLeaderboardSetsWithCompletionHandlerCallback(
             ulong invocationId,
             IntPtr[] leaderboardSets,
-		long leaderboardSetsCount,
+		    long leaderboardSetsCount,
             IntPtr error)
         {
             var invocation = new InvocationRecord(invocationId);
