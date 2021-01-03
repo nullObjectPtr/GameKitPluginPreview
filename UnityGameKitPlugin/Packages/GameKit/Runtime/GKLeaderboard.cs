@@ -111,6 +111,19 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern void GKLeaderboard_loadLeaderboardsWithCompletionHandler(
+            ulong invocationId, LoadLeaderboardsDelegate completionHandler,
+            out IntPtr exceptionPtr);
+
+        
+
+        
+
 
         
 
@@ -466,6 +479,49 @@ namespace HovelHouse.GameKit
                     localPlayerEntry == IntPtr.Zero ? null : new GKLeaderboardEntry(localPlayerEntry),
                     entries == null ? null : entries.Select(x => new GKLeaderboardEntry(x)).ToArray(),
                     totalPlayerCount,
+                    error == IntPtr.Zero ? null : new NSError(error));
+        }
+
+        
+
+        
+        /// <summary>
+        /// </summary>
+        /// <param name="completionHandler"></param>
+        /// <returns>void</returns>
+        public static void LoadLeaderboardsWithCompletionHandler(
+            Action<GKLeaderboard[],NSError> completionHandler)
+        { 
+            var completionHandlerCall = InvocationRecord.Next();
+            LoadLeaderboardsWithCompletionHandlerCallbacks[completionHandlerCall] = new ExecutionContext<GKLeaderboard[],NSError>(completionHandler);
+            
+            GKLeaderboard_loadLeaderboardsWithCompletionHandler(
+                completionHandlerCall.id, LoadLeaderboardsWithCompletionHandlerCallback,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+        }
+        
+        private static readonly Dictionary<InvocationRecord,ExecutionContext<GKLeaderboard[],NSError>> LoadLeaderboardsWithCompletionHandlerCallbacks = new Dictionary<InvocationRecord,ExecutionContext<GKLeaderboard[],NSError>>();
+
+        [MonoPInvokeCallback(typeof(LoadLeaderboardsDelegate))]
+        private static void LoadLeaderboardsWithCompletionHandlerCallback(
+            ulong invocationId,
+            IntPtr[] leaderboards,
+		long leaderboardsCount,
+            IntPtr error)
+        {
+            var invocation = new InvocationRecord(invocationId);
+            var executionContext = LoadLeaderboardsWithCompletionHandlerCallbacks[invocation];
+            LoadLeaderboardsWithCompletionHandlerCallbacks.Remove(invocation);
+            
+            executionContext.Invoke(
+                    leaderboards == null ? null : leaderboards.Select(x => new GKLeaderboard(x)).ToArray(),
                     error == IntPtr.Zero ? null : new NSError(error));
         }
 
