@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using HovelHouse.GameKit;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +10,8 @@ public class LeaderboardSetView : MonoBehaviour
     
     public Action<GKLeaderboardSet> OnLeaderboardSetSelected;
     public Action<GKLeaderboard,GKLeaderboardPlayerScope,GKLeaderboardTimeScope> OnLeaderboardSelected;
-
+    public Action<GKLeaderboard,int> OnSendScore;
+    
     public Button NextLeaderboardSetButton;
     public Button PrevLeaderboardSetButton;
 
@@ -28,6 +29,10 @@ public class LeaderboardSetView : MonoBehaviour
         PrevLeaderboardSetButton.onClick.AddListener(PrevSet);
         NextLeaderboardButton.onClick.AddListener(NextLeaderboard);
         PrevLeaderboardButton.onClick.AddListener(PrevLeaderboard);
+
+        // When the user changes the time or player scope options, refresh the leaderboard data
+        LeaderboardWidget.OnTimeScopeChanged = (val) => InvokeLeaderboardSelected();
+        LeaderboardWidget.OnPlayerScopeChanged = (val) => InvokeLeaderboardSelected();
     }
     
     public void SetLeaderboardSets(GKLeaderboardSet[] sets)
@@ -56,7 +61,7 @@ public class LeaderboardSetView : MonoBehaviour
         
         NextLeaderboardButton.interactable = hasLeaderboards;
         PrevLeaderboardButton.interactable = hasLeaderboards;
-        
+
         SetSelectedLeaderboard(0);
     }
 
@@ -90,9 +95,7 @@ public class LeaderboardSetView : MonoBehaviour
             return;
         
         if (leaderboardIndex > 0)
-            leaderboardIndex--;
-
-        SetSelectedLeaderboard(leaderboardIndex);
+            SetSelectedLeaderboard(leaderboardIndex - 1);
     }
     
     void NextLeaderboard()
@@ -101,15 +104,32 @@ public class LeaderboardSetView : MonoBehaviour
             return;
         
         if (leaderboardIndex < leaderboards.Length - 1)
-            leaderboardIndex++;
-
-        SetSelectedLeaderboard(leaderboardIndex);
+             SetSelectedLeaderboard(leaderboardIndex + 1);
     }
 
     private void SetSelectedLeaderboard(int idx)
     {
-        if(leaderboards.Length > 0)
-            OnLeaderboardSelected?.Invoke(leaderboards[idx], GKLeaderboardPlayerScope.Global, GKLeaderboardTimeScope.AllTime);
+        if (leaderboards.Length <= 0) return;
+        
+        leaderboardIndex = idx;
+            
+        var selectedLeaderboard = leaderboards[idx];
+        LeaderboardWidget.SetLeaderboard(selectedLeaderboard);
+        InvokeLeaderboardSelected();
+
+        PrevLeaderboardButton.interactable = idx > 0;
+        NextLeaderboardButton.interactable = idx < leaderboards.Length - 1;
+    }
+
+    public void InvokeLeaderboardSelected()
+    {
+        if (leaderboards == null || leaderboards.Length == 0)
+            return;
+        
+        OnLeaderboardSelected?.Invoke(
+            leaderboards[leaderboardIndex], 
+            LeaderboardWidget.CurrentPlayerScope,
+            LeaderboardWidget.CurrentTimeScope);
     }
 
     public void SetLeaderboardEntries(GKLeaderboardEntry localPlayerEntry, GKLeaderboardEntry[] entries)

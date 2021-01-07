@@ -10,7 +10,7 @@ using System.Linq;
 using UnityEditor.iOS.Xcode;
 #endif
 
-namespace HovelHouse.CloudKit
+namespace HovelHouse.GameKit
 {
 
 
@@ -21,7 +21,7 @@ namespace HovelHouse.CloudKit
         public static void OnPostprocessBuild(BuildTarget target, string path)
         {
 #if UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX
-            Debug.Log(string.Format("[HovelHouse.CloudKit] building for target: '{0}'", target));
+            Debug.Log(string.Format("[HovelHouse.GameKit] building for target: '{0}'", target));
 
             bool isXCodeTarget = false;
 

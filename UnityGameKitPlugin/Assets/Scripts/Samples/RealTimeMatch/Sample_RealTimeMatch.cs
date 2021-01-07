@@ -3,21 +3,6 @@ using System.Text;
 using HovelHouse.GameKit;
 using UnityEngine;
 
-public class RealTimeChatMatchDelegate : MatchDelegate
-{
-    public Action<byte[]> OnDataRecieved;
-    
-    public override void match_didReceiveData_fromRemotePlayer(byte[] data, string player)
-    {
-        base.match_didReceiveData_fromRemotePlayer(data, player);
-    }
-
-    public override void match_didReceiveData_forRecipient_fromRemotePlayer(byte[] data, string recipientGamePlayerID,
-        string playerGamePlayerID)
-    {
-        base.match_didReceiveData_forRecipient_fromRemotePlayer(data, recipientGamePlayerID, playerGamePlayerID);
-    }
-}
 public class Sample_RealTimeMatch : MonoBehaviour
 {
     public MatchmakingView MatchmakingView;
@@ -29,16 +14,23 @@ public class Sample_RealTimeMatch : MonoBehaviour
     void Start()
     {
         MatchmakingView.OnFindMatch = OnFindMatch;
+
+        ChatView.OnCloseClick = OnClose;
         ChatView.OnSendMessage = OnSendMessage;
         ChatView.OnSendMessageToPlayer = OnSendMessageToPlayer;
     }
 
-    void OnFindMatch(int minPlayer, int maxPlayers)
+    void OnFindMatch(int minPlayers, int maxPlayers)
     {
+        if(minPlayers < 2)
+            throw new ArgumentOutOfRangeException(nameof(minPlayers));
+        if(maxPlayers < 2)
+            throw new ArgumentOutOfRangeException(nameof(maxPlayers));
+        
         // To start matchmaking - create a matchmaking request, and pass it as a parameter to the matchmaker view
         // controller
         var matchRequest = new GKMatchRequest();
-        matchRequest.MinPlayers = (ulong) minPlayer;
+        matchRequest.MinPlayers = (ulong) minPlayers;
         matchRequest.MaxPlayers = (ulong) maxPlayers;
         matchRequest.InviteMessage = "Let's play a game";
 
@@ -61,9 +53,15 @@ public class Sample_RealTimeMatch : MonoBehaviour
         // interested in
         var matchDelegate = new RealTimeChatMatchDelegate();
         matchDelegate.OnDataRecieved = OnDataReceived;
+        matchDelegate.OnPlayerChangedConnectionState = OnPlayerConnectionStateChanged;
         match.Delegate = matchDelegate;
         
         this.match = match;
+    }
+
+    private void OnClose()
+    {
+        match.Disconnect();
     }
 
     // Sends a (public) message to the entire chat-room
@@ -89,5 +87,13 @@ public class Sample_RealTimeMatch : MonoBehaviour
     private void OnDataReceived(byte[] data)
     {
         var msg = System.Text.Encoding.UTF8.GetString(data);
+        ChatView.AddMessage(msg);
+    }
+
+    private void OnPlayerConnectionStateChanged(GKPlayer player, GKPlayerConnectionState connectionState)
+    {
+        var connectionStatus = connectionState == GKPlayerConnectionState.Connected 
+            ? "connected" : "disconnected";
+        ChatView.AddMessage($"{player.DisplayName} has {connectionStatus}");
     }
 }

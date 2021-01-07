@@ -16,7 +16,11 @@
               <e p="AchievementWidget.cs" t="Include" />
               <e p="Sample3_Achievements.cs" t="Include" />
             </e>
+            <e p="Banner" t="Include">
+              <e p="Sample_Banner.cs" t="Include" />
+            </e>
             <e p="Leaderboards" t="Include">
+              <e p="LeaderboardEntryView.cs" t="Include" />
               <e p="LeaderboardSetView.cs" t="Include" />
               <e p="LeaderboardView.cs" t="Include" />
               <e p="Sample_Leaderboards.cs" t="Include" />
@@ -25,6 +29,7 @@
               <e p="MatchmakingView.cs" t="Include" />
               <e p="MyMatchmakerViewControllerDelegate.cs" t="Include" />
               <e p="RealTimeChatView.cs" t="Include" />
+              <e p="RealTimeMatchDelegate.cs" t="Include" />
               <e p="Sample_RealTimeMatch.cs" t="Include" />
             </e>
             <e p="TurnBasedMatch" t="Include">
