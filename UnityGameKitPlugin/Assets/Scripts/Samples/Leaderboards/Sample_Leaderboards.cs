@@ -1,6 +1,7 @@
-﻿using System;
+﻿using System.Linq;
 using HovelHouse.GameKit;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Sample_Leaderboards : AbstractSample
 {
@@ -10,6 +11,8 @@ public class Sample_Leaderboards : AbstractSample
     {
         setView.OnLeaderboardSetSelected = OnLeaderboardSetSelected;
         setView.OnLeaderboardSelected = OnLeaderboardSelected;
+        setView.LeaderboardWidget.OnSendScore = OnSendScore_Method1;
+        setView.LeaderboardWidget.OnSendScoreWithLeaderboardId = OnSendScore_Method2;
     }
     protected override void OnAuthenticated()
     {
@@ -19,20 +22,46 @@ public class Sample_Leaderboards : AbstractSample
     
     private void LoadAllLeaderboards()
     {
-        // Leaderboards are now divided into sets
         Debug.Log("load leaderboard sets");
-        GKLeaderboardSet.LoadLeaderboardSetsWithCompletionHandler((leaderboardSets, error) =>
+        
+        // Leaderboards are now divided into sets
+        // LoadLeaderboardSets appears not to load anything
+        // Unsure if this was a configuration problem on App Store Connect, or just an apple bug in the API
+        // Either way, couldn't use it and it does not appear to be a bug in the plugin
+        // GKLeaderboardSet.LoadLeaderboardSetsWithCompletionHandler((leaderboardSets, error) =>
+        // {
+        //     Debug.Log($"loaded {leaderboardSets?.Length ?? 0} leaderboard sets");
+        //     if (error != null)
+        //     {
+        //         Debug.LogError($"error loading leaderboard sets: {error.LocalizedDescription}");
+        //     }
+        //     else
+        //     {
+        //         setView.SetLeaderboardSets(leaderboardSets);
+        //     }
+        // });
+        
+        // GKLeaderboard.LoadLeaderboardsWithIDs(new []{"recurring","hi_scores"}, OnLeaderboardsLoaded);
+        
+        // Deprecated way of doing this, but it still works
+        GKLeaderboard.LoadLeaderboardsWithCompletionHandler(OnLeaderboardsLoaded);
+    }
+
+    private void OnLeaderboardsLoaded(GKLeaderboard[] leaderboards, NSError error)
+    {
+        var numLeaderboards = leaderboards?.Length ?? 0;
+        var ids = numLeaderboards > 0 ? 
+            string.Join(",", leaderboards.Select(x => x.BaseLeaderboardID)) : "";
+        
+        Debug.Log($"loaded {numLeaderboards} leaderboards. ({ids})");
+        
+        if(numLeaderboards > 0)
+            setView.SetLeaderboards(leaderboards);
+        
+        if (error != null)
         {
-            Debug.Log($"loaded {leaderboardSets?.Length ?? 0} leaderboard sets");
-            if (error != null)
-            {
-                Debug.LogError(error.LocalizedDescription);
-            }
-            else
-            {
-                setView.SetLeaderboardSets(leaderboardSets);
-            }
-        });
+            Debug.LogError(error.LocalizedDescription);
+        }
     }
 
     private void OnLeaderboardSetSelected(GKLeaderboardSet set)
@@ -66,7 +95,7 @@ public class Sample_Leaderboards : AbstractSample
         // against your own
 
         // Scope - loads either just your friends scores, or all players of the game
-        // TimeScope - the timerange of the leaderboard you're interested in (daily,weekly,all-time,etc)
+        // TimeScope - the time-range of the leaderboard you're interested in (daily,weekly,all-time,etc)
         
         leaderboard.LoadEntriesForPlayerScope(scope, timeScope, 1, 100, 
             (localPlayerEntry, entries, totalPlayerCount, error) =>
@@ -86,42 +115,38 @@ public class Sample_Leaderboards : AbstractSample
         } );
     }
 
-    private void SubmitScore(GKLeaderboard leaderboard, long score)
+    // There are two ways to submit scores, you can either use a reference to the leaderboard
+    // or you can use the string-id of the leaderboard if you don't have a reference
+    private void OnSendScore_Method1(GKLeaderboard leaderboard, int score)
     {
-        Debug.Log("submit score to leaderboard");
-        
-        // GKLeaderboard.SubmitScore(
-        //     100,
-        //     0, 
-        //     GKLocalPlayer.LocalPlayer,
-        //     new []{"classic"}, 
-        //     (error) =>
-        //     {
-        //         Debug.Log("submitted score to classic leaderboard");
-        //         if (error != null)
-        //             LogNSError(error);
-        //     });
-        
-        leaderboard.SubmitScore(100, 0, GKLocalPlayer.LocalPlayer, (error) =>
-        {
-            if(error != null)
-                LogNSError(error);
-        });
+        Debug.Log($"submit score of {score} to leaderboard {leaderboard.BaseLeaderboardID}");
+        leaderboard.SubmitScore(score, 0, GKLocalPlayer.LocalPlayer, SubmitScoreHandler);
     }
 
-    private void LoadEntries(GKLeaderboard leaderboard)
+    // this is the second method of sending a score, using the leaderboard id (if you don't have a reference)
+    private void OnSendScore_Method2(string leaderboardId, int score)
     {
-        leaderboard.LoadEntriesForPlayers(
-            new []{GKLocalPlayer.LocalPlayer}, 
-            GKLeaderboardTimeScope.Today, 
-            (playersEntry, entries, error) =>
-            {
-                if (error != null)
-                {
-                    LogNSError(error);
-                    return;
-                }
-                Debug.Log($"{leaderboard.BaseLeaderboardID}: local player score: {playersEntry.Score}");
-            });
+        // score - the score to submit
+        // context - optional extra value you can do what you wish with
+        // player - the player we want to submit a score for, usually the local player
+        // leaderboard ids - an array of leaderboard id's we want to send this score to (can send to multiple leaderboards)
+        // completionHandler - a simple callback invoked when the score is submitted, error is not null if there was a problem
+        var player = GKLocalPlayer.LocalPlayer;
+        GKLeaderboard.SubmitScore(score, 0, player, new []{leaderboardId}, SubmitScoreHandler);
+    }
+
+    private void SubmitScoreHandler(NSError error)
+    { 
+        if (error != null)
+        {
+            Debug.LogError($"error submitting score to leaderboard");
+            LogNSError(error);
+        }
+        else
+        {
+            // force a refresh of leaderboard entries
+            Debug.Log($"Score updated for player");
+            setView.InvokeLeaderboardSelected();
+        }
     }
 }
