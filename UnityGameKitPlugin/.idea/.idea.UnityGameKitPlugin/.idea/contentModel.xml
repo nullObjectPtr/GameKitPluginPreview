@@ -112,6 +112,7 @@
             <e p="GKMatchRequest.cs" t="Include" />
             <e p="GKMatchSendDataMode.cs" t="Include" />
             <e p="GKMatchType.cs" t="Include" />
+            <e p="GKNotificationBanner.cs" t="Include" />
             <e p="GKPlayer.cs" t="Include" />
             <e p="GKPlayerConnectionState.cs" t="Include" />
             <e p="GKSavedGame.cs" t="Include" />
