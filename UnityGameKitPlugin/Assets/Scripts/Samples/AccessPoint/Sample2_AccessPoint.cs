@@ -27,15 +27,15 @@ public class Sample2_AccessPoint : AbstractSample
         //StartCoroutine(PrintCoordsCo());
     }
 
-    private IEnumerator PrintCoordsCo()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(1f);
-            if (GKAccessPoint.Shared.Active)
-                UI.ScreenCoords = GKAccessPoint.Shared.FrameInScreenCoordinates;
-        }
-    }
+    // private IEnumerator PrintCoordsCo()
+    // {
+    //     // while (true)
+    //     // {
+    //     //     yield return new WaitForSeconds(1f);
+    //     //     if (GKAccessPoint.Shared.Active)
+    //     //         UI.ScreenCoords = GKAccessPoint.Shared.FrameInScreenCoordinates;
+    //     // }
+    // }
 
     /// Triggered when the UI toggle is pressed
     private void OnToggleAccessPoint(bool showAccessPoint)
