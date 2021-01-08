@@ -80,6 +80,7 @@
             <e p="BuildProcess.cs" t="Include" />
           </e>
           <e p="Runtime" t="Include">
+            <e p="CGRect.cs" t="Include" />
             <e p="ChallengeListener.cs" t="Include" />
             <e p="ExecutionContext.cs" t="Include" />
             <e p="GameKitCallbacks.cs" t="Include" />

@@ -142,6 +142,12 @@ namespace HovelHouse.GameKit
         private static extern void GKAccessPoint_SetPropFocused(HandleRef ptr, bool focused, out IntPtr exceptionPtr);
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern CGRect GKAccessPoint_GetPropFrameInScreenCoordinates(HandleRef ptr);
 
         #endregion
 
@@ -327,6 +333,17 @@ namespace HovelHouse.GameKit
             set
             {
                 GKAccessPoint_SetPropFocused(Handle, value, out IntPtr exceptionPtr);
+            }
+        }
+
+        
+        /// <value>FrameInScreenCoordinates</value>
+        public CGRect FrameInScreenCoordinates
+        {
+            get
+            {
+                CGRect frameInScreenCoordinates = GKAccessPoint_GetPropFrameInScreenCoordinates(Handle);
+                return frameInScreenCoordinates;
             }
         }
 
