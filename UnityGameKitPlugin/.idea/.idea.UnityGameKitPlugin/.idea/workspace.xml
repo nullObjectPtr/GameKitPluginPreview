@@ -16,17 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1871a63-bac4-4425-bacb-d73786e15938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Banner.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Banner/Sample_Banner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Banner/Sample_Banner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/ChatLine.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/ChatLine.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/RealTimeMatchDelegate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/RealTimeChatView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/RealTimeChatView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/Sample_RealTimeMatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/Sample_RealTimeMatch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2_AccessPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2_AccessPoint.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +51,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Banner/Sample_Banner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/Sample_Leaderboards.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/LeaderboardEntryView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/CGRect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2UI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2_AccessPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/TurnBasedMatch/Sample_TurnBasedMatch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKTurnBasedMatchmakerViewController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKNotificationBanner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/f4/7d925689/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.10f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/3a/305fd913/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -75,10 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/IBinaryWritable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputFrame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SentQueue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Setup/LocalSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameClient.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKLocalPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/QuickTest.cs" />
@@ -87,7 +78,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MyMatchDelegate.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKPlayer.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/InvocationRecord.cs" />
-        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitCallbacks.cs" />
         <option value="$PROJECT_DIR$/Packages/CloudKit/Editor/BuildProcess.cs" />
         <option value="$PROJECT_DIR$/Assets/AbstractSample.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievementDescription.cs" />
@@ -125,7 +115,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/RealTimeChatView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/RealTimeMatchDelegate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/Sample_RealTimeMatch.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitCallbacks.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKNotificationBanner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Banner/Sample_Banner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2UI.cs" />
+        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2_AccessPoint.cs" />
       </list>
     </option>
   </component>
@@ -208,7 +203,8 @@
       <workItem from="1609697636193" duration="51000" />
       <workItem from="1609697882982" duration="193000" />
       <workItem from="1609698396117" duration="12564000" />
-      <workItem from="1610057795275" duration="2172000" />
+      <workItem from="1610057795275" duration="3184000" />
+      <workItem from="1610147216937" duration="2018000" />
     </task>
     <servers />
   </component>
@@ -332,11 +328,11 @@
     </state>
     <state x="200" y="147" width="949" height="534" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1601991030558" />
     <state x="200" y="166" width="949" height="518" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1609705168488" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1610060698261">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1610143866296">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="305" y="104" width="670" height="697" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1609626609448" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1610060698261" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1610143866296" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
