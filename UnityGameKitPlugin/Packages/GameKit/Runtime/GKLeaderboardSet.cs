@@ -2,7 +2,7 @@
 //  GKLeaderboardSet.cs
 //
 //  Created by Jonathan Culp <jonathanculp@gmail.com> on
-//  Copyright © 2020 HovelHouseApps. All rights reserved.
+//  Copyright © 2021 HovelHouseApps. All rights reserved.
 //  Unauthorized copying of this file, via any medium is strictly prohibited
 //  Proprietary and confidential
 //
@@ -121,7 +121,7 @@ namespace HovelHouse.GameKit
         private static void LoadLeaderboardSetsWithCompletionHandlerCallback(
             ulong invocationId,
             IntPtr[] leaderboardSets,
-		    long leaderboardSetsCount,
+		long leaderboardSetsCount,
             IntPtr error)
         {
             var invocation = new InvocationRecord(invocationId);

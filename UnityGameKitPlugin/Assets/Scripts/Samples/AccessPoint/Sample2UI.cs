@@ -16,6 +16,14 @@ public class Sample2UI : MonoBehaviour
 
     public TMP_Dropdown AccessPointLocationDropdown;
     public TMP_Dropdown ViewStateDropdown;
+    public TMP_Text ScreenCoordsTextMesh;
+
+    public CGRect ScreenCoords
+    {
+        set =>
+            ScreenCoordsTextMesh.text =
+                $"origin: ({value.origin.x},{value.origin.y}) size: ({value.size.x},{value.size.y})";
+    }
 
     public bool interactable
     {

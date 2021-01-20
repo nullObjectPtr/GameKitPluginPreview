@@ -10,11 +10,12 @@ using UnityEngine;
 public class Sample2_AccessPoint : AbstractSample
 {
     public Sample2UI UI;
-
+    
     void Awake()
     {
         OnAuthenticated();
     }
+    
     protected override void OnAuthenticated()
     {
         // UI is non-interactable until we can authenticate
@@ -22,6 +23,18 @@ public class Sample2_AccessPoint : AbstractSample
         UI.OnToggleAccessPoint = OnToggleAccessPoint;
         UI.OnChangeAccessPointLocation = OnChangeAccessPointLocation;
         UI.OnShowDashboard = OnShowDashboard;
+
+        StartCoroutine(PrintCoordsCo());
+    }
+
+    private IEnumerator PrintCoordsCo()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1f);
+            if (GKAccessPoint.Shared.Active)
+                UI.ScreenCoords = GKAccessPoint.Shared.FrameInScreenCoordinates;
+        }
     }
 
     /// Triggered when the UI toggle is pressed
@@ -35,10 +48,6 @@ public class Sample2_AccessPoint : AbstractSample
     private void OnChangeAccessPointLocation(GKAccessPointLocation location)
     {
         GKAccessPoint.Shared.Location = location;
-        
-        // TODO - this returns a rect where the access point is rendering
-        // You could use this to adjust your UI around the access point if you couldn't do so at author time
-        // GKAccessPoint.Shared.frameInScreenCoordinates
     }
 
     // You can jump directly to the gamecenter dashboard opened to a certain UI view programatticaly by passing the

@@ -2,7 +2,7 @@
 //  GKAccessPoint.cs
 //
 //  Created by Jonathan Culp <jonathanculp@gmail.com> on
-//  Copyright © 2020 HovelHouseApps. All rights reserved.
+//  Copyright © 2021 HovelHouseApps. All rights reserved.
 //  Unauthorized copying of this file, via any medium is strictly prohibited
 //  Proprietary and confidential
 //
@@ -37,7 +37,7 @@ namespace HovelHouse.GameKit
         #endif
         private static extern void GKAccessPoint_triggerAccessPointWithHandler(
             HandleRef ptr, 
-            ulong invocationId, GKAccessPointDelegate handler,
+            ulong invocationId, VoidDelegate handler,
             out IntPtr exceptionPtr);
 
         
@@ -49,7 +49,7 @@ namespace HovelHouse.GameKit
         private static extern void GKAccessPoint_triggerAccessPointWithState_handler(
             HandleRef ptr, 
             long state,
-            ulong invocationId, GKAccessPointDelegate handler,
+            ulong invocationId, VoidDelegate handler,
             out IntPtr exceptionPtr);
 
         
@@ -142,6 +142,12 @@ namespace HovelHouse.GameKit
         private static extern void GKAccessPoint_SetPropFocused(HandleRef ptr, bool focused, out IntPtr exceptionPtr);
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern CGRect GKAccessPoint_GetPropFrameInScreenCoordinates(HandleRef ptr);
 
         #endregion
 
@@ -178,7 +184,7 @@ namespace HovelHouse.GameKit
         
         private static readonly Dictionary<InvocationRecord,ExecutionContext> TriggerAccessPointWithHandlerCallbacks = new Dictionary<InvocationRecord,ExecutionContext>();
 
-        [MonoPInvokeCallback(typeof(GKAccessPointDelegate))]
+        [MonoPInvokeCallback(typeof(VoidDelegate))]
         private static void TriggerAccessPointWithHandlerCallback(
             ulong invocationId
             )
@@ -221,7 +227,7 @@ namespace HovelHouse.GameKit
         
         private static readonly Dictionary<InvocationRecord,ExecutionContext> TriggerAccessPointWithStateCallbacks = new Dictionary<InvocationRecord,ExecutionContext>();
 
-        [MonoPInvokeCallback(typeof(GKAccessPointDelegate))]
+        [MonoPInvokeCallback(typeof(VoidDelegate))]
         private static void TriggerAccessPointWithStateCallback(
             ulong invocationId
             )
@@ -327,6 +333,17 @@ namespace HovelHouse.GameKit
             set
             {
                 GKAccessPoint_SetPropFocused(Handle, value, out IntPtr exceptionPtr);
+            }
+        }
+
+        
+        /// <value>FrameInScreenCoordinates</value>
+        public CGRect FrameInScreenCoordinates
+        {
+            get
+            {
+                CGRect frameInScreenCoordinates = GKAccessPoint_GetPropFrameInScreenCoordinates(Handle);
+                return frameInScreenCoordinates;
             }
         }
 

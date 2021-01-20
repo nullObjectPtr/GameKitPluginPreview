@@ -80,6 +80,7 @@
             <e p="BuildProcess.cs" t="Include" />
           </e>
           <e p="Runtime" t="Include">
+            <e p="CGRect.cs" t="Include" />
             <e p="ChallengeListener.cs" t="Include" />
             <e p="ExecutionContext.cs" t="Include" />
             <e p="GameKitCallbacks.cs" t="Include" />
@@ -112,6 +113,7 @@
             <e p="GKMatchRequest.cs" t="Include" />
             <e p="GKMatchSendDataMode.cs" t="Include" />
             <e p="GKMatchType.cs" t="Include" />
+            <e p="GKNotificationBanner.cs" t="Include" />
             <e p="GKPlayer.cs" t="Include" />
             <e p="GKPlayerConnectionState.cs" t="Include" />
             <e p="GKSavedGame.cs" t="Include" />
