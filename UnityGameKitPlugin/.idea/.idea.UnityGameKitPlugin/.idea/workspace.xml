@@ -16,10 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1871a63-bac4-4425-bacb-d73786e15938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/GameKit/Runtime/bin/macOS/HHGameKitMacOS.dylib.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,6 @@
         <option value="$PROJECT_DIR$/Assets/Sample2_Leaderboards.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Sample2UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Sample2_AccessPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPointLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Sample3_Achievements.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AchievementsSampleUI.cs" />
@@ -127,6 +125,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2_AccessPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/TurnBasedMatch/MyTurnBasedMatchmakerDelegate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" />
       </list>
     </option>
   </component>
@@ -366,6 +365,19 @@
           <line>116</line>
           <properties documentPath="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKBasePlayer.cs" initialLine="121" />
           <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs</url>
+          <line>12</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" initialLine="12">
+            <startOffsets>
+              <option value="306" />
+            </startOffsets>
+            <endOffsets>
+              <option value="324" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="138" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
