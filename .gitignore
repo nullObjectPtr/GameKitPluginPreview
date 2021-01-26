@@ -2,3 +2,7 @@
 .DS_Store
 
 GameKitPlugin/Build/
+
+BuildHelpers/MacDev_GameKit.provisionprofile
+
+BuildHelpers/
