@@ -104,48 +104,6 @@ namespace HovelHouse.GameKit
             }
         }
         
-        [MonoPInvokeCallback(typeof(GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFindMatch))]
-        public static void turnBasedMatchmakerViewController_didFindMatch(
-            IntPtr ptr,
-            IntPtr viewController, 
-            IntPtr match)
-        {
-            try 
-            {
-                Debug.Log("turnBasedMatchmakerViewController_didFindMatch");
-                var inst = classInstances[ptr.ToInt64()];
-                
-                inst.turnBasedMatchmakerViewController_didFindMatch(
-                    viewController == IntPtr.Zero ? null : new GKTurnBasedMatchmakerViewController(viewController),
-                    match == IntPtr.Zero ? null : new GKTurnBasedMatch(match));
-            }
-            catch(Exception ex)
-            {
-                Debug.LogError(ex);
-            }
-        }
-        
-        [MonoPInvokeCallback(typeof(GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_playerQuitForMatch))]
-        public static void turnBasedMatchmakerViewController_playerQuitForMatch(
-            IntPtr ptr,
-            IntPtr viewController, 
-            IntPtr match)
-        {
-            try 
-            {
-                Debug.Log("turnBasedMatchmakerViewController_playerQuitForMatch");
-                var inst = classInstances[ptr.ToInt64()];
-                
-                inst.turnBasedMatchmakerViewController_playerQuitForMatch(
-                    viewController == IntPtr.Zero ? null : new GKTurnBasedMatchmakerViewController(viewController),
-                    match == IntPtr.Zero ? null : new GKTurnBasedMatch(match));
-            }
-            catch(Exception ex)
-            {
-                Debug.LogError(ex);
-            }
-        }
-        
         
         
         public virtual void turnBasedMatchmakerViewControllerWasCancelled(
@@ -157,20 +115,6 @@ namespace HovelHouse.GameKit
         public virtual void turnBasedMatchmakerViewController_didFailWithError(
             GKTurnBasedMatchmakerViewController viewController,
             NSError error)
-        {
-            
-        }
-        
-        public virtual void turnBasedMatchmakerViewController_didFindMatch(
-            GKTurnBasedMatchmakerViewController viewController,
-            GKTurnBasedMatch match)
-        {
-            
-        }
-        
-        public virtual void turnBasedMatchmakerViewController_playerQuitForMatch(
-            GKTurnBasedMatchmakerViewController viewController,
-            GKTurnBasedMatch match)
         {
             
         }

@@ -265,24 +265,6 @@ namespace HovelHouse.GameKit
             
         }
         
-        private static readonly Dictionary<InvocationRecord,ExecutionContext<NSError>> ReportAchievementsCallbacks = new Dictionary<InvocationRecord,ExecutionContext<NSError>>();
-
-        [MonoPInvokeCallback(typeof(StaticCompletionDelegate))]
-        private static void ReportAchievementsCallback(
-            ulong invocationId,
-            IntPtr error)
-        {
-            var invocation = new InvocationRecord(invocationId);
-            var executionContext = ReportAchievementsCallbacks[invocation];
-            ReportAchievementsCallbacks.Remove(invocation);
-            
-            executionContext.Invoke(
-                    error == IntPtr.Zero ? null : new NSError(error));
-        }
-
-        
-
-        
         /// <summary>
         /// </summary>
         /// <param name="completionHandler"></param>
@@ -352,6 +334,26 @@ namespace HovelHouse.GameKit
             }
             
         }
+        
+        private static readonly Dictionary<InvocationRecord,ExecutionContext<NSError>> ReportAchievementsCallbacks = new Dictionary<InvocationRecord,ExecutionContext<NSError>>();
+
+        [MonoPInvokeCallback(typeof(StaticCompletionDelegate))]
+        private static void ReportAchievementsCallback(
+            ulong invocationId,
+            IntPtr error)
+        {
+            var invocation = new InvocationRecord(invocationId);
+            var executionContext = ReportAchievementsCallbacks[invocation];
+            ReportAchievementsCallbacks.Remove(invocation);
+            
+            executionContext.Invoke(
+                    error == IntPtr.Zero ? null : new NSError(error));
+        }
+
+        
+
+        
+        
         
         public GKAchievement(
             string identifier

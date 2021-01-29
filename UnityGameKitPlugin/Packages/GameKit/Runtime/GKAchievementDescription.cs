@@ -36,8 +36,37 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern IntPtr GKAchievementDescription_incompleteAchievementImage(
+            out IntPtr exceptionPtr);
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern IntPtr GKAchievementDescription_placeholderCompletedAchievementImage(
+            out IntPtr exceptionPtr);
+
+        
+
+        
+
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern void GKAchievementDescription_loadImageWithCompletionHandler(
+            HandleRef ptr, 
+            ulong invocationId, ImageDelegate completionHandler,
+            out IntPtr exceptionPtr);
 
         
 
@@ -158,9 +187,92 @@ namespace HovelHouse.GameKit
         
 
         
+        /// <summary>
+        /// </summary>
+        /// 
+        /// <returns>val</returns>
+        public static UIImage IncompleteAchievementImage()
+        { 
+            var val = GKAchievementDescription_incompleteAchievementImage(
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+            return val == IntPtr.Zero ? null : new UIImage(val);
+        }
+        
+
+        
+        /// <summary>
+        /// </summary>
+        /// 
+        /// <returns>val</returns>
+        public static UIImage PlaceholderCompletedAchievementImage()
+        { 
+            var val = GKAchievementDescription_placeholderCompletedAchievementImage(
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+            return val == IntPtr.Zero ? null : new UIImage(val);
+        }
+        
+
+        
         
         
 
+
+        
+        /// <summary>
+        /// </summary>
+        /// <param name="completionHandler"></param>
+        /// <returns>void</returns>
+        public void LoadImageWithCompletionHandler(
+            Action<UIImage,NSError> completionHandler)
+        { 
+            var completionHandlerCall = new InvocationRecord(Handle);
+            LoadImageWithCompletionHandlerCallbacks[completionHandlerCall] = new ExecutionContext<UIImage,NSError>(completionHandler);
+            
+            GKAchievementDescription_loadImageWithCompletionHandler(
+                Handle,
+                completionHandlerCall.id, LoadImageWithCompletionHandlerCallback,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+        }
+        
+        private static readonly Dictionary<InvocationRecord,ExecutionContext<UIImage,NSError>> LoadImageWithCompletionHandlerCallbacks = new Dictionary<InvocationRecord,ExecutionContext<UIImage,NSError>>();
+
+        [MonoPInvokeCallback(typeof(ImageDelegate))]
+        private static void LoadImageWithCompletionHandlerCallback(
+            ulong invocationId,
+            IntPtr image,
+            IntPtr error)
+        {
+            var invocation = new InvocationRecord(invocationId);
+            var executionContext = LoadImageWithCompletionHandlerCallbacks[invocation];
+            LoadImageWithCompletionHandlerCallbacks.Remove(invocation);
+            
+            executionContext.Invoke(
+                    image == IntPtr.Zero ? null : new UIImage(image),
+                    error == IntPtr.Zero ? null : new NSError(error));
+        }
+
+        
 
         
         
