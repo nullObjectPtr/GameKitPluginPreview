@@ -201,5 +201,10 @@ namespace HovelHouse.GameKit
 	public delegate void VoidDelegate(
         ulong invocationId);
     
+	public delegate void ImageDelegate(
+        ulong invocationId,
+    	IntPtr image,
+    	IntPtr error);
+    
 }
 

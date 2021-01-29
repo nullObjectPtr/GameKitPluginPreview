@@ -33,6 +33,60 @@ namespace HovelHouse.GameKit
         
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern IntPtr NSError_stringForUserInfoKey(
+            HandleRef ptr, 
+            string key,
+            out IntPtr exceptionPtr);
+
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern long NSError_intForUserInfoKey(
+            HandleRef ptr, 
+            string key,
+            out IntPtr exceptionPtr);
+
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern float NSError_floatForUserInfoKey(
+            HandleRef ptr, 
+            string key,
+            out IntPtr exceptionPtr);
+
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern IntPtr NSError_errorForUserInfoKey(
+            HandleRef ptr, 
+            string key,
+            out IntPtr exceptionPtr);
+
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern IntPtr NSError_userInfoAsString(
+            HandleRef ptr, 
+            out IntPtr exceptionPtr);
+
+        
 
         
 
@@ -97,6 +151,123 @@ namespace HovelHouse.GameKit
         
         
 
+
+        
+        /// <summary>
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>val</returns>
+        public string StringForUserInfoKey(
+            string key)
+        { 
+            
+            var val = NSError_stringForUserInfoKey(
+                Handle,
+                key,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+            return Marshal.PtrToStringAuto(val);
+        }
+        
+
+        
+        /// <summary>
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>val</returns>
+        public long IntForUserInfoKey(
+            string key)
+        { 
+            
+            var val = NSError_intForUserInfoKey(
+                Handle,
+                key,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+            return val;
+        }
+        
+
+        
+        /// <summary>
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>val</returns>
+        public float FloatForUserInfoKey(
+            string key)
+        { 
+            
+            var val = NSError_floatForUserInfoKey(
+                Handle,
+                key,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+            return val;
+        }
+        
+
+        
+        /// <summary>
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>val</returns>
+        public NSError ErrorForUserInfoKey(
+            string key)
+        { 
+            
+            var val = NSError_errorForUserInfoKey(
+                Handle,
+                key,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+            return val == IntPtr.Zero ? null : new NSError(val);
+        }
+        
+
+        
+        /// <summary>
+        /// </summary>
+        /// 
+        /// <returns>val</returns>
+        public string UserInfoAsString()
+        { 
+            var val = NSError_userInfoAsString(
+                Handle,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+            return Marshal.PtrToStringAuto(val);
+        }
+        
 
         
         

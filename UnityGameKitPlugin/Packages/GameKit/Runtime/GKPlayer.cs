@@ -2,7 +2,7 @@
 //  GKPlayer.cs
 //
 //  Created by Jonathan Culp <jonathanculp@gmail.com> on
-//  Copyright © 2020 HovelHouseApps. All rights reserved.
+//  Copyright © 2021 HovelHouseApps. All rights reserved.
 //  Unauthorized copying of this file, via any medium is strictly prohibited
 //  Proprietary and confidential
 //
@@ -40,6 +40,16 @@ namespace HovelHouse.GameKit
         
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern IntPtr GKPlayer_anonymousGuestPlayerWithIdentifier(
+            string guestIdentifier, 
+            out IntPtr exceptionPtr
+            );
+        
 
         
         #if UNITY_IPHONE || UNITY_TVOS
@@ -49,6 +59,18 @@ namespace HovelHouse.GameKit
         #endif
         private static extern bool GKPlayer_scopedIDsArePersistent(
             HandleRef ptr, 
+            out IntPtr exceptionPtr);
+
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern void GKPlayer_loadPhotoForSize_withCompletionHandler(
+            HandleRef ptr, 
+            long size,
+            ulong invocationId, ImageDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
@@ -97,6 +119,14 @@ namespace HovelHouse.GameKit
         private static extern IntPtr GKPlayer_GetPropGuestIdentifier(HandleRef ptr);
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern bool GKPlayer_GetPropIsInvitable(HandleRef ptr);
+
+        
 
         #endregion
 
@@ -143,8 +173,6 @@ namespace HovelHouse.GameKit
             var executionContext = LoadPlayersForIdentifiersCallbacks[invocation];
             LoadPlayersForIdentifiersCallbacks.Remove(invocation);
             
-            Debug.Log($"playersCount: {playersCount}");
-
             executionContext.Invoke(
                     players == null ? null : players.Select(x => new GKPlayer(x)).ToArray(),
                     error == IntPtr.Zero ? null : new NSError(error));
@@ -153,6 +181,25 @@ namespace HovelHouse.GameKit
         
 
         
+        
+        
+        public GKPlayer(
+            string guestIdentifier
+            )
+        {
+            
+            IntPtr ptr = GKPlayer_anonymousGuestPlayerWithIdentifier(
+                guestIdentifier, 
+                out IntPtr exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+
+            Handle = new HandleRef(this,ptr);
+        }
         
         
 
@@ -179,13 +226,59 @@ namespace HovelHouse.GameKit
         
 
         
+        /// <summary>
+        /// </summary>
+        /// <param name="size"></param><param name="completionHandler"></param>
+        /// <returns>void</returns>
+        public void LoadPhotoForSize(
+            GKPhotoSize size, 
+            Action<UIImage,NSError> completionHandler)
+        { 
+            
+            var completionHandlerCall = new InvocationRecord(Handle);
+            LoadPhotoForSizeCallbacks[completionHandlerCall] = new ExecutionContext<UIImage,NSError>(completionHandler);
+            
+            GKPlayer_loadPhotoForSize_withCompletionHandler(
+                Handle,
+                (long) size,
+                completionHandlerCall.id, LoadPhotoForSizeCallback,
+                out var exceptionPtr);
+
+            if(exceptionPtr != IntPtr.Zero)
+            {
+                var nativeException = new NSException(exceptionPtr);
+                throw new GameKitException(nativeException, nativeException.Reason);
+            }
+            
+        }
+        
+        private static readonly Dictionary<InvocationRecord,ExecutionContext<UIImage,NSError>> LoadPhotoForSizeCallbacks = new Dictionary<InvocationRecord,ExecutionContext<UIImage,NSError>>();
+
+        [MonoPInvokeCallback(typeof(ImageDelegate))]
+        private static void LoadPhotoForSizeCallback(
+            ulong invocationId,
+            IntPtr image,
+            IntPtr error)
+        {
+            var invocation = new InvocationRecord(invocationId);
+            var executionContext = LoadPhotoForSizeCallbacks[invocation];
+            LoadPhotoForSizeCallbacks.Remove(invocation);
+            
+            executionContext.Invoke(
+                    image == IntPtr.Zero ? null : new UIImage(image),
+                    error == IntPtr.Zero ? null : new NSError(error));
+        }
+
+        
+
+        
         
         
         /// <value>GamePlayerID</value>
         public string GamePlayerID
         {
-            get 
-            { 
+            get
+            {
                 IntPtr gamePlayerID = GKPlayer_GetPropGamePlayerID(Handle);
                 return Marshal.PtrToStringAuto(gamePlayerID);
             }
@@ -195,8 +288,8 @@ namespace HovelHouse.GameKit
         /// <value>TeamPlayerID</value>
         public string TeamPlayerID
         {
-            get 
-            { 
+            get
+            {
                 IntPtr teamPlayerID = GKPlayer_GetPropTeamPlayerID(Handle);
                 return Marshal.PtrToStringAuto(teamPlayerID);
             }
@@ -206,8 +299,8 @@ namespace HovelHouse.GameKit
         /// <value>Alias</value>
         public string Alias
         {
-            get 
-            { 
+            get
+            {
                 IntPtr alias = GKPlayer_GetPropAlias(Handle);
                 return Marshal.PtrToStringAuto(alias);
             }
@@ -217,9 +310,9 @@ namespace HovelHouse.GameKit
         /// <value>DisplayName</value>
         public string DisplayName
         {
-            get 
-            { 
-                IntPtr displayName = GKPlayer_GetPropDisplayName(Handle);
+            get
+            {
+                var displayName = GKPlayer_GetPropDisplayName(Handle);
                 return Marshal.PtrToStringAuto(displayName);
             }
         }
@@ -228,10 +321,21 @@ namespace HovelHouse.GameKit
         /// <value>GuestIdentifier</value>
         public string GuestIdentifier
         {
-            get 
-            { 
+            get
+            {
                 IntPtr guestIdentifier = GKPlayer_GetPropGuestIdentifier(Handle);
                 return Marshal.PtrToStringAuto(guestIdentifier);
+            }
+        }
+
+        
+        /// <value>IsInvitable</value>
+        public bool IsInvitable
+        {
+            get
+            {
+                bool isInvitable = GKPlayer_GetPropIsInvitable(Handle);
+                return isInvitable;
             }
         }
 

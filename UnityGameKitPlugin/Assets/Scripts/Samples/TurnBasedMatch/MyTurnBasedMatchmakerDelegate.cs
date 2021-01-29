@@ -21,16 +21,4 @@ public class MyTurnBasedMatchmakerDelegate : GKTurnBasedMatchmakerViewController
         
         viewController.Dismiss();
     }
-
-    public override void turnBasedMatchmakerViewController_didFindMatch(GKTurnBasedMatchmakerViewController viewController,
-        GKTurnBasedMatch match)
-    {
-        viewController.Dismiss();
-    }
-
-    public override void turnBasedMatchmakerViewController_playerQuitForMatch(GKTurnBasedMatchmakerViewController viewController,
-        GKTurnBasedMatch match)
-    {
-        viewController.Dismiss();
-    }
 }
