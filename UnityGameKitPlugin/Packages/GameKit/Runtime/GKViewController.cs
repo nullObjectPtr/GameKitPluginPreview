@@ -20,7 +20,7 @@ namespace HovelHouse.GameKit
     /// <summary>
     /// 
     /// </summary>
-    public class UIViewController : UnmanagedObject, IDisposable
+    public class GKViewController : UnmanagedObject, IDisposable
     {
         #region dll
 
@@ -30,7 +30,7 @@ namespace HovelHouse.GameKit
         #else
         [DllImport("HHGameKitMacOS")]
         #endif
-        private static extern void UIViewController_present(
+        private static extern void GKViewController_present(
             HandleRef ptr, 
             out IntPtr exceptionPtr);
 
@@ -39,7 +39,7 @@ namespace HovelHouse.GameKit
         #else
         [DllImport("HHGameKitMacOS")]
         #endif
-        private static extern void UIViewController_dismiss(
+        private static extern void GKViewController_dismiss(
             HandleRef ptr, 
             out IntPtr exceptionPtr);
 
@@ -48,9 +48,9 @@ namespace HovelHouse.GameKit
 
         #endregion
 
-        internal UIViewController(IntPtr ptr) : base(ptr) {}
+        internal GKViewController(IntPtr ptr) : base(ptr) {}
         
-        internal UIViewController() {}
+        internal GKViewController() {}
         
         
         
@@ -63,7 +63,7 @@ namespace HovelHouse.GameKit
         /// <returns>void</returns>
         public void Present()
         { 
-            UIViewController_present(
+            GKViewController_present(
                 Handle,
                 out var exceptionPtr);
 
@@ -80,7 +80,7 @@ namespace HovelHouse.GameKit
         /// <returns>void</returns>
         public void Dismiss()
         { 
-            UIViewController_dismiss(
+            GKViewController_dismiss(
                 Handle,
                 out var exceptionPtr);
 
@@ -118,7 +118,7 @@ namespace HovelHouse.GameKit
             }
         }
 
-        ~UIViewController()
+        ~GKViewController()
         {
             // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
             Dispose(false);

@@ -197,6 +197,12 @@ namespace HovelHouse.GameKit
             IntPtr ptr,
             IntPtr viewController,
             IntPtr error);
+    // GKGameCenterControllerDelegate
+
+
+    public delegate void GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish(
+            IntPtr ptr,
+            IntPtr gameCenterViewController);
 
     public class GameKitInitializer
     {
@@ -500,6 +506,16 @@ namespace HovelHouse.GameKit
         private static extern void RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError(
             GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError del);
         
+        // GKGameCenterControllerDelegate
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern void RegisterDelegateFor_GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish(
+            GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish del);
+        
         
 
         public static void Init()
@@ -581,6 +597,9 @@ namespace HovelHouse.GameKit
                 GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewControllerWasCancelled);
                 RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError(
                 GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewController_didFailWithError);
+                
+                RegisterDelegateFor_GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish(
+                GKGameCenterControllerDelegate.gameCenterViewControllerDidFinish);
                 
                 
         }

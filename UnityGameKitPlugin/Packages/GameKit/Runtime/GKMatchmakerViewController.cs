@@ -20,7 +20,7 @@ namespace HovelHouse.GameKit
     /// <summary>
     /// 
     /// </summary>
-    public class GKMatchmakerViewController : UnmanagedObject, IDisposable
+    public class GKMatchmakerViewController : GKViewController, IDisposable
     {
         #region dll
 
@@ -48,26 +48,6 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr
             );
         
-
-        
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
-        private static extern void GKMatchmakerViewController_present(
-            HandleRef ptr, 
-            out IntPtr exceptionPtr);
-
-        
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
-        private static extern void GKMatchmakerViewController_dismiss(
-            HandleRef ptr, 
-            out IntPtr exceptionPtr);
 
         
         #if UNITY_IPHONE || UNITY_TVOS
@@ -194,46 +174,6 @@ namespace HovelHouse.GameKit
         
         /// <summary>
         /// </summary>
-        /// 
-        /// <returns>void</returns>
-        public void Present()
-        { 
-            GKMatchmakerViewController_present(
-                Handle,
-                out var exceptionPtr);
-
-            if(exceptionPtr != IntPtr.Zero)
-            {
-                var nativeException = new NSException(exceptionPtr);
-                throw new GameKitException(nativeException, nativeException.Reason);
-            }
-            
-        }
-        
-
-        
-        /// <summary>
-        /// </summary>
-        /// 
-        /// <returns>void</returns>
-        public void Dismiss()
-        { 
-            GKMatchmakerViewController_dismiss(
-                Handle,
-                out var exceptionPtr);
-
-            if(exceptionPtr != IntPtr.Zero)
-            {
-                var nativeException = new NSException(exceptionPtr);
-                throw new GameKitException(nativeException, nativeException.Reason);
-            }
-            
-        }
-        
-
-        
-        /// <summary>
-        /// </summary>
         /// <param name="match"></param>
         /// <returns>void</returns>
         public void AddPlayersToMatch(
@@ -342,7 +282,7 @@ namespace HovelHouse.GameKit
             
         private bool disposedValue = false; // To detect redundant calls
         
-        protected virtual void Dispose(bool disposing)
+        protected override void Dispose(bool disposing)
         {
             if (!disposedValue)
             {
@@ -359,7 +299,7 @@ namespace HovelHouse.GameKit
         }
 
         // This code added to correctly implement the disposable pattern.
-        public void Dispose()
+        public new void Dispose()
         {
             // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
             Dispose(true);
