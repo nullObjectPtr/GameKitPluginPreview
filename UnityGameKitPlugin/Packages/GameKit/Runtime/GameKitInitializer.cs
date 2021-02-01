@@ -201,8 +201,7 @@ namespace HovelHouse.GameKit
 
 
     public delegate void GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish(
-            IntPtr ptr,
-            IntPtr gameCenterViewController);
+            IntPtr ptr);
 
     public class GameKitInitializer
     {
@@ -599,7 +598,7 @@ namespace HovelHouse.GameKit
                 GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewController_didFailWithError);
                 
                 RegisterDelegateFor_GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish(
-                GKGameCenterControllerDelegate.gameCenterViewControllerDidFinish);
+                GKGameCenterViewController.gameCenterViewControllerDidFinish);
                 
                 
         }

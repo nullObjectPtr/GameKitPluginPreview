@@ -83,22 +83,41 @@ namespace HovelHouse.GameKit
         #else
         [DllImport("HHGameKitMacOS")]
         #endif
-        private static extern IntPtr GKGameCenterViewController_GetPropGameCenterDelegate(HandleRef ptr);
+        private static extern IntPtr GKGameCenterViewController_registerDidFinish(HandleRef thisPtr);
         
         #if UNITY_IPHONE || UNITY_TVOS
         [DllImport("__Internal")]
         #else
         [DllImport("HHGameKitMacOS")]
         #endif
-        private static extern void GKGameCenterViewController_SetPropGameCenterDelegate(HandleRef ptr, IntPtr gameCenterDelegate, out IntPtr exceptionPtr);
+        private static extern void GKGameCenterViewController_unregisterDidFinish(HandleRef thisPtr);
 
-        
 
         #endregion
 
         internal GKGameCenterViewController(IntPtr ptr) : base(ptr) {}
-        
-        
+
+        private Action _didFinish;
+        public Action DidFinish
+        {
+            get { return _didFinish; }
+            set
+            {
+                if (value != null)
+                {
+                    Debug.Log("setting did finish");
+                    classInstances[Handle.Handle] = this;
+                    GKGameCenterViewController_registerDidFinish(Handle);
+                }
+                else
+                {
+                    classInstances.Remove(Handle.Handle);
+                    GKGameCenterViewController_unregisterDidFinish(Handle);
+                }
+
+                _didFinish = value;
+            }
+        }
         
         
         public GKGameCenterViewController(
@@ -182,30 +201,25 @@ namespace HovelHouse.GameKit
             Handle = new HandleRef(this,ptr);
         }
         
+        private static Dictionary<IntPtr,GKGameCenterViewController> classInstances =
+            new Dictionary<IntPtr,GKGameCenterViewController>();
         
-
-
-        
-        
-        
-        /// <value>GameCenterDelegate</value>
-        public GKGameCenterControllerDelegate GameCenterDelegate
+        [MonoPInvokeCallback(typeof(GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish))]
+        public static void gameCenterViewControllerDidFinish(
+            IntPtr ptr)
         {
-            get
+            Debug.Log("GameCenterViewControllerDidFinish");
+            try 
             {
-                IntPtr gameCenterDelegate = GKGameCenterViewController_GetPropGameCenterDelegate(Handle);
-                return gameCenterDelegate == IntPtr.Zero ? null : new GKGameCenterControllerDelegate(gameCenterDelegate);
+                Debug.Log("gameCenterViewControllerDidFinish");
+                var inst = classInstances[ptr];
+                inst.DidFinish?.Invoke();
             }
-            set
+            catch(Exception ex)
             {
-                GKGameCenterViewController_SetPropGameCenterDelegate(Handle, value != null ? HandleRef.ToIntPtr(value.Handle) : IntPtr.Zero, out IntPtr exceptionPtr);
+                Debug.LogError(ex);
             }
         }
-
-        
-
-        
-
         
         #region IDisposable Support
         #if UNITY_IPHONE || UNITY_TVOS

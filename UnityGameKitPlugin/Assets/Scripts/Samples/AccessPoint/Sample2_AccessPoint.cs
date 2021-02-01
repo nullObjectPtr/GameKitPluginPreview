@@ -10,7 +10,8 @@ using UnityEngine;
 public class Sample2_AccessPoint : AbstractSample
 {
     public Sample2UI UI;
-    
+    private GKGameCenterViewController gameCenterView;
+
     void Awake()
     {
         OnAuthenticated();
@@ -57,7 +58,15 @@ public class Sample2_AccessPoint : AbstractSample
     // if you have not done so yet, the UI will open to a default page. 
     private void OnShowDashboard(GKGameCenterViewControllerState viewState)
     {
-        GKAccessPoint.Shared.TriggerAccessPointWithState(viewState, OnAccessPointOpened);
+        //GKAccessPoint.Shared.TriggerAccessPointWithState(viewState, OnAccessPointOpened);
+
+        gameCenterView = new GKGameCenterViewController(viewState);
+        gameCenterView.DidFinish = () =>
+        {
+            Debug.Log("DidFinish");
+            gameCenterView.Dismiss();
+        };
+        gameCenterView.Present();
     }
 
     /// <summary>

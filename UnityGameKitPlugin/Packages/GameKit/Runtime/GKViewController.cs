@@ -104,7 +104,7 @@ namespace HovelHouse.GameKit
         #else
         [DllImport("HHGameKitMacOS")]
         #endif
-        private static extern void UIViewController_Dispose(HandleRef handle);
+        private static extern void GKViewController_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls
         
@@ -113,7 +113,7 @@ namespace HovelHouse.GameKit
             if (!disposedValue)
             {
                 //Debug.Log("UIViewController Dispose");
-                UIViewController_Dispose(Handle);
+                GKViewController_Dispose(Handle);
                 disposedValue = true;
             }
         }
