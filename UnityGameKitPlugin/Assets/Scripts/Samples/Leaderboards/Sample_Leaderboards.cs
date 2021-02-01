@@ -14,9 +14,8 @@ public class Sample_Leaderboards : AbstractSample
         setView.LeaderboardWidget.OnSendScore = OnSendScore_Method1;
         setView.LeaderboardWidget.OnSendScoreWithLeaderboardId = OnSendScore_Method2;
     }
-    protected override void OnAuthenticated()
+    protected override void Run()
     {
-        Debug.Log("Player Authenticated");
         LoadAllLeaderboards();
     }
     

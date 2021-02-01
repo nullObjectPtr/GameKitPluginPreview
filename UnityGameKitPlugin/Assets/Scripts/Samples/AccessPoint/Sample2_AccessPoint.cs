@@ -12,12 +12,7 @@ public class Sample2_AccessPoint : AbstractSample
     public Sample2UI UI;
     private GKGameCenterViewController gameCenterView;
 
-    void Awake()
-    {
-        OnAuthenticated();
-    }
-    
-    protected override void OnAuthenticated()
+    override protected void Run()
     {
         // UI is non-interactable until we can authenticate
         UI.interactable = true;

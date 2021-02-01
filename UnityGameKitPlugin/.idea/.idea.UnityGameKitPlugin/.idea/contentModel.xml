@@ -6,7 +6,6 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Samples" t="Include">
-            <e p="AbstractSample.cs" t="Include" />
             <e p="AccessPoint" t="Include">
               <e p="Sample2_AccessPoint.cs" t="Include" />
               <e p="Sample2UI.cs" t="Include" />
@@ -15,6 +14,10 @@
               <e p="AchievementsSampleUI.cs" t="Include" />
               <e p="AchievementWidget.cs" t="Include" />
               <e p="Sample3_Achievements.cs" t="Include" />
+            </e>
+            <e p="Authentication" t="Include">
+              <e p="AbstractSample.cs" t="Include" />
+              <e p="Sample_Authenticate.cs" t="Include" />
             </e>
             <e p="Banner" t="Include">
               <e p="Sample_Banner.cs" t="Include" />

@@ -16,7 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1871a63-bac4-4425-bacb-d73786e15938" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGameKitPlugin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Authentication/AbstractSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Authentication/AbstractSample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Authentication/Sample_Authenticate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Authentication/Sample_Authenticate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Prefabs/Header.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/Prefabs/Header.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +33,26 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKNotificationBanner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/NSException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Authentication/Sample_Authenticate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Editor/BuildProcess.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitCallbacks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/CGRect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Authentication/AbstractSample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/NSError.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievementDescription.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Banner/Sample_Banner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2UI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2_AccessPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.10f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.10f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKGameCenterViewControllerState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKTurnBasedMatchmakerViewControllerDelegate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Editor/BuildProcess.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitCallbacks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Achievements/Sample3_Achievements.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/LeaderboardSetView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/CGRect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/Sample_Leaderboards.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/LeaderboardView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/LeaderboardEntryView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,6 +60,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/Sample_RealTimeMatch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKGameCenterViewController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/d0/ed11d4cc/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.10f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/RealTimeMatchDelegate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/16/2bdd2930/HandleRef.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPointLocation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,9 +72,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/61/de3ab2b9/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/TurnBasedMatch/MatchListView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/TurnBasedMatch/Sample_TurnBasedMatch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/f4/7d925689/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/TurnBasedMatch/MatchView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/3a/305fd913/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKLeaderboardSet.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,19 +81,12 @@
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/TurnBasedMatch/MyTurnBasedMatchmakerDelegate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKLeaderboardTimeScope.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKLeaderboardPlayerScope.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievementDescription.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/GameKit/Runtime/GKLeaderboard.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/GKPlayer.cs" />
-        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/Plugin/InvocationRecord.cs" />
-        <option value="$PROJECT_DIR$/Packages/CloudKit/Editor/BuildProcess.cs" />
-        <option value="$PROJECT_DIR$/Assets/AbstractSample.cs" />
-        <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAchievementDescription.cs" />
         <option value="$PROJECT_DIR$/Assets/Sample3_Achievements.cs" />
         <option value="$PROJECT_DIR$/Assets/Sample2_Leaderboards.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Sample2UI.cs" />
@@ -110,25 +114,30 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/LeaderboardEntryView.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Editor/BuildProcess.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKLeaderboard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/Sample_Leaderboards.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/LeaderboardSetView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/LeaderboardView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/RealTimeChatView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/RealTimeMatchDelegate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/Sample_RealTimeMatch.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitCallbacks.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKNotificationBanner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Banner/Sample_Banner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2UI.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKAccessPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Samples/TurnBasedMatch/MyTurnBasedMatchmakerDelegate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKGameCenterControllerDelegate.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GameKitInitializer.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKViewController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2_AccessPoint.cs" />
         <option value="$PROJECT_DIR$/Packages/GameKit/Runtime/GKGameCenterViewController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Achievements/Sample3_Achievements.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Leaderboards/Sample_Leaderboards.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/TurnBasedMatch/Sample_TurnBasedMatch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AccessPoint/Sample2_AccessPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/AbstractSample.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Sample_Authenticate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Banner/Sample_Banner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/RealTimeMatch/Sample_RealTimeMatch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Authentication/Sample_Authenticate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Samples/Authentication/AbstractSample.cs" />
       </list>
     </option>
   </component>
@@ -215,7 +224,8 @@
       <workItem from="1610147216937" duration="2018000" />
       <workItem from="1611963721833" duration="292000" />
       <workItem from="1612194797055" duration="3259000" />
-      <workItem from="1612201093310" duration="2853000" />
+      <workItem from="1612201093310" duration="5808000" />
+      <workItem from="1612221758761" duration="832000" />
     </task>
     <servers />
   </component>
@@ -261,11 +271,11 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="200" y="166" width="949" height="518" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1612197353664" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1612202744123">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1612222185310">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="305" y="104" width="670" height="697" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1609626609448" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1612202744123" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1612222185310" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -299,10 +309,10 @@
           <line>12</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Samples/Photos/Sample_Photo.cs" initialLine="12">
             <startOffsets>
-              <option value="306" />
+              <option value="294" />
             </startOffsets>
             <endOffsets>
-              <option value="324" />
+              <option value="312" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="138" />

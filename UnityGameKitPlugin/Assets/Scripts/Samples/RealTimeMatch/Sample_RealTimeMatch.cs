@@ -3,7 +3,7 @@ using System.Text;
 using HovelHouse.GameKit;
 using UnityEngine;
 
-public class Sample_RealTimeMatch : MonoBehaviour
+public class Sample_RealTimeMatch : AbstractSample
 {
     public MatchmakingView MatchmakingView;
     public RealTimeChatView ChatView;
@@ -11,7 +11,7 @@ public class Sample_RealTimeMatch : MonoBehaviour
     private GKMatch match;
     
     // To demo the capabilities of real time matches, we're going to create a simple peer-to-peer chat room
-    void Start()
+    protected override void Run()
     {
         MatchmakingView.OnFindMatch = OnFindMatch;
 

@@ -13,7 +13,7 @@ public class Sample_TurnBasedMatch : AbstractSample
         listView.OnNewMatch = OnNewMatch;
     }
     
-    protected override void OnAuthenticated()
+    protected override void Run()
     {
         LoadInProgressMatches();
     }
