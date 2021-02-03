@@ -423,13 +423,13 @@ namespace HovelHouse.GameKit
         
         
         /// <value>AuthenticateHandler</value>
-        public Action<UIViewController,NSError> AuthenticateHandler
+        public Action<GKViewController,NSError> AuthenticateHandler
         {
             get 
             {
                 if(AuthenticateHandlerCallbacks.TryGetValue(
                     HandleRef.ToIntPtr(Handle), 
-                    out ExecutionContext<UIViewController,NSError> value))
+                    out ExecutionContext<GKViewController,NSError> value))
                 {
                     return value.Callback;
                 }
@@ -445,7 +445,7 @@ namespace HovelHouse.GameKit
                 }
                 else
                 {
-                    AuthenticateHandlerCallbacks[myPtr] = new ExecutionContext<UIViewController,NSError>(value);
+                    AuthenticateHandlerCallbacks[myPtr] = new ExecutionContext<GKViewController,NSError>(value);
                 }
                 GKLocalPlayer_SetPropAuthenticateHandler(Handle, AuthenticateHandlerCallback, out IntPtr exceptionPtr);
 
@@ -457,15 +457,15 @@ namespace HovelHouse.GameKit
             }
         }
 
-        private static readonly Dictionary<IntPtr,ExecutionContext<UIViewController,NSError>> AuthenticateHandlerCallbacks = new Dictionary<IntPtr,ExecutionContext<UIViewController,NSError>>();
+        private static readonly Dictionary<IntPtr,ExecutionContext<GKViewController,NSError>> AuthenticateHandlerCallbacks = new Dictionary<IntPtr,ExecutionContext<GKViewController,NSError>>();
 
         [MonoPInvokeCallback(typeof(AuthenticateHandler))]
         private static void AuthenticateHandlerCallback(IntPtr thisPtr, IntPtr viewController, IntPtr error)
         {
-            if(AuthenticateHandlerCallbacks.TryGetValue(thisPtr, out ExecutionContext<UIViewController,NSError> callback))
+            if(AuthenticateHandlerCallbacks.TryGetValue(thisPtr, out ExecutionContext<GKViewController,NSError> callback))
             {
                 callback.Invoke(
-                        viewController == IntPtr.Zero ? null : new UIViewController(viewController),
+                        viewController == IntPtr.Zero ? null : new GKViewController(viewController),
                         error == IntPtr.Zero ? null : new NSError(error));
             }
         }

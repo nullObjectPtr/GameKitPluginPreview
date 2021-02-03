@@ -11,10 +11,8 @@ public class Sample3_Achievements : AbstractSample
     private Dictionary<string, GKAchievement> _achievementProgress = new Dictionary<string, GKAchievement>();
     private List<GKAchievementDescription> _achievementDescriptions;
     
-    protected override void OnAuthenticated()
+    protected override void Run()
     {
-        Debug.Log("player authenticated");
-
         // Once we load achievement data, and the UI is drawn, this callback handles toggling the achievement earned
         // status for the player
         UI.OnToggleAchievementEarned = OnToggleAchievement;

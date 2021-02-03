@@ -450,15 +450,15 @@ namespace HovelHouse.GameKit
         /// </summary>
         /// <param name="message"></param><param name="players"></param><param name="completionHandler"></param>
         /// <returns>val</returns>
-        public UIViewController ChallengeComposeControllerWithMessage(
+        public GKViewController ChallengeComposeControllerWithMessage(
             string message, 
             GKPlayer[] players, 
-            Action<UIViewController,bool,string[]> completionHandler)
+            Action<GKViewController,bool,string[]> completionHandler)
         { 
             
             
             var completionHandlerCall = new InvocationRecord(Handle);
-            ChallengeComposeControllerWithMessageCallbacks[completionHandlerCall] = new ExecutionContext<UIViewController,bool,string[]>(completionHandler);
+            ChallengeComposeControllerWithMessageCallbacks[completionHandlerCall] = new ExecutionContext<GKViewController,bool,string[]>(completionHandler);
             
             var val = GKAchievement_challengeComposeControllerWithMessage_players_completionHandler(
                 Handle,
@@ -474,10 +474,10 @@ namespace HovelHouse.GameKit
                 throw new GameKitException(nativeException, nativeException.Reason);
             }
             
-            return val == IntPtr.Zero ? null : new UIViewController(val);
+            return val == IntPtr.Zero ? null : new GKViewController(val);
         }
         
-        private static readonly Dictionary<InvocationRecord,ExecutionContext<UIViewController,bool,string[]>> ChallengeComposeControllerWithMessageCallbacks = new Dictionary<InvocationRecord,ExecutionContext<UIViewController,bool,string[]>>();
+        private static readonly Dictionary<InvocationRecord,ExecutionContext<GKViewController,bool,string[]>> ChallengeComposeControllerWithMessageCallbacks = new Dictionary<InvocationRecord,ExecutionContext<GKViewController,bool,string[]>>();
 
         [MonoPInvokeCallback(typeof(GKChallengeComposeCompletionDelegate))]
         private static void ChallengeComposeControllerWithMessageCallback(
@@ -492,7 +492,7 @@ namespace HovelHouse.GameKit
             ChallengeComposeControllerWithMessageCallbacks.Remove(invocation);
             
             executionContext.Invoke(
-                    composeController == IntPtr.Zero ? null : new UIViewController(composeController),
+                    composeController == IntPtr.Zero ? null : new GKViewController(composeController),
                     didIssueChallenge,
                     sentPlayerIDs == null ? null : sentPlayerIDs.Select(x => Marshal.PtrToStringAuto(x)).ToArray());
         }

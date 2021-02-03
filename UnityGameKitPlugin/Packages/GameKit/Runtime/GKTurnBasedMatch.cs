@@ -694,7 +694,8 @@ namespace HovelHouse.GameKit
             LoadMatchDataWithCompletionHandlerCallbacks.Remove(invocation);
 
             var bytes = new byte[matchDataLength];
-            Marshal.Copy(matchData, bytes, 0, (int) matchDataLength);
+            if(matchData != IntPtr.Zero)
+                Marshal.Copy(matchData, bytes, 0, (int) matchDataLength);
             
             executionContext.Invoke(
                     bytes,
@@ -1307,7 +1308,8 @@ namespace HovelHouse.GameKit
                     ref length);
 
                 var bytes = new byte[length];
-                Marshal.Copy(source, bytes, 0, (int) length);
+                if(source != IntPtr.Zero)
+                    Marshal.Copy(source, bytes, 0, (int) length);
                 return bytes;
             }
         }

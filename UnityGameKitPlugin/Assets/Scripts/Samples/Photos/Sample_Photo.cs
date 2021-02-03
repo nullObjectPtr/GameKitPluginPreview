@@ -6,7 +6,7 @@ public class Sample_Photo : AbstractSample
 {
     public Image unityImage;
 
-    protected override void OnAuthenticated()
+    protected override void Run()
     {
         GKLocalPlayer.LocalPlayer.LoadPhotoForSize(GKPhotoSize.Normal, (image, error) =>
         {

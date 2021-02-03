@@ -5,16 +5,15 @@ using HovelHouse.GameKit;
 using TMPro;
 using UnityEngine.UI;
 
-public class Sample_Banner : MonoBehaviour
+public class Sample_Banner : AbstractSample
 {
     public TMP_InputField MessageTextMesh;
     public TMP_InputField TitleTextMesh;
     public Button ShowButton;
     
     public Slider DurationSlider;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    protected override void Run()
     {
         ShowButton.onClick.AddListener(OnShowClick);
     }
