@@ -119,7 +119,10 @@ namespace HovelHouse.GameKit
             {
                 var inst = classInstances[ptr.ToInt64()];
                 var dataBytes = new byte[dataLength];
-				Marshal.Copy(data, dataBytes, 0, (int) dataLength);
+                
+                if(data != IntPtr.Zero)
+				    Marshal.Copy(data, dataBytes, 0, (int) dataLength);
+                
                 inst.match_didReceiveData_fromRemotePlayer(
                     dataBytes,
                     playerGamePlayerID == IntPtr.Zero ? null : Marshal.PtrToStringAuto(playerGamePlayerID));
@@ -141,7 +144,10 @@ namespace HovelHouse.GameKit
             {
                 var inst = classInstances[ptr.ToInt64()];
                 var dataBytes = new byte[dataLength];
-				Marshal.Copy(data, dataBytes, 0, (int) dataLength);
+                
+                if(data != IntPtr.Zero)
+				    Marshal.Copy(data, dataBytes, 0, (int) dataLength);
+                
                 inst.match_didReceiveData_forRecipient_fromRemotePlayer(
                     dataBytes,
                     recipientGamePlayerID == IntPtr.Zero ? null : Marshal.PtrToStringAuto(recipientGamePlayerID),
