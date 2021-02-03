@@ -229,7 +229,7 @@ namespace HovelHouse.GameKit
             get
             {
                 IntPtr matchmakerDelegate = GKMatchmakerViewController_GetPropMatchmakerDelegate(Handle);
-                return matchmakerDelegate == IntPtr.Zero ? null : new MatchmakerViewControllerDelegate(matchmakerDelegate);
+                return matchmakerDelegate == IntPtr.Zero ? null : MatchmakerViewControllerDelegate.GetInstance(matchmakerDelegate);
             }
             set
             {

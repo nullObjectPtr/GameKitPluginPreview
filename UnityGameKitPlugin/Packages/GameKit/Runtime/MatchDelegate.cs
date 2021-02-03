@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Runtime.InteropServices;
 using AOT;
 using UnityEngine;
@@ -24,27 +25,27 @@ namespace HovelHouse.GameKit
         #region dll
         
         #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
+        const string dll = "__Internal";
         #else
-        [DllImport("HHGameKitMacOS")]
+        const string dll = "HHGameKitMacOS";
         #endif
+        
+        [DllImport(dll)]
         private static extern IntPtr MatchDelegate_init(out IntPtr exceptionPtr);
             
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void MatchDelegate_Dispose(HandleRef handle);
             
         #endregion
         
         private static Dictionary<Int64,MatchDelegate> classInstances =
             new Dictionary<Int64,MatchDelegate>();
+            
+        private readonly SynchronizationContext synchronizationContext;
     
-        internal MatchDelegate(IntPtr ptr) : base(ptr)
+        internal static MatchDelegate GetInstance(IntPtr ptr)
         {
-            classInstances[ptr.ToInt64()] = this;
+            return classInstances[ptr.ToInt64()];
         }
         
         public MatchDelegate()
@@ -59,6 +60,7 @@ namespace HovelHouse.GameKit
             }
 
             Handle = new HandleRef(this,ptr);
+            synchronizationContext = SynchronizationContext.Current;
             classInstances[ptr.ToInt64()] = this;
         }
 
@@ -76,10 +78,13 @@ namespace HovelHouse.GameKit
                 Debug.Log("match_player_didChangeConnectionState");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.match_player_didChangeConnectionState(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.match_player_didChangeConnectionState(
                     match == IntPtr.Zero ? null : new GKMatch(match),
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     (GKPlayerConnectionState) state);
+                }, null);
             }
             catch(Exception ex)
             {
@@ -98,9 +103,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("match_didFailWithError");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.match_didFailWithError(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.match_didFailWithError(
                     match == IntPtr.Zero ? null : new GKMatch(match),
                     error == IntPtr.Zero ? null : new NSError(error));
+                }, null);
             }
             catch(Exception ex)
             {

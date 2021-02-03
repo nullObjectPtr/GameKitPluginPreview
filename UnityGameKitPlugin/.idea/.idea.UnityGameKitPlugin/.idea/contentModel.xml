@@ -34,6 +34,7 @@
             <e p="RealTimeMatch" t="Include">
               <e p="MatchmakingView.cs" t="Include" />
               <e p="MyMatchmakerViewControllerDelegate.cs" t="Include" />
+              <e p="PrivateMessageSelectView.cs" t="Include" />
               <e p="RealTimeChatView.cs" t="Include" />
               <e p="RealTimeMatchDelegate.cs" t="Include" />
               <e p="Sample_RealTimeMatch.cs" t="Include" />
