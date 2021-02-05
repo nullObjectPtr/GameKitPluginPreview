@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Runtime.InteropServices;
 using AOT;
 using UnityEngine;
@@ -24,27 +25,27 @@ namespace HovelHouse.GameKit
         #region dll
         
         #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
+        const string dll = "__Internal";
         #else
-        [DllImport("HHGameKitMacOS")]
+        const string dll = "HHGameKitMacOS";
         #endif
+        
+        [DllImport(dll)]
         private static extern IntPtr TurnBasedEventListener_init(out IntPtr exceptionPtr);
             
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void TurnBasedEventListener_Dispose(HandleRef handle);
             
         #endregion
         
         private static Dictionary<Int64,TurnBasedEventListener> classInstances =
             new Dictionary<Int64,TurnBasedEventListener>();
+            
+        private readonly SynchronizationContext synchronizationContext;
     
-        internal TurnBasedEventListener(IntPtr ptr) : base(ptr)
+        internal static TurnBasedEventListener GetInstance(IntPtr ptr)
         {
-            classInstances[ptr.ToInt64()] = this;
+            return classInstances[ptr.ToInt64()];
         }
         
         public TurnBasedEventListener()
@@ -59,6 +60,7 @@ namespace HovelHouse.GameKit
             }
 
             Handle = new HandleRef(this,ptr);
+            synchronizationContext = SynchronizationContext.Current;
             classInstances[ptr.ToInt64()] = this;
         }
 
@@ -76,10 +78,13 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_receivedExchangeCancellation_forMatch");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_receivedExchangeCancellation_forMatch(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_receivedExchangeCancellation_forMatch(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     exchange == IntPtr.Zero ? null : new GKTurnBasedExchange(exchange),
                     match == IntPtr.Zero ? null : new GKTurnBasedMatch(match));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -101,11 +106,14 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_receivedExchangeReplies_forCompletedExchange_forMatch");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_receivedExchangeReplies_forCompletedExchange_forMatch(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_receivedExchangeReplies_forCompletedExchange_forMatch(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     replies == null ? null : replies.Select(x => new GKTurnBasedExchangeReply(x)).ToArray(),
                     exchange == IntPtr.Zero ? null : new GKTurnBasedExchange(exchange),
                     match == IntPtr.Zero ? null : new GKTurnBasedMatch(match));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -125,10 +133,13 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_receivedExchangeRequest_forMatch");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_receivedExchangeRequest_forMatch(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_receivedExchangeRequest_forMatch(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     exchange == IntPtr.Zero ? null : new GKTurnBasedExchange(exchange),
                     match == IntPtr.Zero ? null : new GKTurnBasedMatch(match));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -148,9 +159,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_didRequestMatchWithOtherPlayers");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_didRequestMatchWithOtherPlayers(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_didRequestMatchWithOtherPlayers(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     playersToInvite == null ? null : playersToInvite.Select(x => new GKPlayer(x)).ToArray());
+                }, null);
             }
             catch(Exception ex)
             {
@@ -169,9 +183,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_matchEnded");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_matchEnded(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_matchEnded(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     match == IntPtr.Zero ? null : new GKTurnBasedMatch(match));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -191,10 +208,13 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_receivedTurnEventForMatch_didBecomeActive");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_receivedTurnEventForMatch_didBecomeActive(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_receivedTurnEventForMatch_didBecomeActive(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     match == IntPtr.Zero ? null : new GKTurnBasedMatch(match),
                     didBecomeActive);
+                }, null);
             }
             catch(Exception ex)
             {
@@ -213,9 +233,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_wantsToQuitMatch");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_wantsToQuitMatch(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_wantsToQuitMatch(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     match == IntPtr.Zero ? null : new GKTurnBasedMatch(match));
+                }, null);
             }
             catch(Exception ex)
             {

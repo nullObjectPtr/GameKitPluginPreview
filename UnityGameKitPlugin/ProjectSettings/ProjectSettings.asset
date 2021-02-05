@@ -168,7 +168,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.hovelhouse.unitycloudkitmacosplugin
+    Standalone: com.hovelhouse.gamekit
     iPhone: com.hovelhouse.gamekit
     tvOS: com.hovelhouse.unitycloudkitmacosplugin
   buildNumber:

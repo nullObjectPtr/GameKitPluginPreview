@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Runtime.InteropServices;
 using AOT;
 using UnityEngine;
@@ -24,27 +25,27 @@ namespace HovelHouse.GameKit
         #region dll
         
         #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
+        const string dll = "__Internal";
         #else
-        [DllImport("HHGameKitMacOS")]
+        const string dll = "HHGameKitMacOS";
         #endif
+        
+        [DllImport(dll)]
         private static extern IntPtr ChallengeListener_init(out IntPtr exceptionPtr);
             
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void ChallengeListener_Dispose(HandleRef handle);
             
         #endregion
         
         private static Dictionary<Int64,ChallengeListener> classInstances =
             new Dictionary<Int64,ChallengeListener>();
+            
+        private readonly SynchronizationContext synchronizationContext;
     
-        internal ChallengeListener(IntPtr ptr) : base(ptr)
+        internal static ChallengeListener GetInstance(IntPtr ptr)
         {
-            classInstances[ptr.ToInt64()] = this;
+            return classInstances[ptr.ToInt64()];
         }
         
         public ChallengeListener()
@@ -75,9 +76,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_didReceiveChallenge");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_didReceiveChallenge(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_didReceiveChallenge(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     challenge == IntPtr.Zero ? null : new GKChallenge(challenge));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -96,9 +100,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_wantsToPlayChallenge");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_wantsToPlayChallenge(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_wantsToPlayChallenge(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     challenge == IntPtr.Zero ? null : new GKChallenge(challenge));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -118,10 +125,13 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_didCompleteChallenge_issuedByFriend");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_didCompleteChallenge_issuedByFriend(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_didCompleteChallenge_issuedByFriend(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     challenge == IntPtr.Zero ? null : new GKChallenge(challenge),
                     friendPlayer == IntPtr.Zero ? null : new GKPlayer(friendPlayer));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -141,10 +151,13 @@ namespace HovelHouse.GameKit
                 Debug.Log("player_issuedChallengeWasCompleted_byFriend");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.player_issuedChallengeWasCompleted_byFriend(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.player_issuedChallengeWasCompleted_byFriend(
                     player == IntPtr.Zero ? null : new GKPlayer(player),
                     challenge == IntPtr.Zero ? null : new GKChallenge(challenge),
                     friendPlayer == IntPtr.Zero ? null : new GKPlayer(friendPlayer));
+                }, null);
             }
             catch(Exception ex)
             {

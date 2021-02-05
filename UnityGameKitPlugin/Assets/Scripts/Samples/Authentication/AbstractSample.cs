@@ -20,7 +20,7 @@ public abstract class AbstractSample : MonoBehaviour
 
     protected abstract void Run();
 
-    private void OnBackClick()
+    protected virtual void OnBackClick()
     {
         if (OnBack == null) return;
         OnBack.Invoke();

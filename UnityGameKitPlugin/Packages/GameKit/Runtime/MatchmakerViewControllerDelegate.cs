@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Runtime.InteropServices;
 using AOT;
 using UnityEngine;
@@ -24,27 +25,27 @@ namespace HovelHouse.GameKit
         #region dll
         
         #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
+        const string dll = "__Internal";
         #else
-        [DllImport("HHGameKitMacOS")]
+        const string dll = "HHGameKitMacOS";
         #endif
+        
+        [DllImport(dll)]
         private static extern IntPtr MatchmakerViewControllerDelegate_init(out IntPtr exceptionPtr);
             
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void MatchmakerViewControllerDelegate_Dispose(HandleRef handle);
             
         #endregion
         
         private static Dictionary<Int64,MatchmakerViewControllerDelegate> classInstances =
             new Dictionary<Int64,MatchmakerViewControllerDelegate>();
+            
+        private readonly SynchronizationContext synchronizationContext;
     
-        internal MatchmakerViewControllerDelegate(IntPtr ptr) : base(ptr)
+        internal static MatchmakerViewControllerDelegate GetInstance(IntPtr ptr)
         {
-            classInstances[ptr.ToInt64()] = this;
+            return classInstances[ptr.ToInt64()];
         }
         
         public MatchmakerViewControllerDelegate()
@@ -59,6 +60,7 @@ namespace HovelHouse.GameKit
             }
 
             Handle = new HandleRef(this,ptr);
+            synchronizationContext = SynchronizationContext.Current;
             classInstances[ptr.ToInt64()] = this;
         }
 
@@ -75,9 +77,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("matchmakerViewController_didFindMatch");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.matchmakerViewController_didFindMatch(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.matchmakerViewController_didFindMatch(
                     viewController == IntPtr.Zero ? null : new GKMatchmakerViewController(viewController),
                     match == IntPtr.Zero ? null : new GKMatch(match));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -95,8 +100,11 @@ namespace HovelHouse.GameKit
                 Debug.Log("matchmakerViewControllerWasCancelled");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.matchmakerViewControllerWasCancelled(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.matchmakerViewControllerWasCancelled(
                     viewController == IntPtr.Zero ? null : new GKMatchmakerViewController(viewController));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -115,9 +123,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("matchmakerViewController_didFailWithError");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.matchmakerViewController_didFailWithError(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.matchmakerViewController_didFailWithError(
                     viewController == IntPtr.Zero ? null : new GKMatchmakerViewController(viewController),
                     error == IntPtr.Zero ? null : new NSError(error));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -136,9 +147,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("matchmakerViewController_hostedPlayerDidAccept");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.matchmakerViewController_hostedPlayerDidAccept(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.matchmakerViewController_hostedPlayerDidAccept(
                     viewController == IntPtr.Zero ? null : new GKMatchmakerViewController(viewController),
                     player == IntPtr.Zero ? null : new GKPlayer(player));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -158,9 +172,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("matchmakerViewController_didFindHostedPlayers");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.matchmakerViewController_didFindHostedPlayers(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.matchmakerViewController_didFindHostedPlayers(
                     viewController == IntPtr.Zero ? null : new GKMatchmakerViewController(viewController),
                     players == null ? null : players.Select(x => new GKPlayer(x)).ToArray());
+                }, null);
             }
             catch(Exception ex)
             {

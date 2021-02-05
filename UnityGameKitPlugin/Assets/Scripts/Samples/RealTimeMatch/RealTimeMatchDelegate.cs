@@ -1,9 +1,10 @@
 ﻿using System;
 using HovelHouse.GameKit;
+using UnityEngine;
 
 public class RealTimeChatMatchDelegate : MatchDelegate
 {
-    public Action<byte[]> OnDataRecieved;
+    public Action<byte[], string> OnDataRecieved;
     public Action<byte[], string> OnDataReceivedForRecipient;
     public Action<GKPlayer, GKPlayerConnectionState> OnPlayerChangedConnectionState;
 
@@ -12,14 +13,16 @@ public class RealTimeChatMatchDelegate : MatchDelegate
         OnPlayerChangedConnectionState?.Invoke(player, state);
     }
 
-    public override void match_didReceiveData_fromRemotePlayer(byte[] data, string player)
+    public override void match_didReceiveData_fromRemotePlayer(byte[] data, string playerAlias)
     {
-        OnDataRecieved?.Invoke(data);
+        Debug.Log("Data Recieved");
+        OnDataRecieved?.Invoke(data, playerAlias);
     }
 
-    public override void match_didReceiveData_forRecipient_fromRemotePlayer(byte[] data, string recipientGamePlayerID,
-        string playerGamePlayerID)
+    public override void match_didReceiveData_forRecipient_fromRemotePlayer(byte[] data, string recipientId,
+        string senderId)
     {
-        OnDataReceivedForRecipient?.Invoke(data, playerGamePlayerID);
+        Debug.Log("Data Recieved for Recipient");
+        OnDataReceivedForRecipient?.Invoke(data, senderId);
     }
 }

@@ -338,7 +338,7 @@ namespace HovelHouse.GameKit
             get
             {
                 IntPtr del = GKMatch_GetPropDelegate(Handle);
-                return del == IntPtr.Zero ? null : new MatchDelegate(del);
+                return del == IntPtr.Zero ? null : MatchDelegate.GetInstance(del);
             }
             set
             {
