@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Runtime.InteropServices;
 using AOT;
 using UnityEngine;
@@ -24,27 +25,27 @@ namespace HovelHouse.GameKit
         #region dll
         
         #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
+        const string dll = "__Internal";
         #else
-        [DllImport("HHGameKitMacOS")]
+        const string dll = "HHGameKitMacOS";
         #endif
+        
+        [DllImport(dll)]
         private static extern IntPtr GKTurnBasedMatchmakerViewControllerDelegate_init(out IntPtr exceptionPtr);
             
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatchmakerViewControllerDelegate_Dispose(HandleRef handle);
             
         #endregion
         
         private static Dictionary<Int64,GKTurnBasedMatchmakerViewControllerDelegate> classInstances =
             new Dictionary<Int64,GKTurnBasedMatchmakerViewControllerDelegate>();
+            
+        private readonly SynchronizationContext synchronizationContext;
     
-        internal GKTurnBasedMatchmakerViewControllerDelegate(IntPtr ptr) : base(ptr)
+        internal static GKTurnBasedMatchmakerViewControllerDelegate GetInstance(IntPtr ptr)
         {
-            classInstances[ptr.ToInt64()] = this;
+            return classInstances[ptr.ToInt64()];
         }
         
         public GKTurnBasedMatchmakerViewControllerDelegate()
@@ -59,6 +60,7 @@ namespace HovelHouse.GameKit
             }
 
             Handle = new HandleRef(this,ptr);
+            synchronizationContext = SynchronizationContext.Current;
             classInstances[ptr.ToInt64()] = this;
         }
 
@@ -74,8 +76,11 @@ namespace HovelHouse.GameKit
                 Debug.Log("turnBasedMatchmakerViewControllerWasCancelled");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.turnBasedMatchmakerViewControllerWasCancelled(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.turnBasedMatchmakerViewControllerWasCancelled(
                     viewController == IntPtr.Zero ? null : new GKTurnBasedMatchmakerViewController(viewController));
+                }, null);
             }
             catch(Exception ex)
             {
@@ -94,9 +99,12 @@ namespace HovelHouse.GameKit
                 Debug.Log("turnBasedMatchmakerViewController_didFailWithError");
                 var inst = classInstances[ptr.ToInt64()];
                 
-                inst.turnBasedMatchmakerViewController_didFailWithError(
+                
+                inst.synchronizationContext.Post((_) => {
+                    inst.turnBasedMatchmakerViewController_didFailWithError(
                     viewController == IntPtr.Zero ? null : new GKTurnBasedMatchmakerViewController(viewController),
                     error == IntPtr.Zero ? null : new NSError(error));
+                }, null);
             }
             catch(Exception ex)
             {

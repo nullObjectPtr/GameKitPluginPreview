@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 using HovelHouse.GameKit;
 using UnityEngine;
@@ -14,8 +15,8 @@ public class Sample_RealTimeMatch : AbstractSample
     protected override void Run()
     {
         MatchmakingView.OnFindMatch = OnFindMatch;
+        MatchmakingView.gameObject.SetActive(true);
 
-        ChatView.OnCloseClick = OnClose;
         ChatView.OnSendMessage = OnSendMessage;
         ChatView.OnSendMessageToPlayer = OnSendMessageToPlayer;
     }
@@ -35,33 +36,43 @@ public class Sample_RealTimeMatch : AbstractSample
         matchRequest.InviteMessage = "Let's play a game";
 
         var matchmakingView = new GKMatchmakerViewController(matchRequest);
-        matchmakingView.Present();
         
         // To respond to UI events from the matchmaker view, subclass MatchmakerViewControllerDelegate and override
         // it's event handlers. We create a pass-trough delegate object that's a little easier to use.
         var matchmakingViewDelegate = new MyMatchmakerViewControllerDelegate();
         matchmakingViewDelegate.OnMatchFound = OnMatchFound;
+        matchmakingView.MatchmakerDelegate = matchmakingViewDelegate;
+        
+        matchmakingView.Present();
     }
 
     private void OnMatchFound(GKMatch match)
     {
         MatchmakingView.gameObject.SetActive(false);
-        ChatView.gameObject.SetActive(true);
+
+        ChatView.Show(match);
         
         // Again, in order to receive notification of events in the real-time match, we have to subclass the 
         // MatchDelegate and override it's methods. We create a pass-through delegate object with events that we're
         // interested in
         var matchDelegate = new RealTimeChatMatchDelegate();
         matchDelegate.OnDataRecieved = OnDataReceived;
+        matchDelegate.OnDataReceivedForRecipient = OnDataReceivedForRecipient;
         matchDelegate.OnPlayerChangedConnectionState = OnPlayerConnectionStateChanged;
         match.Delegate = matchDelegate;
         
         this.match = match;
     }
 
-    private void OnClose()
+    protected override void OnBackClick()
     {
-        match.Disconnect();
+        if (match != null)
+        {
+            match.Disconnect();
+            match = null;
+        }
+
+        base.OnBackClick();
     }
 
     // Sends a (public) message to the entire chat-room
@@ -71,8 +82,8 @@ public class Sample_RealTimeMatch : AbstractSample
         // by all peers. You can also use the unreliable channel. Unreliable messages will not be re-sent and may be
         // dropped, but are much faster. You'll want to use the unreliable channel for things like sending object
         // snapshots
-
-        var msgBytes = Encoding.UTF8.GetBytes($"public:{msg}");
+        Debug.Log("send msg to all players");
+        var msgBytes = Encoding.UTF8.GetBytes(msg);
         match.SendDataToAllPlayers(msgBytes, GKMatchSendDataMode.Reliable);
     }
 
@@ -80,14 +91,25 @@ public class Sample_RealTimeMatch : AbstractSample
     private void OnSendMessageToPlayer(GKPlayer player, string msg)
     {
         // convert the message to a byte array
+        Debug.Log($"send msg to {player.Alias}");
         var msgBytes = Encoding.UTF8.GetBytes($"private:{msg}");
         match.SendDataToPlayers(msgBytes, new []{player}, GKMatchSendDataMode.Reliable);
     }
 
-    private void OnDataReceived(byte[] data)
+    private void OnDataReceived(byte[] data, string senderAlias)
     {
-        var msg = System.Text.Encoding.UTF8.GetString(data);
-        ChatView.AddMessage(msg);
+        var sender = match.Players.FirstOrDefault(p => p.Alias == senderAlias);
+        var msg = Encoding.UTF8.GetString(data);
+        var senderName = sender?.DisplayName ?? "unknown";
+        ChatView.AddMessage($"{senderName}: {msg}");
+    }
+
+    private void OnDataReceivedForRecipient(byte[] data, string senderId)
+    {
+        var sender = match.Players.FirstOrDefault(p => p.GamePlayerID == senderId);
+        var msg = Encoding.UTF8.GetString(data);
+        var senderName = sender?.DisplayName ?? "unknown";
+        ChatView.AddMessage($"{senderName}: (private) {msg}");
     }
 
     private void OnPlayerConnectionStateChanged(GKPlayer player, GKPlayerConnectionState connectionState)

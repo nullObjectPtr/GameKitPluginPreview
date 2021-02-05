@@ -128,7 +128,7 @@ namespace HovelHouse.GameKit
             get
             {
                 IntPtr turnBasedMatchmakerDelegate = GKTurnBasedMatchmakerViewController_GetPropTurnBasedMatchmakerDelegate(Handle);
-                return turnBasedMatchmakerDelegate == IntPtr.Zero ? null : new GKTurnBasedMatchmakerViewControllerDelegate(turnBasedMatchmakerDelegate);
+                return turnBasedMatchmakerDelegate == IntPtr.Zero ? null : GKTurnBasedMatchmakerViewControllerDelegate.GetInstance(turnBasedMatchmakerDelegate);
             }
             set
             {
