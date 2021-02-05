@@ -59,6 +59,21 @@ namespace HovelHouse.GameKit
         private static extern double GKTurnBasedParticipant_GetPropLastTurnDate(HandleRef ptr);
 
         
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern GKTurnBasedMatchOutcome GKTurnBasedParticipant_GetPropMatchOutcome(HandleRef ptr);
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        [DllImport("__Internal")]
+        #else
+        [DllImport("HHGameKitMacOS")]
+        #endif
+        private static extern void GKTurnBasedParticipant_SetPropMatchOutcome(HandleRef ptr, long matchOutcome, out IntPtr exceptionPtr);
+
+        
 
         #endregion
 
@@ -101,6 +116,21 @@ namespace HovelHouse.GameKit
             {
                 double lastTurnDate = GKTurnBasedParticipant_GetPropLastTurnDate(Handle);
                 return new DateTime(1970, 1, 1, 0, 0, 0,DateTimeKind.Utc).AddSeconds(lastTurnDate);;
+            }
+        }
+
+        
+        /// <value>MatchOutcome</value>
+        public GKTurnBasedMatchOutcome MatchOutcome
+        {
+            get
+            {
+                GKTurnBasedMatchOutcome matchOutcome = GKTurnBasedParticipant_GetPropMatchOutcome(Handle);
+                return (GKTurnBasedMatchOutcome) matchOutcome;
+            }
+            set
+            {
+                GKTurnBasedParticipant_SetPropMatchOutcome(Handle, (long) value, out IntPtr exceptionPtr);
             }
         }
 

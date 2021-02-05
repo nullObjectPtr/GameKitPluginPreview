@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MyTurnBasedMatchmakerDelegate : GKTurnBasedMatchmakerViewControllerDelegate
 {
-    public Action<GKTurnBasedMatch> OnMatchSelected;
-    
     public override void turnBasedMatchmakerViewControllerWasCancelled(GKTurnBasedMatchmakerViewController viewController)
     {
         // this is invoked when the user hits the cancel button on the matchmaker view, you should dismiss the view when
