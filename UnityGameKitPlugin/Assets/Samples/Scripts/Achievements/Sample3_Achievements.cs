@@ -104,11 +104,11 @@ public class Sample3_Achievements : AbstractSample
             if (error != null)
                 LogNSError(error);
             
-            Debug.Log($"loaded progress for {achievements.Length} achievements");
-
             // Achievements will be null, if you have not reported any progress for the current player yet
             if (achievements != null)
             {
+                Debug.Log($"loaded progress for {achievements.Length} achievements");
+
                 // Store each achievement in an dictionary keyed by the achievement index
                 foreach (var achievement in achievements)
                 {
