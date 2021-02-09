@@ -23,6 +23,12 @@ namespace HovelHouse.GameKit
     public class GKScore : UnmanagedObject, IDisposable
     {
         #region dll
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+        #else
+        const string dll = "HHGameKitMacOS"
+        #endif
 
         // Class Methods
         
@@ -53,11 +59,7 @@ namespace HovelHouse.GameKit
 
         
         #region IDisposable Support
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKScore_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls

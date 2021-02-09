@@ -23,6 +23,12 @@ namespace HovelHouse.GameKit
     public class GKVoiceChat : UnmanagedObject, IDisposable
     {
         #region dll
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+        #else
+        const string dll = "HHGameKitMacOS"
+        #endif
 
         // Class Methods
         
@@ -30,40 +36,24 @@ namespace HovelHouse.GameKit
         
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern bool GKVoiceChat_isVoIPAllowed(
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKVoiceChat_start(
             HandleRef ptr, 
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKVoiceChat_stop(
             HandleRef ptr, 
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKVoiceChat_setPlayer_muted(
             HandleRef ptr, 
             IntPtr player,
@@ -76,49 +66,25 @@ namespace HovelHouse.GameKit
 
         // Properties
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern bool GKVoiceChat_GetPropActive(HandleRef ptr);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKVoiceChat_SetPropActive(HandleRef ptr, bool active, out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKVoiceChat_GetPropName(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKVoiceChat_GetPropPlayers(HandleRef ptr, ref IntPtr buffer, ref long count);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern float GKVoiceChat_GetPropVolume(HandleRef ptr);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKVoiceChat_SetPropVolume(HandleRef ptr, float volume, out IntPtr exceptionPtr);
 
         
@@ -292,11 +258,7 @@ namespace HovelHouse.GameKit
 
         
         #region IDisposable Support
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKVoiceChat_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls

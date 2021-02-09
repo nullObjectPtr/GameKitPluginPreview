@@ -23,6 +23,12 @@ namespace HovelHouse.GameKit
     public class GKTurnBasedParticipant : UnmanagedObject, IDisposable
     {
         #region dll
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+        #else
+        const string dll = "HHGameKitMacOS"
+        #endif
 
         // Class Methods
         
@@ -35,42 +41,22 @@ namespace HovelHouse.GameKit
 
         // Properties
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKTurnBasedParticipant_GetPropPlayer(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern GKTurnBasedParticipantStatus GKTurnBasedParticipant_GetPropStatus(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern double GKTurnBasedParticipant_GetPropLastTurnDate(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern GKTurnBasedMatchOutcome GKTurnBasedParticipant_GetPropMatchOutcome(HandleRef ptr);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedParticipant_SetPropMatchOutcome(HandleRef ptr, long matchOutcome, out IntPtr exceptionPtr);
 
         
@@ -140,11 +126,7 @@ namespace HovelHouse.GameKit
 
         
         #region IDisposable Support
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedParticipant_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls

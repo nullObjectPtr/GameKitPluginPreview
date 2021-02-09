@@ -23,14 +23,16 @@ namespace HovelHouse.GameKit
     public class GKChallenge : UnmanagedObject, IDisposable
     {
         #region dll
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+        #else
+        const string dll = "HHGameKitMacOS"
+        #endif
 
         // Class Methods
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKChallenge_loadReceivedChallengesWithCompletionHandler(
             ulong invocationId, LoadReceivedChallengesCompletionDelegate completionHandler,
             out IntPtr exceptionPtr);
@@ -45,51 +47,27 @@ namespace HovelHouse.GameKit
 
         // Properties
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern double GKChallenge_GetPropIssueDate(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern double GKChallenge_GetPropCompletionDate(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKChallenge_GetPropIssuingPlayer(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKChallenge_GetPropReceivingPlayer(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKChallenge_GetPropMessage(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern GKChallengeState GKChallenge_GetPropState(HandleRef ptr);
 
         
@@ -220,11 +198,7 @@ namespace HovelHouse.GameKit
 
         
         #region IDisposable Support
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKChallenge_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls

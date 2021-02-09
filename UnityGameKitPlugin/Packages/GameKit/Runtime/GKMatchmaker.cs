@@ -23,14 +23,16 @@ namespace HovelHouse.GameKit
     public class GKMatchmaker : UnmanagedObject, IDisposable
     {
         #region dll
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+        #else
+        const string dll = "HHGameKitMacOS"
+        #endif
 
         // Class Methods
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKMatchmaker_sharedMatchmaker(
             out IntPtr exceptionPtr);
 
@@ -39,53 +41,33 @@ namespace HovelHouse.GameKit
         
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_cancel(
             HandleRef ptr, 
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_cancelPendingInviteToPlayer(
             HandleRef ptr, 
             IntPtr player,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_stopBrowsingForNearbyPlayers(
             HandleRef ptr, 
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_finishMatchmakingForMatch(
             HandleRef ptr, 
             IntPtr match,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_matchForInvite_completionHandler(
             HandleRef ptr, 
             IntPtr invite,
@@ -93,11 +75,7 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_addPlayersToMatch_matchRequest_completionHandler(
             HandleRef ptr, 
             IntPtr match,
@@ -106,11 +84,7 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_findPlayersForHostedRequest_withCompletionHandler(
             HandleRef ptr, 
             IntPtr request,
@@ -118,22 +92,14 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_queryActivityWithCompletionHandler(
             HandleRef ptr, 
             ulong invocationId, QueryActivityDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_queryPlayerGroupActivity_withCompletionHandler(
             HandleRef ptr, 
             ulong playerGroup,
@@ -141,11 +107,7 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_findMatchForRequest_withCompletionHandler(
             HandleRef ptr, 
             IntPtr request,
@@ -153,11 +115,7 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_startBrowsingForNearbyPlayersWithHandler(
             HandleRef ptr, 
             ulong invocationId, StartBrowsingForNearbyPlayersDelegate reachableHandler,
@@ -611,11 +569,7 @@ namespace HovelHouse.GameKit
 
         
         #region IDisposable Support
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmaker_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls

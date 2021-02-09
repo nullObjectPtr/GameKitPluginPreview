@@ -23,26 +23,24 @@ namespace HovelHouse.GameKit
     public class GKMatchmakerViewController : GKViewController, IDisposable
     {
         #region dll
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+        #else
+        const string dll = "HHGameKitMacOS"
+        #endif
 
         // Class Methods
         
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKMatchmakerViewController_initWithMatchRequest(
             IntPtr request, 
             out IntPtr exceptionPtr
             );
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKMatchmakerViewController_initWithInvite(
             IntPtr invite, 
             out IntPtr exceptionPtr
@@ -50,22 +48,14 @@ namespace HovelHouse.GameKit
         
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmakerViewController_addPlayersToMatch(
             HandleRef ptr, 
             IntPtr match,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmakerViewController_setHostedPlayer_didConnect(
             HandleRef ptr, 
             IntPtr player,
@@ -78,48 +68,24 @@ namespace HovelHouse.GameKit
 
         // Properties
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKMatchmakerViewController_GetPropMatchmakerDelegate(HandleRef ptr);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmakerViewController_SetPropMatchmakerDelegate(HandleRef ptr, IntPtr matchmakerDelegate, out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern bool GKMatchmakerViewController_GetPropHosted(HandleRef ptr);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmakerViewController_SetPropHosted(HandleRef ptr, bool hosted, out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern GKMatchmakingMode GKMatchmakerViewController_GetPropMatchmakingMode(HandleRef ptr);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmakerViewController_SetPropMatchmakingMode(HandleRef ptr, long matchmakingMode, out IntPtr exceptionPtr);
 
         
@@ -273,11 +239,7 @@ namespace HovelHouse.GameKit
 
         
         #region IDisposable Support
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKMatchmakerViewController_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls
