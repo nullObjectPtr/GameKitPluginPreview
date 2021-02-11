@@ -40,11 +40,11 @@
               <e p="Sample_RealTimeMatch.cs" t="Include" />
             </e>
             <e p="TurnBasedMatch" t="Include">
-              <e p="MatchListView.cs" t="Include" />
-              <e p="MatchView.cs" t="Include" />
               <e p="MyLocalPlayerDelegate.cs" t="Include" />
               <e p="MyTurnBasedMatchmakerDelegate.cs" t="Include" />
               <e p="RockPaperScissorsGameState.cs" t="Include" />
+              <e p="RockPaperScissorsGameView.cs" t="Include" />
+              <e p="RockPaperScissorsMatch.cs" t="Include" />
               <e p="Sample_TurnBasedMatch.cs" t="Include" />
             </e>
           </e>

@@ -3,8 +3,8 @@
 	"version":"1.0.0",
 	"displayName":"Game Kit Plugin",
 	"description":"An Apple Arcade ready GameKit plugin for iOS, macOS and TVOS.",
-	"unity":"2018.4",
-	"unityRelease":"7f1",
+	"unity":"2019.4",
+	"unityRelease":"10f1",
 	"dependencies":{},
 	"keywords":
 	[
@@ -27,8 +27,8 @@
     [
         {
             "displayName": "Samples",
-            "description": "Eight sample scenes that demonstrate common usages of GameKit",
-            "path":"Samples~/ExampleHub"
+            "description": "Demonstrates common usages of GameKit",
+            "path":"Samples~/"
         }
     ]
 }

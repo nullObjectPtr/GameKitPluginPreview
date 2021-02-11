@@ -60,6 +60,7 @@ namespace HovelHouse.GameKit
             }
 
             Handle = new HandleRef(this,ptr);
+            synchronizationContext = SynchronizationContext.Current;
             classInstances[ptr.ToInt64()] = this;
         }
 

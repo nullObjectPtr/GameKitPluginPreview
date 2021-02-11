@@ -23,14 +23,16 @@ namespace HovelHouse.GameKit
     public class GKLeaderboard : UnmanagedObject, IDisposable
     {
         #region dll
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+        #else
+        const string dll = "HHGameKitMacOS"
+        #endif
 
         // Class Methods
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKLeaderboard_loadLeaderboardsWithIDs_completionHandler(
             string[] leaderboardIDs,
 			int leaderboardIDsCount,
@@ -38,11 +40,7 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKLeaderboard_submitScore_context_player_leaderboardIDs_completionHandler(
             long score,
             ulong context,
@@ -57,11 +55,7 @@ namespace HovelHouse.GameKit
         
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKLeaderboard_submitScore_context_player_completionHandler(
             HandleRef ptr, 
             long score,
@@ -71,22 +65,14 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKLeaderboard_loadPreviousOccurrenceWithCompletionHandler(
             HandleRef ptr, 
             ulong invocationId, GKLeaderboardDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKLeaderboard_loadEntriesForPlayers_timeScope_completionHandler(
             HandleRef ptr, 
             IntPtr[] players,
@@ -96,11 +82,7 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKLeaderboard_loadEntriesForPlayerScope_timeScope_index_length_completionHandler(
             HandleRef ptr, 
             long playerScope,
@@ -111,11 +93,7 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKLeaderboard_loadLeaderboardsWithCompletionHandler(
             ulong invocationId, LoadLeaderboardsDelegate completionHandler,
             out IntPtr exceptionPtr);
@@ -124,64 +102,33 @@ namespace HovelHouse.GameKit
 
         
 
-
-        
-
         // Properties
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKLeaderboard_GetPropTitle(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern double GKLeaderboard_GetPropDuration(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKLeaderboard_GetPropGroupIdentifier(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern double GKLeaderboard_GetPropStartDate(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern double GKLeaderboard_GetPropNextStartDate(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern GKLeaderboardType GKLeaderboard_GetPropType(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKLeaderboard_GetPropBaseLeaderboardID(HandleRef ptr);
 
         
@@ -612,11 +559,7 @@ namespace HovelHouse.GameKit
 
         
         #region IDisposable Support
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKLeaderboard_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls

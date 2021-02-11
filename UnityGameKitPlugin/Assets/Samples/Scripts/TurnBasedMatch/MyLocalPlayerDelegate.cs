@@ -3,14 +3,14 @@ using HovelHouse.GameKit;
 
 public class MyLocalPlayerDelegate : LocalPlayerListener
 {
-    public Action<GKPlayer, GKTurnBasedExchange, GKTurnBasedMatch> OnExchangeRequest;
-    public Action<GKPlayer, GKTurnBasedExchangeReply[], GKTurnBasedExchange, GKTurnBasedMatch> OnExchangeReply;
-    public Action<GKPlayer, GKTurnBasedExchange, GKTurnBasedMatch> OnExchangeCancelled;
-    public Action<GKPlayer, GKTurnBasedMatch, bool> OnReceivedTurnEvent;
-    public Action<GKPlayer, GKPlayer[]> OnRequestMatchWithOtherPlayers;
-    public Action<GKPlayer, GKPlayer[]> OnRequestMatchWithRecipients;
-    public Action<GKPlayer, GKTurnBasedMatch> OnMatchEnded;
-    public Action<GKPlayer, GKTurnBasedMatch> OnWantsToQuit;
+    public event Action<GKPlayer, GKTurnBasedExchange, GKTurnBasedMatch> OnExchangeRequest;
+    public event Action<GKPlayer, GKTurnBasedExchangeReply[], GKTurnBasedExchange, GKTurnBasedMatch> OnExchangeReply;
+    public event Action<GKPlayer, GKTurnBasedExchange, GKTurnBasedMatch> OnExchangeCancelled;
+    public event Action<GKPlayer, GKTurnBasedMatch, bool> OnReceivedTurnEvent;
+    public event Action<GKPlayer, GKPlayer[]> OnRequestMatchWithOtherPlayers;
+    public event Action<GKPlayer, GKPlayer[]> OnRequestMatchWithRecipients;
+    public event Action<GKPlayer, GKTurnBasedMatch> OnMatchEnded;
+    public event Action<GKPlayer, GKTurnBasedMatch> OnWantsToQuit;
     
     public override void player_receivedExchangeRequest_forMatch(GKPlayer player, GKTurnBasedExchange exchange, GKTurnBasedMatch match)
     {
