@@ -206,312 +206,169 @@ namespace HovelHouse.GameKit
     public class GameKitInitializer
     {
         // MatchDelegate
+#if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+#else
+        const string dll = "HHGameKitMacOS"
+#endif
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchDelegate_match_player_didChangeConnectionState(
             MatchDelegate_match_player_didChangeConnectionState del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchDelegate_match_didFailWithError(
             MatchDelegate_match_didFailWithError del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchDelegate_match_didReceiveData_fromRemotePlayer(
             MatchDelegate_match_didReceiveData_fromRemotePlayer del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchDelegate_match_didReceiveData_forRecipient_fromRemotePlayer(
             MatchDelegate_match_didReceiveData_forRecipient_fromRemotePlayer del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchDelegate_match_shouldReinviteDisconnectedPlayer(
             MatchDelegate_match_shouldReinviteDisconnectedPlayer del);
         
         // MatchmakerViewControllerDelegate
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchmakerViewControllerDelegate_matchmakerViewController_didFindMatch(
             MatchmakerViewControllerDelegate_matchmakerViewController_didFindMatch del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchmakerViewControllerDelegate_matchmakerViewControllerWasCancelled(
             MatchmakerViewControllerDelegate_matchmakerViewControllerWasCancelled del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchmakerViewControllerDelegate_matchmakerViewController_didFailWithError(
             MatchmakerViewControllerDelegate_matchmakerViewController_didFailWithError del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchmakerViewControllerDelegate_matchmakerViewController_hostedPlayerDidAccept(
             MatchmakerViewControllerDelegate_matchmakerViewController_hostedPlayerDidAccept del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_MatchmakerViewControllerDelegate_matchmakerViewController_didFindHostedPlayers(
             MatchmakerViewControllerDelegate_matchmakerViewController_didFindHostedPlayers del);
         
         // LocalPlayerListener
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_didAcceptInvite(
             LocalPlayerListener_player_didAcceptInvite del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_didReceiveChallenge(
             LocalPlayerListener_player_didReceiveChallenge del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_wantsToPlayChallenge(
             LocalPlayerListener_player_wantsToPlayChallenge del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_issuedChallengeWasCompleted_byFriend(
             LocalPlayerListener_player_issuedChallengeWasCompleted_byFriend del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_matchEnded(
             LocalPlayerListener_player_matchEnded del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_didRequestMatchWithRecipients(
             LocalPlayerListener_player_didRequestMatchWithRecipients del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_didCompleteChallenge_issuedByFriend(
             LocalPlayerListener_player_didCompleteChallenge_issuedByFriend del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_receivedExchangeCancellation_forMatch(
             LocalPlayerListener_player_receivedExchangeCancellation_forMatch del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_receivedExchangeReplies_forCompletedExchange_forMatch(
             LocalPlayerListener_player_receivedExchangeReplies_forCompletedExchange_forMatch del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_receivedExchangeRequest_forMatch(
             LocalPlayerListener_player_receivedExchangeRequest_forMatch del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_didRequestMatchWithOtherPlayers(
             LocalPlayerListener_player_didRequestMatchWithOtherPlayers del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_receivedTurnEventForMatch_didBecomeActive(
             LocalPlayerListener_player_receivedTurnEventForMatch_didBecomeActive del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_LocalPlayerListener_player_wantsToQuitMatch(
             LocalPlayerListener_player_wantsToQuitMatch del);
         
         // ChallengeListener
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_ChallengeListener_player_didReceiveChallenge(
             ChallengeListener_player_didReceiveChallenge del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_ChallengeListener_player_wantsToPlayChallenge(
             ChallengeListener_player_wantsToPlayChallenge del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_ChallengeListener_player_didCompleteChallenge_issuedByFriend(
             ChallengeListener_player_didCompleteChallenge_issuedByFriend del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_ChallengeListener_player_issuedChallengeWasCompleted_byFriend(
             ChallengeListener_player_issuedChallengeWasCompleted_byFriend del);
         
         // TurnBasedEventListener
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_TurnBasedEventListener_player_receivedExchangeCancellation_forMatch(
             TurnBasedEventListener_player_receivedExchangeCancellation_forMatch del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_TurnBasedEventListener_player_receivedExchangeReplies_forCompletedExchange_forMatch(
             TurnBasedEventListener_player_receivedExchangeReplies_forCompletedExchange_forMatch del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_TurnBasedEventListener_player_receivedExchangeRequest_forMatch(
             TurnBasedEventListener_player_receivedExchangeRequest_forMatch del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_TurnBasedEventListener_player_didRequestMatchWithOtherPlayers(
             TurnBasedEventListener_player_didRequestMatchWithOtherPlayers del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_TurnBasedEventListener_player_matchEnded(
             TurnBasedEventListener_player_matchEnded del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_TurnBasedEventListener_player_receivedTurnEventForMatch_didBecomeActive(
             TurnBasedEventListener_player_receivedTurnEventForMatch_didBecomeActive del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_TurnBasedEventListener_player_wantsToQuitMatch(
             TurnBasedEventListener_player_wantsToQuitMatch del);
         
         // GKTurnBasedMatchmakerViewControllerDelegate
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewControllerWasCancelled(
             GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewControllerWasCancelled del);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError(
             GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError del);
         
         // GKGameCenterControllerDelegate
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void RegisterDelegateFor_GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish(
             GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish del);
         
@@ -596,11 +453,9 @@ namespace HovelHouse.GameKit
                 GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewControllerWasCancelled);
                 RegisterDelegateFor_GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError(
                 GKTurnBasedMatchmakerViewControllerDelegate.turnBasedMatchmakerViewController_didFailWithError);
-                
+
                 RegisterDelegateFor_GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish(
-                GKGameCenterViewController.gameCenterViewControllerDidFinish);
-                
-                
+                    GKGameCenterViewController.gameCenterViewControllerDidFinish);
         }
     }
 }
