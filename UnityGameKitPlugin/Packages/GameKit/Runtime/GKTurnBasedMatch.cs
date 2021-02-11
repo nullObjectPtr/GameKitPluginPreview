@@ -23,35 +23,29 @@ namespace HovelHouse.GameKit
     public class GKTurnBasedMatch : UnmanagedObject, IDisposable
     {
         #region dll
+        
+        #if UNITY_IPHONE || UNITY_TVOS
+        const string dll = "__Internal";
+        #else
+        const string dll = "HHGameKitMacOS";
+        #endif
 
         // Class Methods
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_loadMatchesWithCompletionHandler(
             ulong invocationId, LoadMatchesDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_loadMatchWithID_withCompletionHandler(
             string matchID,
             ulong invocationId, StaticTurnBasedMatchDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_findMatchForRequest_withCompletionHandler(
             IntPtr request,
             ulong invocationId, StaticTurnBasedMatchDelegate completionHandler,
@@ -62,55 +56,35 @@ namespace HovelHouse.GameKit
         
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_acceptInviteWithCompletionHandler(
             HandleRef ptr, 
             ulong invocationId, TurnBasedMatchDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_declineInviteWithCompletionHandler(
             HandleRef ptr, 
             ulong invocationId, StaticCompletionDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_rematchWithCompletionHandler(
             HandleRef ptr, 
             ulong invocationId, TurnBasedMatchDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_loadMatchDataWithCompletionHandler(
             HandleRef ptr, 
             ulong invocationId, ByteArrayDelegate completionHandler,
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_saveCurrentTurnWithMatchData_completionHandler(
             HandleRef ptr, 
             byte[] matchData,
@@ -119,11 +93,7 @@ namespace HovelHouse.GameKit
             out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_endTurnWithNextParticipants_turnTimeout_matchData_completionHandler(
             HandleRef ptr, 
             IntPtr[] nextParticipants,
@@ -269,78 +239,40 @@ namespace HovelHouse.GameKit
 
         
 
-        
-
         // Properties
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKTurnBasedMatch_GetPropMessage(HandleRef ptr);
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_SetPropMessage(HandleRef ptr, string message, out IntPtr exceptionPtr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern double GKTurnBasedMatch_GetPropCreationDate(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKTurnBasedMatch_GetPropMatchID(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_GetPropParticipants(HandleRef ptr, ref IntPtr buffer, ref long count);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern IntPtr GKTurnBasedMatch_GetPropCurrentParticipant(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern ulong GKTurnBasedMatch_GetPropMatchDataMaximumSize(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern GKTurnBasedMatchStatus GKTurnBasedMatch_GetPropStatus(HandleRef ptr);
 
         
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_GetPropMatchData(
             HandleRef ptr,
             ref IntPtr source,
@@ -1417,11 +1349,7 @@ namespace HovelHouse.GameKit
 
         
         #region IDisposable Support
-        #if UNITY_IPHONE || UNITY_TVOS
-        [DllImport("__Internal")]
-        #else
-        [DllImport("HHGameKitMacOS")]
-        #endif
+        [DllImport(dll)]
         private static extern void GKTurnBasedMatch_Dispose(HandleRef handle);
             
         private bool disposedValue = false; // To detect redundant calls

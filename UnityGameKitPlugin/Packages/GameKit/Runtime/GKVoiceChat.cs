@@ -27,7 +27,7 @@ namespace HovelHouse.GameKit
         #if UNITY_IPHONE || UNITY_TVOS
         const string dll = "__Internal";
         #else
-        const string dll = "HHGameKitMacOS"
+        const string dll = "HHGameKitMacOS";
         #endif
 
         // Class Methods
