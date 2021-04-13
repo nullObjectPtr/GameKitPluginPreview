@@ -2,7 +2,7 @@
 //  GKLeaderboard.h
 //
 //  Created by Jonathan Culp <jonathanculp@gmail.com> on 09/23/2020
-//  Copyright © 2020 HovelHouseApps. All rights reserved.
+//  Copyright © 2021 HovelHouseApps. All rights reserved.
 //  Unauthorized copying of this file, via any medium is strictly prohibited
 //  Proprietary and confidential
 //
@@ -53,6 +53,21 @@ extern "C" void GKLeaderboard_loadEntriesForPlayers_timeScope_completionHandler(
 	long playersCount,
     long timeScope,
     unsigned long invocationId, LoadLeaderboardEntriesCallback completionHandler,
+    void** exception
+    );
+
+extern "C" void GKLeaderboard_loadEntriesForPlayerScope_timeScope_index_length_completionHandler(
+	void* ptr,
+	long playerScope,
+    long timeScope,
+    uint index,
+    uint length,
+    unsigned long invocationId, LoadEntriesForPlayerScopeCallback completionHandler,
+    void** exception
+    );
+
+extern "C" void GKLeaderboard_loadLeaderboardsWithCompletionHandler(
+	unsigned long invocationId, LoadLeaderboardsCallback completionHandler,
     void** exception
     );
 

@@ -18,70 +18,103 @@ extern "C" {
 //InstanceMethods
 //VoidMethods
 //Properties
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 101500) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 130000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 130000)
 uint GKLeaderboardEntry_GetPropContext(void* ptr)
-{
-	GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
-	NSUInteger val = [iGKLeaderboardEntry context];
-	return val;
+{ 
+    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    { 
+        GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
+        NSUInteger val = [iGKLeaderboardEntry context];
+        return val;
+    }
+    else
+    {
+        return 0;
+    } 
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 double GKLeaderboardEntry_GetPropDate(void* ptr)
-{
-	GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
-	NSDate* val = [iGKLeaderboardEntry date];
-	return [val timeIntervalSince1970];
+{ 
+    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    { 
+        GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
+        NSDate* val = [iGKLeaderboardEntry date];
+        return [val timeIntervalSince1970];
+    }
+    else
+    {
+        return 0.0;
+    } 
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 const char* GKLeaderboardEntry_GetPropFormattedScore(void* ptr)
-{
-	GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
-	NSString* val = [iGKLeaderboardEntry formattedScore];
-	return [val UTF8String];
+{ 
+    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    { 
+        GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
+        NSString* val = [iGKLeaderboardEntry formattedScore];
+        return [val UTF8String];
+    }
+    else
+    {
+        return nil;
+    } 
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 void* GKLeaderboardEntry_GetPropPlayer(void* ptr)
-{
-	GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
-	GKPlayer* val = [iGKLeaderboardEntry player];
-	return (__bridge_retained void*) val;
+{ 
+    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    { 
+        GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
+        GKPlayer* val = [iGKLeaderboardEntry player];
+        return (__bridge_retained void*) val;
+    }
+    else
+    {
+        return nil;
+    } 
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 NSInteger GKLeaderboardEntry_GetPropRank(void* ptr)
-{
-	GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
-	NSInteger val = [iGKLeaderboardEntry rank];
-	return val;
+{ 
+    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    { 
+        GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
+        NSInteger val = [iGKLeaderboardEntry rank];
+        return val;
+    }
+    else
+    {
+        return 0;
+    } 
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 NSInteger GKLeaderboardEntry_GetPropScore(void* ptr)
-{
-	GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
-	NSInteger val = [iGKLeaderboardEntry score];
-	return val;
+{ 
+    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    { 
+        GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
+        NSInteger val = [iGKLeaderboardEntry score];
+        return val;
+    }
+    else
+    {
+        return 0;
+    } 
 }
-#endif
 
 
 
 void GKLeaderboardEntry_Dispose(void* ptr)
 {
-    GKLeaderboardEntry* val = (__bridge GKLeaderboardEntry*) ptr;
-    if(val != nil)
+    if(@available(macOS 11, iOS 14, tvOS 14, *))
     {
-        CFRelease(ptr);
+        GKLeaderboardEntry* val = (__bridge GKLeaderboardEntry*) ptr;
+        if(val != nil)
+        {
+            CFRelease(ptr);
+        }
+        //NSLog(@"Dispose...GKLeaderboardEntry");
     }
-    NSLog(@"Dispose...GKLeaderboardEntry");
 }
 
 }
