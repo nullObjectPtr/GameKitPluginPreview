@@ -1,6 +1,6 @@
 {
 	"name":"com.hovelhouse.gamekit",
-	"version":"1.0.0",
+	"version":"0.2.0",
 	"displayName":"Game Kit Plugin",
 	"description":"An Apple Arcade ready GameKit plugin for iOS, macOS and TVOS.",
 	"unity":"2019.4",

@@ -56,6 +56,9 @@ typedef void (*TurnBasedEventListener_player_wantsToQuitMatch)(void* ptr, void* 
 typedef void (*GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewControllerWasCancelled)(void* ptr, void* viewController);
 typedef void (*GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError)(void* ptr, void* viewController, void* error);
 
+// GKGameCenterControllerDelegate
+typedef void (*GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish)(const void* gameCenterViewController);
+
 
 
 // MatchDelegate
@@ -141,5 +144,9 @@ extern TurnBasedEventListener_player_wantsToQuitMatch KTurnBasedEventListener_pl
 extern GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewControllerWasCancelled KGKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewControllerWasCancelled;
 
 extern GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError KGKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError;
+
+// GKGameCenterControllerDelegate
+
+extern GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish KGKGameCenterControllerDelegate_gameCenterViewControllerDidFinish;
 
 
