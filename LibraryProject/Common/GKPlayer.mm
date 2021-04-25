@@ -165,7 +165,7 @@ const char* GKPlayer_GetPropGuestIdentifier(void* ptr)
 
 bool GKPlayer_GetPropIsInvitable(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
         BOOL val = [iGKPlayer isInvitable];

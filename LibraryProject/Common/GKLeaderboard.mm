@@ -21,7 +21,7 @@ void GKLeaderboard_loadLeaderboardsWithIDs_completionHandler(
 	void** exception
     )
 {
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0, *))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0, *))
     { 
         @try
         {
@@ -60,7 +60,7 @@ void GKLeaderboard_submitScore_context_player_leaderboardIDs_completionHandler(
     )
 {
 
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0, *))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0, *))
     { 
         @try
         {
@@ -91,7 +91,7 @@ void GKLeaderboard_submitScore_context_player_completionHandler(
     void** exception
     )
 { 
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0, * ))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0, * ))
     { 
         @try
         {
@@ -118,7 +118,7 @@ void GKLeaderboard_loadPreviousOccurrenceWithCompletionHandler(
     void** exception
     )
 { 
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0, * ))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0, * ))
     { 
         @try
         {
@@ -151,7 +151,7 @@ void GKLeaderboard_loadEntriesForPlayers_timeScope_completionHandler(
     void** exception
     )
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         @try
         {
@@ -190,7 +190,7 @@ void GKLeaderboard_loadEntriesForPlayerScope_timeScope_index_length_completionHa
     void** exception
     )
 { 
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0, *))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0, *))
     { 
         @try
         {
@@ -261,7 +261,7 @@ const char* GKLeaderboard_GetPropTitle(void* ptr)
 
 double GKLeaderboard_GetPropDuration(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKLeaderboard* iGKLeaderboard = (__bridge GKLeaderboard*) ptr;
         NSTimeInterval val = [iGKLeaderboard duration];
@@ -283,7 +283,7 @@ const char* GKLeaderboard_GetPropGroupIdentifier(void* ptr)
 
 double GKLeaderboard_GetPropStartDate(void* ptr)
 { 
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0,  *))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0,  *))
     { 
         GKLeaderboard* iGKLeaderboard = (__bridge GKLeaderboard*) ptr;
         NSDate* val = [iGKLeaderboard startDate];
@@ -297,7 +297,7 @@ double GKLeaderboard_GetPropStartDate(void* ptr)
 
 double GKLeaderboard_GetPropNextStartDate(void* ptr)
 { 
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0,  *))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0,  *))
     { 
         GKLeaderboard* iGKLeaderboard = (__bridge GKLeaderboard*) ptr;
         NSDate* val = [iGKLeaderboard nextStartDate];
@@ -311,7 +311,7 @@ double GKLeaderboard_GetPropNextStartDate(void* ptr)
 
 long GKLeaderboard_GetPropType(void* ptr)
 { 
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0,  *))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0,  *))
     { 
         GKLeaderboard* iGKLeaderboard = (__bridge GKLeaderboard*) ptr;
         GKLeaderboardType val = [iGKLeaderboard type];
@@ -325,7 +325,7 @@ long GKLeaderboard_GetPropType(void* ptr)
 
 const char* GKLeaderboard_GetPropBaseLeaderboardID(void* ptr)
 { 
-    if(@available(macOS 11.0, tvOS 14.0, iOS 14.0,  *))
+    if(@available(macOS 10.16, tvOS 14.0, iOS 14.0,  *))
     { 
         GKLeaderboard* iGKLeaderboard = (__bridge GKLeaderboard*) ptr;
         NSString* val = [iGKLeaderboard baseLeaderboardID];

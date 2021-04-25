@@ -23,7 +23,7 @@ void GKAccessPoint_triggerAccessPointWithHandler(
     void** exception
     )
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         @try
         {
@@ -50,7 +50,7 @@ void GKAccessPoint_triggerAccessPointWithState_handler(
     void** exception
     )
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         @try
         {
@@ -73,7 +73,7 @@ void GKAccessPoint_triggerAccessPointWithState_handler(
 
 void* GKAccessPoint_GetPropShared()
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         GKAccessPoint* val = [GKAccessPoint shared];
         return (__bridge_retained void*) val;
@@ -86,7 +86,7 @@ void* GKAccessPoint_GetPropShared()
 
 long GKAccessPoint_GetPropLocation(void* ptr)
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
         GKAccessPointLocation val = [iGKAccessPoint location];
@@ -100,7 +100,7 @@ long GKAccessPoint_GetPropLocation(void* ptr)
 
 void GKAccessPoint_SetPropLocation(void* ptr, long location, void** exceptionPtr)
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         @try
         {
@@ -116,7 +116,7 @@ void GKAccessPoint_SetPropLocation(void* ptr, long location, void** exceptionPtr
 
 bool GKAccessPoint_GetPropActive(void* ptr)
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
         BOOL val = [iGKAccessPoint isActive];
@@ -130,7 +130,7 @@ bool GKAccessPoint_GetPropActive(void* ptr)
 
 void GKAccessPoint_SetPropActive(void* ptr, bool active, void** exceptionPtr)
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         @try
         {
@@ -146,7 +146,7 @@ void GKAccessPoint_SetPropActive(void* ptr, bool active, void** exceptionPtr)
 
 bool GKAccessPoint_GetPropIsPresentingGameCenter(void* ptr)
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
         BOOL val = [iGKAccessPoint isPresentingGameCenter];
@@ -160,7 +160,7 @@ bool GKAccessPoint_GetPropIsPresentingGameCenter(void* ptr)
 
 bool GKAccessPoint_GetPropVisible(void* ptr)
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
         BOOL val = [iGKAccessPoint isVisible];
@@ -174,7 +174,7 @@ bool GKAccessPoint_GetPropVisible(void* ptr)
 
 bool GKAccessPoint_GetPropShowHighlights(void* ptr)
 {
-    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    if(@available(macOS 10.16, iOS 14.0, tvOS 14.0, *))
     {
         GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
         BOOL val = [iGKAccessPoint showHighlights];
@@ -188,7 +188,7 @@ bool GKAccessPoint_GetPropShowHighlights(void* ptr)
 
 void GKAccessPoint_SetPropShowHighlights(void* ptr, bool showHighlights, void** exceptionPtr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         @try
         {
@@ -237,7 +237,7 @@ void GKAccessPoint_SetPropFocused(void* ptr, bool focused, void** exceptionPtr)
 
 CGRect GKAccessPoint_GetPropFrameInScreenCoordinates(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
         CGRect val = [iGKAccessPoint frameInScreenCoordinates];
@@ -254,7 +254,7 @@ CGRect GKAccessPoint_GetPropFrameInScreenCoordinates(void* ptr)
 
 void GKAccessPoint_Dispose(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKAccessPoint* val = (__bridge GKAccessPoint*) ptr;
         if(val != nil)

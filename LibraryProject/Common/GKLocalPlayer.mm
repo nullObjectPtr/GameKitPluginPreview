@@ -272,7 +272,7 @@ bool GKLocalPlayer_GetPropMultiplayerGamingRestricted(void* ptr)
 
 bool GKLocalPlayer_GetPropPersonalizedCommunicationRestricted(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         GKLocalPlayer* iGKLocalPlayer = (__bridge GKLocalPlayer*) ptr;
         BOOL val = [iGKLocalPlayer isPersonalizedCommunicationRestricted];

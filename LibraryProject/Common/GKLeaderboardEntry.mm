@@ -20,7 +20,7 @@ extern "C" {
 //Properties
 uint GKLeaderboardEntry_GetPropContext(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     { 
         GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
         NSUInteger val = [iGKLeaderboardEntry context];
@@ -34,7 +34,7 @@ uint GKLeaderboardEntry_GetPropContext(void* ptr)
 
 double GKLeaderboardEntry_GetPropDate(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
         NSDate* val = [iGKLeaderboardEntry date];
@@ -48,7 +48,7 @@ double GKLeaderboardEntry_GetPropDate(void* ptr)
 
 const char* GKLeaderboardEntry_GetPropFormattedScore(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
         NSString* val = [iGKLeaderboardEntry formattedScore];
@@ -62,7 +62,7 @@ const char* GKLeaderboardEntry_GetPropFormattedScore(void* ptr)
 
 void* GKLeaderboardEntry_GetPropPlayer(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
         GKPlayer* val = [iGKLeaderboardEntry player];
@@ -76,7 +76,7 @@ void* GKLeaderboardEntry_GetPropPlayer(void* ptr)
 
 NSInteger GKLeaderboardEntry_GetPropRank(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
         NSInteger val = [iGKLeaderboardEntry rank];
@@ -90,7 +90,7 @@ NSInteger GKLeaderboardEntry_GetPropRank(void* ptr)
 
 NSInteger GKLeaderboardEntry_GetPropScore(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         GKLeaderboardEntry* iGKLeaderboardEntry = (__bridge GKLeaderboardEntry*) ptr;
         NSInteger val = [iGKLeaderboardEntry score];
@@ -106,7 +106,7 @@ NSInteger GKLeaderboardEntry_GetPropScore(void* ptr)
 
 void GKLeaderboardEntry_Dispose(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKLeaderboardEntry* val = (__bridge GKLeaderboardEntry*) ptr;
         if(val != nil)

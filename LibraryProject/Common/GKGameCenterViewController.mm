@@ -19,7 +19,7 @@ void* GKGameCenterViewController_initWithState(
     long state,
     void** exceptionPtr)
 {
-    if(@available(macOS 11, tvOS 14, iOS 14, *))
+    if(@available(macOS 10.16, tvOS 14, iOS 14, *))
     {
         @try
         {
@@ -39,7 +39,7 @@ void* GKGameCenterViewController_initWithAchievementID(
     const char* achievementID,
     void** exceptionPtr)
 {
-    if(@available(macOS 11, tvOS 14, iOS 14, *))
+    if(@available(macOS 10.16, tvOS 14, iOS 14, *))
     {
         @try
         {
@@ -60,7 +60,7 @@ void* GKGameCenterViewController_initWithLeaderboard_playerScope(
     long playerScope,
     void** exceptionPtr)
 {
-    if(@available(macOS 11, tvOS 14, iOS 14, *))
+    if(@available(macOS 10.16, tvOS 14, iOS 14, *))
     {
         @try
         {
@@ -82,7 +82,7 @@ void* GKGameCenterViewController_initWithLeaderboardID_playerScope_timeScope(
     long timeScope,
     void** exceptionPtr)
 {
-    if(@available(macOS 11, tvOS 14, iOS 14, *))
+    if(@available(macOS 10.16, tvOS 14, iOS 14, *))
     {
         @try
         {

@@ -20,7 +20,7 @@ extern "C" {
 //Properties
 uint GKLeaderboardScore_GetPropContext(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKLeaderboardScore* iGKLeaderboardScore = (__bridge GKLeaderboardScore*) ptr;
         NSUInteger val = [iGKLeaderboardScore context];
@@ -34,7 +34,7 @@ uint GKLeaderboardScore_GetPropContext(void* ptr)
 
 void GKLeaderboardScore_SetPropContext(void* ptr, uint context, void** exceptionPtr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         @try
         {
@@ -50,7 +50,7 @@ void GKLeaderboardScore_SetPropContext(void* ptr, uint context, void** exception
 
 const char* GKLeaderboardScore_GetPropLeaderboardID(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKLeaderboardScore* iGKLeaderboardScore = (__bridge GKLeaderboardScore*) ptr;
         NSString* val = [iGKLeaderboardScore leaderboardID];
@@ -64,7 +64,7 @@ const char* GKLeaderboardScore_GetPropLeaderboardID(void* ptr)
 
 void GKLeaderboardScore_SetPropLeaderboardID(void* ptr, const char* leaderboardID, void** exceptionPtr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         @try
         {
@@ -80,7 +80,7 @@ void GKLeaderboardScore_SetPropLeaderboardID(void* ptr, const char* leaderboardI
 
 void* GKLeaderboardScore_GetPropPlayer(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKLeaderboardScore* iGKLeaderboardScore = (__bridge GKLeaderboardScore*) ptr;
         GKPlayer* val = [iGKLeaderboardScore player];
@@ -94,7 +94,7 @@ void* GKLeaderboardScore_GetPropPlayer(void* ptr)
 
 void GKLeaderboardScore_SetPropPlayer(void* ptr, void* player, void** exceptionPtr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         @try
         {
@@ -110,7 +110,7 @@ void GKLeaderboardScore_SetPropPlayer(void* ptr, void* player, void** exceptionP
 
 NSInteger GKLeaderboardScore_GetPropValue(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKLeaderboardScore* iGKLeaderboardScore = (__bridge GKLeaderboardScore*) ptr;
         NSInteger val = [iGKLeaderboardScore value];
@@ -124,7 +124,7 @@ NSInteger GKLeaderboardScore_GetPropValue(void* ptr)
 
 void GKLeaderboardScore_SetPropValue(void* ptr, NSInteger value, void** exceptionPtr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         @try
         {
@@ -142,7 +142,7 @@ void GKLeaderboardScore_SetPropValue(void* ptr, NSInteger value, void** exceptio
 
 void GKLeaderboardScore_Dispose(void* ptr)
 {
-    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14, *))
     {
         GKLeaderboardScore* val = (__bridge GKLeaderboardScore*) ptr;
         if(val != nil)

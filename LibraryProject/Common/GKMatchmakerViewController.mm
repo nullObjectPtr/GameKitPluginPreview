@@ -137,7 +137,7 @@ void GKMatchmakerViewController_SetPropHosted(void* ptr, bool hosted, void** exc
 
 long GKMatchmakerViewController_GetPropMatchmakingMode(void* ptr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         GKMatchmakerViewController* iGKMatchmakerViewController = (__bridge GKMatchmakerViewController*) ptr;
         GKMatchmakingMode val = [iGKMatchmakerViewController matchmakingMode];
@@ -151,7 +151,7 @@ long GKMatchmakerViewController_GetPropMatchmakingMode(void* ptr)
 
 void GKMatchmakerViewController_SetPropMatchmakingMode(void* ptr, long matchmakingMode, void** exceptionPtr)
 { 
-    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    if(@available(macOS 10.16, iOS 14, tvOS 14,  *))
     { 
         @try
         {
