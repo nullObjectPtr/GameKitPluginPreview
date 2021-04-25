@@ -93,6 +93,10 @@ GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewControllerWas
 
 GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError KGKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError;
 
+// GKGameCenterControllerDelegate
+
+GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish KGKGameCenterControllerDelegate_gameCenterViewControllerDidFinish;
+
 
 
 
@@ -288,6 +292,13 @@ extern "C" {
     {
     	NSLog(@"did register GKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError");
     	KGKTurnBasedMatchmakerViewControllerDelegate_turnBasedMatchmakerViewController_didFailWithError = del;
+	}
+    
+    // GKGameCenterControllerDelegate
+    void RegisterDelegateFor_GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish(GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish del)
+    {
+    	NSLog(@"did register GKGameCenterControllerDelegate_gameCenterViewControllerDidFinish");
+    	KGKGameCenterControllerDelegate_gameCenterViewControllerDidFinish = del;
 	}
     
     

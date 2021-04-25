@@ -8,9 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		AB3C653723F6FD5800B20CC4 /* libHHGameKitTVOS.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3C646823F6F98800B20CC4 /* libHHGameKitTVOS.a */; };
+		AB65F3BA25B7DBD4000E7C51 /* UIImage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB65F3B825B7DBD4000E7C51 /* UIImage.h */; };
+		AB65F3BB25B7DBD4000E7C51 /* UIImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB65F3B925B7DBD4000E7C51 /* UIImage.mm */; };
+		AB76D76725C4B16400247DCD /* GKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB76D76525C4B16400247DCD /* GKViewController.h */; };
+		AB76D76825C4B16400247DCD /* GKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB76D76625C4B16400247DCD /* GKViewController.mm */; };
+		AB76D78025C4BF8600247DCD /* GKGameCenterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB76D77C25C4BF8500247DCD /* GKGameCenterViewController.h */; };
+		AB76D78125C4BF8600247DCD /* GKGameCenterControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB76D77D25C4BF8600247DCD /* GKGameCenterControllerDelegate.h */; };
+		AB76D78225C4BF8600247DCD /* GKGameCenterControllerDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB76D77E25C4BF8600247DCD /* GKGameCenterControllerDelegate.mm */; };
+		AB76D78325C4BF8600247DCD /* GKGameCenterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB76D77F25C4BF8600247DCD /* GKGameCenterViewController.mm */; };
+		ABAE502425A7CD7C00F51AF2 /* GKNotificationBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAE502225A7CD7C00F51AF2 /* GKNotificationBanner.h */; };
+		ABAE502525A7CD7C00F51AF2 /* GKNotificationBanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABAE502325A7CD7C00F51AF2 /* GKNotificationBanner.mm */; };
 		ABDEA9812571C5A5008EB04E /* GKTurnBasedExchangeReply.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDEA9382571C5A4008EB04E /* GKTurnBasedExchangeReply.h */; };
 		ABDEA9822571C5A5008EB04E /* NSException.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDEA9392571C5A4008EB04E /* NSException.mm */; };
-		ABDEA9832571C5A5008EB04E /* UIViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDEA93A2571C5A4008EB04E /* UIViewController.mm */; };
 		ABDEA9842571C5A5008EB04E /* GKVoiceChat.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDEA93B2571C5A4008EB04E /* GKVoiceChat.mm */; };
 		ABDEA9852571C5A5008EB04E /* GKChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDEA93C2571C5A4008EB04E /* GKChallenge.h */; };
 		ABDEA9862571C5A5008EB04E /* GKBasePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDEA93D2571C5A4008EB04E /* GKBasePlayer.h */; };
@@ -39,7 +48,6 @@
 		ABDEA99D2571C5A5008EB04E /* MatchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDEA9542571C5A5008EB04E /* MatchDelegate.h */; };
 		ABDEA99E2571C5A5008EB04E /* GKAchievementChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDEA9552571C5A5008EB04E /* GKAchievementChallenge.h */; };
 		ABDEA99F2571C5A5008EB04E /* GKLeaderboardEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDEA9562571C5A5008EB04E /* GKLeaderboardEntry.h */; };
-		ABDEA9A02571C5A5008EB04E /* UIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDEA9572571C5A5008EB04E /* UIViewController.h */; };
 		ABDEA9A12571C5A5008EB04E /* ChallengeListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDEA9582571C5A5008EB04E /* ChallengeListener.mm */; };
 		ABDEA9A22571C5A5008EB04E /* MatchDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDEA9592571C5A5008EB04E /* MatchDelegate.mm */; };
 		ABDEA9A32571C5A5008EB04E /* GKLeaderboardSet.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDEA95A2571C5A5008EB04E /* GKLeaderboardSet.mm */; };
@@ -89,7 +97,7 @@
 		AB3C653623F6FD4C00B20CC4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /Users/jonathan/Development/PongPrototype/PongUnity/Packages/GameKit/Runtime/bin/TVOS;
+			dstPath = /Users/jonathan/Development/GameKitPlugin/GameKitPlugin/UnityGameKitPlugin/Packages/GameKit/Runtime/bin/TVOS;
 			dstSubfolderSpec = 0;
 			files = (
 				AB3C653723F6FD5800B20CC4 /* libHHGameKitTVOS.a in CopyFiles */,
@@ -100,9 +108,18 @@
 
 /* Begin PBXFileReference section */
 		AB3C646823F6F98800B20CC4 /* libHHGameKitTVOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHHGameKitTVOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB65F3B825B7DBD4000E7C51 /* UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImage.h; sourceTree = "<group>"; };
+		AB65F3B925B7DBD4000E7C51 /* UIImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIImage.mm; sourceTree = "<group>"; };
+		AB76D76525C4B16400247DCD /* GKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKViewController.h; sourceTree = "<group>"; };
+		AB76D76625C4B16400247DCD /* GKViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GKViewController.mm; sourceTree = "<group>"; };
+		AB76D77C25C4BF8500247DCD /* GKGameCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKGameCenterViewController.h; sourceTree = "<group>"; };
+		AB76D77D25C4BF8600247DCD /* GKGameCenterControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKGameCenterControllerDelegate.h; sourceTree = "<group>"; };
+		AB76D77E25C4BF8600247DCD /* GKGameCenterControllerDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GKGameCenterControllerDelegate.mm; sourceTree = "<group>"; };
+		AB76D77F25C4BF8600247DCD /* GKGameCenterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GKGameCenterViewController.mm; sourceTree = "<group>"; };
+		ABAE502225A7CD7C00F51AF2 /* GKNotificationBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNotificationBanner.h; sourceTree = "<group>"; };
+		ABAE502325A7CD7C00F51AF2 /* GKNotificationBanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GKNotificationBanner.mm; sourceTree = "<group>"; };
 		ABDEA9382571C5A4008EB04E /* GKTurnBasedExchangeReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKTurnBasedExchangeReply.h; sourceTree = "<group>"; };
 		ABDEA9392571C5A4008EB04E /* NSException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSException.mm; sourceTree = "<group>"; };
-		ABDEA93A2571C5A4008EB04E /* UIViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIViewController.mm; sourceTree = "<group>"; };
 		ABDEA93B2571C5A4008EB04E /* GKVoiceChat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GKVoiceChat.mm; sourceTree = "<group>"; };
 		ABDEA93C2571C5A4008EB04E /* GKChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKChallenge.h; sourceTree = "<group>"; };
 		ABDEA93D2571C5A4008EB04E /* GKBasePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBasePlayer.h; sourceTree = "<group>"; };
@@ -131,7 +148,6 @@
 		ABDEA9542571C5A5008EB04E /* MatchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchDelegate.h; sourceTree = "<group>"; };
 		ABDEA9552571C5A5008EB04E /* GKAchievementChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKAchievementChallenge.h; sourceTree = "<group>"; };
 		ABDEA9562571C5A5008EB04E /* GKLeaderboardEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKLeaderboardEntry.h; sourceTree = "<group>"; };
-		ABDEA9572571C5A5008EB04E /* UIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewController.h; sourceTree = "<group>"; };
 		ABDEA9582571C5A5008EB04E /* ChallengeListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChallengeListener.mm; sourceTree = "<group>"; };
 		ABDEA9592571C5A5008EB04E /* MatchDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MatchDelegate.mm; sourceTree = "<group>"; };
 		ABDEA95A2571C5A5008EB04E /* GKLeaderboardSet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GKLeaderboardSet.mm; sourceTree = "<group>"; };
@@ -207,81 +223,89 @@
 		ABDEA9372571C5A4008EB04E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				ABDEA9382571C5A4008EB04E /* GKTurnBasedExchangeReply.h */,
-				ABDEA9392571C5A4008EB04E /* NSException.mm */,
-				ABDEA93A2571C5A4008EB04E /* UIViewController.mm */,
-				ABDEA93B2571C5A4008EB04E /* GKVoiceChat.mm */,
-				ABDEA93C2571C5A4008EB04E /* GKChallenge.h */,
+				ABAE502225A7CD7C00F51AF2 /* GKNotificationBanner.h */,
+				ABAE502325A7CD7C00F51AF2 /* GKNotificationBanner.mm */,
+				ABDEA94D2571C5A4008EB04E /* Callbacks.h */,
+				ABDEA94B2571C5A4008EB04E /* ChallengeListener.h */,
+				ABDEA9582571C5A5008EB04E /* ChallengeListener.mm */,
+				ABDEA9442571C5A4008EB04E /* Converters.h */,
+				ABDEA96B2571C5A5008EB04E /* Converters.m */,
+				ABDEA96F2571C5A5008EB04E /* GameKitInitializer.h */,
+				ABDEA97D2571C5A5008EB04E /* GameKitInitializer.mm */,
+				ABDEA9692571C5A5008EB04E /* GKAccessPoint.h */,
+				ABDEA9702571C5A5008EB04E /* GKAccessPoint.mm */,
+				ABDEA9642571C5A5008EB04E /* GKAchievement.h */,
+				ABDEA9672571C5A5008EB04E /* GKAchievement.mm */,
+				ABDEA9552571C5A5008EB04E /* GKAchievementChallenge.h */,
+				ABDEA9752571C5A5008EB04E /* GKAchievementChallenge.mm */,
+				ABDEA9742571C5A5008EB04E /* GKAchievementDescription.h */,
+				ABDEA95D2571C5A5008EB04E /* GKAchievementDescription.mm */,
 				ABDEA93D2571C5A4008EB04E /* GKBasePlayer.h */,
+				ABDEA9622571C5A5008EB04E /* GKBasePlayer.mm */,
+				ABDEA93C2571C5A4008EB04E /* GKChallenge.h */,
+				ABDEA96D2571C5A5008EB04E /* GKChallenge.mm */,
 				ABDEA93E2571C5A4008EB04E /* GKInvite.h */,
+				ABDEA96E2571C5A5008EB04E /* GKInvite.mm */,
+				AB76D77D25C4BF8600247DCD /* GKGameCenterControllerDelegate.h */,
+				AB76D77E25C4BF8600247DCD /* GKGameCenterControllerDelegate.mm */,
+				AB76D77C25C4BF8500247DCD /* GKGameCenterViewController.h */,
+				AB76D77F25C4BF8600247DCD /* GKGameCenterViewController.mm */,
+				ABDEA94C2571C5A4008EB04E /* GKLeaderboard.h */,
+				ABDEA9722571C5A5008EB04E /* GKLeaderboard.mm */,
+				ABDEA9562571C5A5008EB04E /* GKLeaderboardEntry.h */,
+				ABDEA9732571C5A5008EB04E /* GKLeaderboardEntry.mm */,
 				ABDEA9D62571D18E008EB04E /* GKLeaderboardScore.h */,
 				ABDEA9D52571D18E008EB04E /* GKLeaderboardScore.mm */,
-				ABDEA93F2571C5A4008EB04E /* GKScore.mm */,
-				ABDEA9402571C5A4008EB04E /* NSException.h */,
-				ABDEA9412571C5A4008EB04E /* GKMatch.mm */,
-				ABDEA9422571C5A4008EB04E /* GKMatchmakerViewController.mm */,
-				ABDEA9432571C5A4008EB04E /* TurnBasedEventListener.h */,
-				ABDEA9442571C5A4008EB04E /* Converters.h */,
-				ABDEA9452571C5A4008EB04E /* GKPlayer.h */,
-				ABDEA9462571C5A4008EB04E /* GKTurnBasedParticipant.mm */,
-				ABDEA9472571C5A4008EB04E /* GKScoreChallenge.h */,
-				ABDEA9482571C5A4008EB04E /* GKSavedGame.mm */,
-				ABDEA9492571C5A4008EB04E /* GKMatch.h */,
-				ABDEA94A2571C5A4008EB04E /* GKTurnBasedMatch.h */,
-				ABDEA94B2571C5A4008EB04E /* ChallengeListener.h */,
-				ABDEA94C2571C5A4008EB04E /* GKLeaderboard.h */,
-				ABDEA94D2571C5A4008EB04E /* Callbacks.h */,
-				ABDEA94E2571C5A4008EB04E /* MatchmakerViewControllerDelegate.h */,
 				ABDEA94F2571C5A4008EB04E /* GKLeaderboardSet.h */,
-				ABDEA9502571C5A4008EB04E /* GKTurnBasedExchange.mm */,
-				ABDEA9512571C5A4008EB04E /* GKLocalPlayer.mm */,
-				ABDEA9522571C5A4008EB04E /* GKScoreChallenge.mm */,
-				ABDEA9532571C5A4008EB04E /* TurnBasedEventListener.mm */,
-				ABDEA9542571C5A5008EB04E /* MatchDelegate.h */,
-				ABDEA9552571C5A5008EB04E /* GKAchievementChallenge.h */,
-				ABDEA9562571C5A5008EB04E /* GKLeaderboardEntry.h */,
-				ABDEA9572571C5A5008EB04E /* UIViewController.h */,
-				ABDEA9582571C5A5008EB04E /* ChallengeListener.mm */,
-				ABDEA9592571C5A5008EB04E /* MatchDelegate.mm */,
 				ABDEA95A2571C5A5008EB04E /* GKLeaderboardSet.mm */,
-				ABDEA95B2571C5A5008EB04E /* GKPlayer.mm */,
-				ABDEA95C2571C5A5008EB04E /* GKSavedGame.h */,
-				ABDEA95D2571C5A5008EB04E /* GKAchievementDescription.mm */,
-				ABDEA95E2571C5A5008EB04E /* GKTurnBasedMatchmakerViewControllerDelegate.mm */,
-				ABDEA95F2571C5A5008EB04E /* MatchmakerViewControllerDelegate.mm */,
-				ABDEA9602571C5A5008EB04E /* LocalPlayerListener.h */,
-				ABDEA9612571C5A5008EB04E /* GKTurnBasedExchangeReply.mm */,
-				ABDEA9622571C5A5008EB04E /* GKBasePlayer.mm */,
-				ABDEA9632571C5A5008EB04E /* GKTurnBasedExchange.h */,
-				ABDEA9642571C5A5008EB04E /* GKAchievement.h */,
-				ABDEA9652571C5A5008EB04E /* GKTurnBasedMatchmakerViewControllerDelegate.h */,
-				ABDEA9662571C5A5008EB04E /* GKTurnBasedMatchmakerViewController.h */,
-				ABDEA9672571C5A5008EB04E /* GKAchievement.mm */,
-				ABDEA9682571C5A5008EB04E /* LocalPlayerListener.mm */,
-				ABDEA9692571C5A5008EB04E /* GKAccessPoint.h */,
-				ABDEA96A2571C5A5008EB04E /* GKVoiceChat.h */,
-				ABDEA96B2571C5A5008EB04E /* Converters.m */,
-				ABDEA96C2571C5A5008EB04E /* NSError.mm */,
-				ABDEA96D2571C5A5008EB04E /* GKChallenge.mm */,
-				ABDEA96E2571C5A5008EB04E /* GKInvite.mm */,
-				ABDEA96F2571C5A5008EB04E /* GameKitInitializer.h */,
-				ABDEA9702571C5A5008EB04E /* GKAccessPoint.mm */,
-				ABDEA9712571C5A5008EB04E /* NSError.h */,
-				ABDEA9722571C5A5008EB04E /* GKLeaderboard.mm */,
-				ABDEA9732571C5A5008EB04E /* GKLeaderboardEntry.mm */,
-				ABDEA9742571C5A5008EB04E /* GKAchievementDescription.h */,
-				ABDEA9752571C5A5008EB04E /* GKAchievementChallenge.mm */,
 				ABDEA9762571C5A5008EB04E /* GKLocalPlayer.h */,
-				ABDEA9772571C5A5008EB04E /* GKTurnBasedParticipant.h */,
-				ABDEA9782571C5A5008EB04E /* GKMatchmakerViewController.h */,
-				ABDEA9792571C5A5008EB04E /* GKMatchmaker.mm */,
-				ABDEA97A2571C5A5008EB04E /* GKScore.h */,
-				ABDEA97B2571C5A5008EB04E /* GKTurnBasedMatchmakerViewController.mm */,
-				ABDEA97C2571C5A5008EB04E /* GKTurnBasedMatch.mm */,
-				ABDEA97D2571C5A5008EB04E /* GameKitInitializer.mm */,
+				ABDEA9512571C5A4008EB04E /* GKLocalPlayer.mm */,
+				ABDEA9492571C5A4008EB04E /* GKMatch.h */,
+				ABDEA9412571C5A4008EB04E /* GKMatch.mm */,
 				ABDEA97E2571C5A5008EB04E /* GKMatchmaker.h */,
+				ABDEA9792571C5A5008EB04E /* GKMatchmaker.mm */,
+				ABDEA9782571C5A5008EB04E /* GKMatchmakerViewController.h */,
+				ABDEA9422571C5A4008EB04E /* GKMatchmakerViewController.mm */,
 				ABDEA97F2571C5A5008EB04E /* GKMatchRequest.h */,
 				ABDEA9802571C5A5008EB04E /* GKMatchRequest.mm */,
+				ABDEA9452571C5A4008EB04E /* GKPlayer.h */,
+				ABDEA95B2571C5A5008EB04E /* GKPlayer.mm */,
+				ABDEA95C2571C5A5008EB04E /* GKSavedGame.h */,
+				ABDEA9482571C5A4008EB04E /* GKSavedGame.mm */,
+				ABDEA97A2571C5A5008EB04E /* GKScore.h */,
+				ABDEA93F2571C5A4008EB04E /* GKScore.mm */,
+				ABDEA9472571C5A4008EB04E /* GKScoreChallenge.h */,
+				ABDEA9522571C5A4008EB04E /* GKScoreChallenge.mm */,
+				ABDEA9632571C5A5008EB04E /* GKTurnBasedExchange.h */,
+				ABDEA9502571C5A4008EB04E /* GKTurnBasedExchange.mm */,
+				ABDEA9382571C5A4008EB04E /* GKTurnBasedExchangeReply.h */,
+				ABDEA9612571C5A5008EB04E /* GKTurnBasedExchangeReply.mm */,
+				ABDEA94A2571C5A4008EB04E /* GKTurnBasedMatch.h */,
+				ABDEA97C2571C5A5008EB04E /* GKTurnBasedMatch.mm */,
+				ABDEA9662571C5A5008EB04E /* GKTurnBasedMatchmakerViewController.h */,
+				ABDEA97B2571C5A5008EB04E /* GKTurnBasedMatchmakerViewController.mm */,
+				ABDEA9652571C5A5008EB04E /* GKTurnBasedMatchmakerViewControllerDelegate.h */,
+				ABDEA95E2571C5A5008EB04E /* GKTurnBasedMatchmakerViewControllerDelegate.mm */,
+				ABDEA9772571C5A5008EB04E /* GKTurnBasedParticipant.h */,
+				ABDEA9462571C5A4008EB04E /* GKTurnBasedParticipant.mm */,
+				ABDEA96A2571C5A5008EB04E /* GKVoiceChat.h */,
+				ABDEA93B2571C5A4008EB04E /* GKVoiceChat.mm */,
+				ABDEA9602571C5A5008EB04E /* LocalPlayerListener.h */,
+				ABDEA9682571C5A5008EB04E /* LocalPlayerListener.mm */,
+				ABDEA9542571C5A5008EB04E /* MatchDelegate.h */,
+				ABDEA9592571C5A5008EB04E /* MatchDelegate.mm */,
+				ABDEA94E2571C5A4008EB04E /* MatchmakerViewControllerDelegate.h */,
+				ABDEA95F2571C5A5008EB04E /* MatchmakerViewControllerDelegate.mm */,
+				ABDEA9712571C5A5008EB04E /* NSError.h */,
+				ABDEA96C2571C5A5008EB04E /* NSError.mm */,
+				ABDEA9402571C5A4008EB04E /* NSException.h */,
+				ABDEA9392571C5A4008EB04E /* NSException.mm */,
+				ABDEA9432571C5A4008EB04E /* TurnBasedEventListener.h */,
+				ABDEA9532571C5A4008EB04E /* TurnBasedEventListener.mm */,
+				AB65F3B825B7DBD4000E7C51 /* UIImage.h */,
+				AB65F3B925B7DBD4000E7C51 /* UIImage.mm */,
+				AB76D76525C4B16400247DCD /* GKViewController.h */,
+				AB76D76625C4B16400247DCD /* GKViewController.mm */,
 			);
 			name = Common;
 			path = ../Common;
@@ -307,24 +331,28 @@
 				ABDEA9BA2571C5A6008EB04E /* NSError.h in Headers */,
 				ABDEA9D82571D18E008EB04E /* GKLeaderboardScore.h in Headers */,
 				ABDEA9952571C5A5008EB04E /* GKLeaderboard.h in Headers */,
+				ABAE502425A7CD7C00F51AF2 /* GKNotificationBanner.h in Headers */,
 				ABDEA9942571C5A5008EB04E /* ChallengeListener.h in Headers */,
 				ABDEA98D2571C5A5008EB04E /* Converters.h in Headers */,
-				ABDEA9A02571C5A5008EB04E /* UIViewController.h in Headers */,
 				ABDEA9A52571C5A5008EB04E /* GKSavedGame.h in Headers */,
+				AB76D76725C4B16400247DCD /* GKViewController.h in Headers */,
 				ABDEA9B22571C5A6008EB04E /* GKAccessPoint.h in Headers */,
 				ABDEA9BF2571C5A6008EB04E /* GKLocalPlayer.h in Headers */,
 				ABDEA9AE2571C5A6008EB04E /* GKTurnBasedMatchmakerViewControllerDelegate.h in Headers */,
 				ABDEA9AF2571C5A6008EB04E /* GKTurnBasedMatchmakerViewController.h in Headers */,
+				AB76D78025C4BF8600247DCD /* GKGameCenterViewController.h in Headers */,
 				ABDEA99F2571C5A5008EB04E /* GKLeaderboardEntry.h in Headers */,
 				ABDEA99D2571C5A5008EB04E /* MatchDelegate.h in Headers */,
 				ABDEA9892571C5A5008EB04E /* NSException.h in Headers */,
 				ABDEA9852571C5A5008EB04E /* GKChallenge.h in Headers */,
 				ABDEA9C82571C5A6008EB04E /* GKMatchRequest.h in Headers */,
+				AB76D78125C4BF8600247DCD /* GKGameCenterControllerDelegate.h in Headers */,
 				ABDEA9B32571C5A6008EB04E /* GKVoiceChat.h in Headers */,
 				ABDEA9AD2571C5A6008EB04E /* GKAchievement.h in Headers */,
 				ABDEA9982571C5A5008EB04E /* GKLeaderboardSet.h in Headers */,
 				ABDEA9962571C5A5008EB04E /* Callbacks.h in Headers */,
 				ABDEA9A92571C5A5008EB04E /* LocalPlayerListener.h in Headers */,
+				AB65F3BA25B7DBD4000E7C51 /* UIImage.h in Headers */,
 				ABDEA9C32571C5A6008EB04E /* GKScore.h in Headers */,
 				ABDEA9972571C5A5008EB04E /* MatchmakerViewControllerDelegate.h in Headers */,
 				ABDEA9812571C5A5008EB04E /* GKTurnBasedExchangeReply.h in Headers */,
@@ -398,6 +426,7 @@
 				ABDEA9BE2571C5A6008EB04E /* GKAchievementChallenge.mm in Sources */,
 				ABDEA98F2571C5A5008EB04E /* GKTurnBasedParticipant.mm in Sources */,
 				ABDEA9882571C5A5008EB04E /* GKScore.mm in Sources */,
+				AB65F3BB25B7DBD4000E7C51 /* UIImage.mm in Sources */,
 				ABDEA9A42571C5A5008EB04E /* GKPlayer.mm in Sources */,
 				ABDEA9BC2571C5A6008EB04E /* GKLeaderboardEntry.mm in Sources */,
 				ABDEA9C22571C5A6008EB04E /* GKMatchmaker.mm in Sources */,
@@ -405,6 +434,7 @@
 				ABDEA9AA2571C5A5008EB04E /* GKTurnBasedExchangeReply.mm in Sources */,
 				ABDEA9A22571C5A5008EB04E /* MatchDelegate.mm in Sources */,
 				ABDEA9A72571C5A5008EB04E /* GKTurnBasedMatchmakerViewControllerDelegate.mm in Sources */,
+				ABAE502525A7CD7C00F51AF2 /* GKNotificationBanner.mm in Sources */,
 				ABDEA9B12571C5A6008EB04E /* LocalPlayerListener.mm in Sources */,
 				ABDEA9BB2571C5A6008EB04E /* GKLeaderboard.mm in Sources */,
 				ABDEA9842571C5A5008EB04E /* GKVoiceChat.mm in Sources */,
@@ -413,15 +443,17 @@
 				ABDEA9B42571C5A6008EB04E /* Converters.m in Sources */,
 				ABDEA9B52571C5A6008EB04E /* NSError.mm in Sources */,
 				ABDEA9B72571C5A6008EB04E /* GKInvite.mm in Sources */,
-				ABDEA9832571C5A5008EB04E /* UIViewController.mm in Sources */,
 				ABDEA9C52571C5A6008EB04E /* GKTurnBasedMatch.mm in Sources */,
 				ABDEA98A2571C5A5008EB04E /* GKMatch.mm in Sources */,
+				AB76D76825C4B16400247DCD /* GKViewController.mm in Sources */,
 				ABDEA9992571C5A5008EB04E /* GKTurnBasedExchange.mm in Sources */,
 				ABDEA9912571C5A5008EB04E /* GKSavedGame.mm in Sources */,
 				ABDEA9B02571C5A6008EB04E /* GKAchievement.mm in Sources */,
 				ABDEA9AB2571C5A5008EB04E /* GKBasePlayer.mm in Sources */,
 				ABDEA9C62571C5A6008EB04E /* GameKitInitializer.mm in Sources */,
 				ABDEA9822571C5A5008EB04E /* NSException.mm in Sources */,
+				AB76D78225C4BF8600247DCD /* GKGameCenterControllerDelegate.mm in Sources */,
+				AB76D78325C4BF8600247DCD /* GKGameCenterViewController.mm in Sources */,
 				ABDEA9A82571C5A5008EB04E /* MatchmakerViewControllerDelegate.mm in Sources */,
 				ABDEA9B92571C5A6008EB04E /* GKAccessPoint.mm in Sources */,
 				ABDEA99C2571C5A5008EB04E /* TurnBasedEventListener.mm in Sources */,
@@ -551,11 +583,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DCQFJ2K8S3;
 				EXECUTABLE_PREFIX = lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = NO;
 				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
@@ -565,10 +599,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DCQFJ2K8S3;
 				EXECUTABLE_PREFIX = lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};

@@ -42,6 +42,7 @@ typedef void (*LoadEntriesForPlayerScopeCallback)(unsigned long invocationId, vo
 typedef void (*LoadLeaderboardEntriesCallback)(unsigned long invocationId, void* localPlayerEntry, void* entries[],
 	long entriesCount, void* error);
 typedef void (*TurnBasedMatchCallback)(unsigned long invocationId, void* match, void* error);
+typedef void (*TurnBasedExchangeCallback)(unsigned long invocationId, void* match, void* error);
 typedef void (*LoadMatchesCallback)(unsigned long invocationId, void* matches[],
 	long matchesCount, void* error);
 typedef void (*StaticTurnBasedMatchCallback)(unsigned long invocationId, void* match, void* error);
@@ -49,6 +50,7 @@ typedef void (*GKChallengeComposeCompletionCallback)(unsigned long invocationId,
 	long sentPlayerIDsCount);
 typedef void (*playerVoiceChatStateDidChangeCallback)(void* ptr, unsigned long invocationId, void* player, long state);
 typedef void (*ByteArrayCallback)(unsigned long invocationId, const void* matchData, long matchDataLength, void* error);
-typedef void (*GKAccessPointCallback)(unsigned long invocationId);
+typedef void (*VoidCallback)(unsigned long invocationId);
+typedef void (*ImageCallback)(unsigned long invocationId, void* image, void* error);
 
 

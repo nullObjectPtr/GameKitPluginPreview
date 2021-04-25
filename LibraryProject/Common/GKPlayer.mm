@@ -21,27 +21,31 @@ void GKPlayer_loadPlayersForIdentifiers_withCompletionHandler(
 	void** exception
     )
 {
-	@try {
-		NSLog(@"GKPlayer_loadPlayersForIdentifiers_withCompletionHandler()");
-	    [GKPlayer loadPlayersForIdentifiers:[Converters StringArray:identifiers withCount:identifiersCount] withCompletionHandler:^(NSArray<GKPlayer*>* players,
+
+        @try {
+            NSLog(@"GKPlayer_loadPlayersForIdentifiers_withCompletionHandler()");
+            [GKPlayer loadPlayersForIdentifiers:[Converters StringArray:identifiers withCount:identifiersCount] withCompletionHandler:^(NSArray<GKPlayer*>* players,
 NSError* error)
 		{
 			long playersCount = [players count];
-			void** playersBuffer = (void**) malloc(sizeof(void*) * playersCount);
-			[Converters NSArrayToRetainedCArray:players withBuffer:playersBuffer];
+			void** playersBuffer = nil;
+			if(playersCount > 0)
+			{
+				playersBuffer = (void**) malloc(sizeof(void*) * playersCount);
+				[Converters NSArrayToRetainedCArray:players withBuffer:playersBuffer];
+			}
 			completionHandler(invocationId, playersBuffer, playersCount, (__bridge_retained void*) error);
 			free(playersBuffer);
 		}
 ];
-	}
-	@catch(NSException* ex)
-	{
-		*exception = (__bridge_retained void*) ex;
-	}
+        }
+        @catch(NSException* ex)
+        {
+            *exception = (__bridge_retained void*) ex;
+        }
+    
 
-	
 }
-
 
 
 //InitMethods
@@ -67,18 +71,52 @@ bool GKPlayer_scopedIDsArePersistent(
     void* ptr,
     void** exception
     )
+{ 
+        @try
+        {
+            GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
+            BOOL val = [iGKPlayer scopedIDsArePersistent];
+            return val;
+        }
+        @catch(NSException* ex)
+        {
+            *exception = (__bridge_retained void*) ex;
+        }
+        return NO;
+
+}
+
+
+
+void GKPlayer_loadPhotoForSize_withCompletionHandler(
+    void* ptr,
+    long size,
+    unsigned long invocationId, ImageCallback completionHandler,
+    void** exception
+    )
 {
 	@try 
 	{
 		GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
-	    BOOL val = [iGKPlayer scopedIDsArePersistent];
-	    return val;
+#if TARGET_OS_IOS || TARGET_OS_TV
+	    [iGKPlayer loadPhotoForSize:(GKPhotoSize)size withCompletionHandler:^(UIImage* image,
+NSError* error)
+#else
+        [iGKPlayer loadPhotoForSize:(GKPhotoSize)size withCompletionHandler:^(NSImage* image,
+ NSError* error)
+#endif
+		{
+			
+			completionHandler(invocationId, (__bridge_retained void*) image, (__bridge_retained void*) error);
+			
+		}
+];
 	}
 	@catch(NSException* ex)
 	{
 		*exception = (__bridge_retained void*) ex;
 	}
-	return NO;
+	
 }
 
 
@@ -86,53 +124,58 @@ bool GKPlayer_scopedIDsArePersistent(
 //VoidMethods
 //Properties
 const char* GKPlayer_GetPropGamePlayerID(void* ptr)
-{
-	GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
-	NSString* val = [iGKPlayer gamePlayerID];
-	return [val UTF8String];
+{ 
+        GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
+        NSString* val = [iGKPlayer gamePlayerID];
+        return [val UTF8String];
+    
 }
-
 
 const char* GKPlayer_GetPropTeamPlayerID(void* ptr)
-{
-	GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
-	NSString* val = [iGKPlayer teamPlayerID];
-	return [val UTF8String];
+{ 
+        GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
+        NSString* val = [iGKPlayer teamPlayerID];
+        return [val UTF8String];
+    
 }
-
 
 const char* GKPlayer_GetPropAlias(void* ptr)
-{
-	GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
-	NSString* val = [iGKPlayer alias];
-	return [val UTF8String];
+{ 
+        GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
+        NSString* val = [iGKPlayer alias];
+        return [val UTF8String];
+    
 }
-
 
 const char* GKPlayer_GetPropDisplayName(void* ptr)
-{
-	GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
-	NSString* val = [iGKPlayer displayName];
-	return [val UTF8String];
+{ 
+        GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
+        NSString* val = [iGKPlayer displayName];
+        return [val UTF8String];
+    
 }
-
 
 const char* GKPlayer_GetPropGuestIdentifier(void* ptr)
-{
-	GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
-	NSString* val = [iGKPlayer guestIdentifier];
-	return [val UTF8String];
+{ 
+        GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
+        NSString* val = [iGKPlayer guestIdentifier];
+        return [val UTF8String];
+    
 }
 
-
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 bool GKPlayer_GetPropIsInvitable(void* ptr)
-{
-	GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
-	BOOL val = [iGKPlayer isInvitable];
-	return val;
+{ 
+    if(@available(macOS 11, iOS 14, tvOS 14,  *))
+    { 
+        GKPlayer* iGKPlayer = (__bridge GKPlayer*) ptr;
+        BOOL val = [iGKPlayer isInvitable];
+        return val;
+    }
+    else
+    {
+        return NO;
+    } 
 }
-#endif
 
 
 

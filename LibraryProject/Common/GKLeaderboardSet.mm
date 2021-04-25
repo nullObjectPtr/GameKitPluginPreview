@@ -19,9 +19,10 @@ void GKLeaderboardSet_loadLeaderboardSetsWithCompletionHandler(
 	void** exception
     )
 {
-	@try {
-		NSLog(@"GKLeaderboardSet_loadLeaderboardSetsWithCompletionHandler()");
-	    [GKLeaderboardSet loadLeaderboardSetsWithCompletionHandler:^(NSArray<GKLeaderboardSet*>* leaderboardSets,
+
+        @try {
+            NSLog(@"GKLeaderboardSet_loadLeaderboardSetsWithCompletionHandler()");
+            [GKLeaderboardSet loadLeaderboardSetsWithCompletionHandler:^(NSArray<GKLeaderboardSet*>* leaderboardSets,
 NSError* error)
 		{
 			long leaderboardSetsCount = [leaderboardSets count];
@@ -35,30 +36,30 @@ NSError* error)
 			free(leaderboardSetsBuffer);
 		}
 ];
-	}
-	@catch(NSException* ex)
-	{
-		*exception = (__bridge_retained void*) ex;
-	}
+        }
+        @catch(NSException* ex)
+        {
+            *exception = (__bridge_retained void*) ex;
+        }
+    
 
-	
 }
-
 
 
 //InitMethods
 //InstanceMethods
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 void GKLeaderboardSet_loadLeaderboardsWithHandler(
     void* ptr,
     unsigned long invocationId, LoadLeaderboardsCallback handler,
     void** exception
     )
-{
-	@try 
-	{
-		GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
-	    [iGKLeaderboardSet loadLeaderboardsWithHandler:^(NSArray<GKLeaderboard*>* leaderboards,
+{ 
+    if(@available(macOS 11, iOS 14, tvOS 14, * ))
+    { 
+        @try
+        {
+            GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
+            [iGKLeaderboardSet loadLeaderboardsWithHandler:^(NSArray<GKLeaderboard*>* leaderboards,
 NSError* error)
 		{
 			long leaderboardsCount = [leaderboards count];
@@ -72,54 +73,55 @@ NSError* error)
 			free(leaderboardsBuffer);
 		}
 ];
-	}
-	@catch(NSException* ex)
-	{
-		*exception = (__bridge_retained void*) ex;
-	}
-	
+        }
+        @catch(NSException* ex)
+        {
+            *exception = (__bridge_retained void*) ex;
+        }
+
+    }
 }
-#endif
+
 
 
 //VoidMethods
 //Properties
 const char* GKLeaderboardSet_GetPropTitle(void* ptr)
-{
-	GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
-	NSString* val = [iGKLeaderboardSet title];
-	return [val UTF8String];
+{ 
+        GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
+        NSString* val = [iGKLeaderboardSet title];
+        return [val UTF8String];
+    
 }
 
-
 const char* GKLeaderboardSet_GetPropIdentifier(void* ptr)
-{
-	GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
-	NSString* val = [iGKLeaderboardSet identifier];
-	return [val UTF8String];
+{ 
+        GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
+        NSString* val = [iGKLeaderboardSet identifier];
+        return [val UTF8String];
+    
 }
 
 void GKLeaderboardSet_SetPropIdentifier(void* ptr, const char* identifier, void** exceptionPtr)
-{
-	@try
-	{
-		GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
-		[iGKLeaderboardSet setIdentifier:[NSString stringWithUTF8String:identifier]];
-	}
-	@catch(NSException* ex) 
-	{
-		*exceptionPtr = (__bridge_retained void*) ex;
-	}
+{ 
+        @try
+        {
+            GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
+            [iGKLeaderboardSet setIdentifier:[NSString stringWithUTF8String:identifier]];
+        }
+        @catch(NSException* ex)
+        {
+            *exceptionPtr = (__bridge_retained void*) ex;
+        }
 }
-
 
 const char* GKLeaderboardSet_GetPropGroupIdentifier(void* ptr)
-{
-	GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
-	NSString* val = [iGKLeaderboardSet groupIdentifier];
-	return [val UTF8String];
+{ 
+        GKLeaderboardSet* iGKLeaderboardSet = (__bridge GKLeaderboardSet*) ptr;
+        NSString* val = [iGKLeaderboardSet groupIdentifier];
+        return [val UTF8String];
+    
 }
-
 
 
 

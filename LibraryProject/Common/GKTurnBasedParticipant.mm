@@ -42,6 +42,27 @@ double GKTurnBasedParticipant_GetPropLastTurnDate(void* ptr)
 }
 
 
+long GKTurnBasedParticipant_GetPropMatchOutcome(void* ptr)
+{
+	GKTurnBasedParticipant* iGKTurnBasedParticipant = (__bridge GKTurnBasedParticipant*) ptr;
+	GKTurnBasedMatchOutcome val = [iGKTurnBasedParticipant matchOutcome];
+	return val;
+}
+
+void GKTurnBasedParticipant_SetPropMatchOutcome(void* ptr, long matchOutcome, void** exceptionPtr)
+{
+	@try
+	{
+		GKTurnBasedParticipant* iGKTurnBasedParticipant = (__bridge GKTurnBasedParticipant*) ptr;
+		[iGKTurnBasedParticipant setMatchOutcome:(GKTurnBasedMatchOutcome)matchOutcome];
+	}
+	@catch(NSException* ex) 
+	{
+		*exceptionPtr = (__bridge_retained void*) ex;
+	}
+}
+
+
 
 
 void GKTurnBasedParticipant_Dispose(void* ptr)

@@ -46,8 +46,79 @@ NSError* error)
 
 
 
+void* GKAchievementDescription_incompleteAchievementImage(
+	void** exception
+    )
+{
+	@try {
+		NSLog(@"GKAchievementDescription_incompleteAchievementImage()");
+	    id val = [GKAchievementDescription incompleteAchievementImage];
+		return (__bridge_retained void*) val;
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+
+	return nil;
+}
+
+
+
+void* GKAchievementDescription_placeholderCompletedAchievementImage(
+	void** exception
+    )
+{
+	@try {
+		NSLog(@"GKAchievementDescription_placeholderCompletedAchievementImage()");
+	    id val = [GKAchievementDescription placeholderCompletedAchievementImage];
+		return (__bridge_retained void*) val;
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+
+	return nil;
+}
+
+
+
 //InitMethods
 //InstanceMethods
+void GKAchievementDescription_loadImageWithCompletionHandler(
+    void* ptr,
+    unsigned long invocationId, ImageCallback completionHandler,
+    void** exception
+    )
+{
+	@try 
+	{
+		GKAchievementDescription* iGKAchievementDescription = (__bridge GKAchievementDescription*) ptr;
+	    
+#if TARGET_OS_IOS || TARGET_OS_TV
+        [iGKAchievementDescription loadImageWithCompletionHandler:^(UIImage* image,
+NSError* error)
+#else
+         [iGKAchievementDescription loadImageWithCompletionHandler:^(NSImage* image,
+ NSError* error)
+#endif
+		{
+			
+			completionHandler(invocationId, (__bridge_retained void*) image, (__bridge_retained void*) error);
+			
+		}
+];
+	}
+	@catch(NSException* ex)
+	{
+		*exception = (__bridge_retained void*) ex;
+	}
+	
+}
+
+
+
 //VoidMethods
 //Properties
 const char* GKAchievementDescription_GetPropIdentifier(void* ptr)

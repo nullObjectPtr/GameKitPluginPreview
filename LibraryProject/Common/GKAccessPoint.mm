@@ -16,187 +16,253 @@ extern "C" {
 //ClassMethods
 //InitMethods
 //InstanceMethods
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
+
 void GKAccessPoint_triggerAccessPointWithHandler(
     void* ptr,
-    unsigned long invocationId, GKAccessPointCallback handler,
+    unsigned long invocationId, VoidCallback handler,
     void** exception
     )
 {
-	@try 
-	{
-		GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-	    [iGKAccessPoint triggerAccessPointWithHandler:^()
-		{
-			
-			handler(invocationId);
-			
-		}
-];
-	}
-	@catch(NSException* ex)
-	{
-		*exception = (__bridge_retained void*) ex;
-	}
-	
+    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    {
+        @try
+        {
+            GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+            [iGKAccessPoint triggerAccessPointWithHandler:^()
+            {
+                
+                handler(invocationId);
+                
+            }
+    ];
+        }
+        @catch(NSException* ex)
+        {
+            *exception = (__bridge_retained void*) ex;
+        }
+    }
 }
-#endif
 
-
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 void GKAccessPoint_triggerAccessPointWithState_handler(
     void* ptr,
     long state,
-    unsigned long invocationId, GKAccessPointCallback handler,
+    unsigned long invocationId, VoidCallback handler,
     void** exception
     )
 {
-	@try 
-	{
-		GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-	    [iGKAccessPoint triggerAccessPointWithState:(GKGameCenterViewControllerState)state handler:^()
-		{
-			
-			handler(invocationId);
-			
-		}
-];
-	}
-	@catch(NSException* ex)
-	{
-		*exception = (__bridge_retained void*) ex;
-	}
-	
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        @try
+        {
+            GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+            [iGKAccessPoint triggerAccessPointWithState:(GKGameCenterViewControllerState)state handler:^()
+            {
+                
+                handler(invocationId);
+                
+            }
+    ];
+        }
+        @catch(NSException* ex)
+        {
+            *exception = (__bridge_retained void*) ex;
+        }
+    }
 }
-#endif
 
 
-//VoidMethods
-//Properties
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 void* GKAccessPoint_GetPropShared()
 {
-	GKAccessPoint* val = [GKAccessPoint shared];
-	return (__bridge_retained void*) val;
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        GKAccessPoint* val = [GKAccessPoint shared];
+        return (__bridge_retained void*) val;
+    }
+    else
+    {
+        return nil;
+    }
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 long GKAccessPoint_GetPropLocation(void* ptr)
 {
-	GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-	GKAccessPointLocation val = [iGKAccessPoint location];
-	return val;
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+        GKAccessPointLocation val = [iGKAccessPoint location];
+        return val;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 void GKAccessPoint_SetPropLocation(void* ptr, long location, void** exceptionPtr)
 {
-	@try
-	{
-		GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-		[iGKAccessPoint setLocation:(GKAccessPointLocation)location];
-	}
-	@catch(NSException* ex) 
-	{
-		*exceptionPtr = (__bridge_retained void*) ex;
-	}
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        @try
+        {
+            GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+            [iGKAccessPoint setLocation:(GKAccessPointLocation)location];
+        }
+        @catch(NSException* ex)
+        {
+            *exceptionPtr = (__bridge_retained void*) ex;
+        }
+    }
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 bool GKAccessPoint_GetPropActive(void* ptr)
 {
-	GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-	BOOL val = [iGKAccessPoint isActive];
-	return val;
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+        BOOL val = [iGKAccessPoint isActive];
+        return val;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 void GKAccessPoint_SetPropActive(void* ptr, bool active, void** exceptionPtr)
 {
-	@try
-	{
-		GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-		[iGKAccessPoint setActive:active];
-	}
-	@catch(NSException* ex) 
-	{
-		*exceptionPtr = (__bridge_retained void*) ex;
-	}
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        @try
+        {
+            GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+            [iGKAccessPoint setActive:active];
+        }
+        @catch(NSException* ex)
+        {
+            *exceptionPtr = (__bridge_retained void*) ex;
+        }
+    }
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 bool GKAccessPoint_GetPropIsPresentingGameCenter(void* ptr)
 {
-	GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-	BOOL val = [iGKAccessPoint isPresentingGameCenter];
-	return val;
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+        BOOL val = [iGKAccessPoint isPresentingGameCenter];
+        return val;
+    }
+    else
+    {
+        return false;
+    }
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 bool GKAccessPoint_GetPropVisible(void* ptr)
 {
-	GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-	BOOL val = [iGKAccessPoint isVisible];
-	return val;
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+        BOOL val = [iGKAccessPoint isVisible];
+        return val;
+    }
+    else
+    {
+        return false;
+    }
 }
-#endif
 
-#if (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 110000) || (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 140000) || (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
 bool GKAccessPoint_GetPropShowHighlights(void* ptr)
 {
-	GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-	BOOL val = [iGKAccessPoint showHighlights];
-	return val;
+    if(@available(macOS 11.0, iOS 14.0, tvOS 14.0, *))
+    {
+        GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+        BOOL val = [iGKAccessPoint showHighlights];
+        return val;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 void GKAccessPoint_SetPropShowHighlights(void* ptr, bool showHighlights, void** exceptionPtr)
 {
-	@try
-	{
-		GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-		[iGKAccessPoint setShowHighlights:showHighlights];
-	}
-	@catch(NSException* ex) 
-	{
-		*exceptionPtr = (__bridge_retained void*) ex;
-	}
+    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    {
+        @try
+        {
+            GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+            [iGKAccessPoint setShowHighlights:showHighlights];
+        }
+        @catch(NSException* ex)
+        {
+            *exceptionPtr = (__bridge_retained void*) ex;
+        }
+    }
 }
-#endif
 
-#if (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
+
 bool GKAccessPoint_GetPropFocused(void* ptr)
 {
-	GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-	BOOL val = [iGKAccessPoint isFocused];
-	return val;
+    if(@available(tvOS 14.0, *))
+    {
+#if (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
+        GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+        BOOL val = [iGKAccessPoint isFocused];
+        return val;
+#endif
+    }
+
+    return false;
 }
 
 void GKAccessPoint_SetPropFocused(void* ptr, bool focused, void** exceptionPtr)
 {
-	@try
-	{
-		GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
-		[iGKAccessPoint setFocused:focused];
-	}
-	@catch(NSException* ex) 
-	{
-		*exceptionPtr = (__bridge_retained void*) ex;
-	}
-}
+#if (defined(__TV_OS_VERSION_MIN_REQUIRED) && __TV_OS_VERSION_MIN_REQUIRED >= 140000)
+    if(@available(tvOS 14.0, *))
+    {
+        @try
+        {
+            GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+            [iGKAccessPoint setFocused:focused];
+        }
+        @catch(NSException* ex)
+        {
+            *exceptionPtr = (__bridge_retained void*) ex;
+        }
+    }
 #endif
+}
+
+CGRect GKAccessPoint_GetPropFrameInScreenCoordinates(void* ptr)
+{
+    if(@available(macOS 11, iOS 14, tvOS 14, *))
+    {
+        GKAccessPoint* iGKAccessPoint = (__bridge GKAccessPoint*) ptr;
+        CGRect val = [iGKAccessPoint frameInScreenCoordinates];
+        //NSLog(@"x:%f y:%f w:%f h:%f", val.origin.x, val.origin.y, val.size.width, val.size.height);
+        return val;
+    }
+    else
+    {
+        return CGRectZero;
+    }
+}
 
 
 
 void GKAccessPoint_Dispose(void* ptr)
 {
-    GKAccessPoint* val = (__bridge GKAccessPoint*) ptr;
-    if(val != nil)
+    if(@available(macOS 11, iOS 14, tvOS 14, *))
     {
-        CFRelease(ptr);
+        GKAccessPoint* val = (__bridge GKAccessPoint*) ptr;
+        if(val != nil)
+        {
+            CFRelease(ptr);
+        }
+        //NSLog(@"Dispose...GKAccessPoint");
     }
-    NSLog(@"Dispose...GKAccessPoint");
 }
 
 }
